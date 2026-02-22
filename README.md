@@ -95,11 +95,23 @@ Portfolio: [system-portfolio.vercel.app](https://system-portfolio.vercel.app)
 
 ---
 
-### 2. CSS - Not Started ⏳
+### 2. CSS - In Progress ✅
 
 **Course**: SoloLearn CSS
-**Status**: Not Started
-**Progress**: 0%
+**Status**: In Progress
+**Current Progress**: 1/? lessons completed
+
+#### Lesson 1: Welcome to CSS
+
+![Lesson 1](css/images/lesson1-welcome-to-css.png)
+
+**Key Points:**
+- CSS (Cascading Style Sheets) is used to style web pages
+- CSS is one of the three core web technologies (HTML, CSS, JavaScript)
+- The `style` attribute adds CSS directly to HTML tags (inline styling)
+- Common CSS properties include: `color`, `background-color`, `font-size`, `text-align`, `margin`, `border`
+- Multiple CSS properties are separated by semicolons: `style="color: blue; font-size: 20px;"`
+- CSS values must be enclosed in quotes when used within the style attribute
 
 ---
 
