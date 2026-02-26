@@ -16,9 +16,9 @@ This repository operates on three levels:
 |---|--------|-------|--------|
 | 00 | [Pre-Course](00-pre-course/) | HTML, CSS, JavaScript fundamentals | Done |
 | 01 | [Foundations](01-foundations/) | DevOps philosophy, SDLC, team dynamics | Done |
-| 02 | [Linux](02-linux/) | Command line, filesystem, permissions | Upcoming |
+| 02 | [Linux](02-linux/) | Command line, filesystem, permissions | In Progress |
 | 03 | [Networking](03-networking/) | TCP/IP, DNS, HTTP, firewalls | Upcoming |
-| 04 | [Python Basics](04-python-basics/) | Syntax, data structures, scripting | Upcoming |
+| 04 | [Python Basics](04-python-basics/) | Syntax, data structures, scripting | In Progress |
 | 05 | [Git & GitHub](05-git-github/) | Version control, branching, collaboration | Upcoming |
 | 06 | [Python Advanced](06-python-advanced/) | OOP, APIs, automation scripts | Upcoming |
 | 07 | [AWS](07-aws/) | Cloud fundamentals, core services | Upcoming |
