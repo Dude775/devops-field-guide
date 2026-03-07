@@ -1,40 +1,89 @@
 # Core Commands Reference
 
-Commands learned during the Linux environment setup and first exercises.
+Commands learned during the Linux module, organized by category.
+
+## Reading Files
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `cat` | Display entire file / concatenate multiple files | `cat config.txt` or `cat file1 file2` |
+| `less` | Interactive file viewer (scroll, search, navigate) | `less /etc/services` then `q` to exit |
+| `head` | Display first lines (default 10) | `head -n 20 app.log` |
+| `tail` | Display last lines (default 10) | `tail -n 50 app.log` |
+| `tail -f` | Follow file in real-time | `tail -f /var/log/syslog` |
+
+## Searching
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `grep PATTERN file` | Search for text inside a file | `grep ERROR app.log` |
+| `grep -i` | Case-insensitive search | `grep -i error app.log` |
+| `grep -r` | Recursive search in directory tree | `grep -r "TODO" .` |
+| `grep -n` | Show line numbers with matches | `grep -n "CONFIG" settings.yaml` |
+| `grep -c` | Count matching lines | `grep -c ERROR app.log` |
+| `find path -name` | Find files by name pattern | `find /etc -name "*.conf"` |
+| `find -type f` | Filter to files only | `find . -name ".*" -type f` |
+| `find -exec` | Execute command on results | `find . -name "*.log" -exec grep ERROR {} +` |
+
+## System Administration
 
 | Command | What It Does | Example |
 |---------|-------------|---------|
 | `sudo` | Run command as root (superuser) | `sudo apt install curl -y` |
 | `apt install` | Install a package from repositories | `sudo apt install openssh-server -y` |
 | `apt update` | Refresh the list of available packages | `sudo apt update` |
-| `ip a` | Show network interfaces and IP addresses | `ip a` → shows `enp0s3: 10.0.2.15` |
+
+## Networking
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `ip a` | Show network interfaces and IP addresses | `ip a` shows `enp0s3: 10.0.2.15` |
 | `ssh` | Open a secure shell session to a remote host | `ssh david@127.0.0.1 -p 2222` |
 | `curl -L` | Download from a URL, following redirects | `curl -L https://example.com/file.tar.gz` |
-| `tar -xz` | Extract a gzip-compressed tar archive | `tar -xz` (usually piped from curl) |
-| `cat` | Display file contents / create files with heredoc | `cat TASKS.md` |
+
+## File Operations
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
 | `cd` | Change directory | `cd project-folder` |
-| `ls -la` | List all files including hidden, with details | `ls -la` → shows permissions, sizes, dates |
+| `ls -la` | List all files including hidden, with details | `ls -la` shows permissions, sizes, dates |
+| `ls -a` | List all files including hidden (short format) | `ls -a` reveals dot-files |
+| `mkdir -p` | Create directory with parent directories | `mkdir -p my_answers/{codes,passwords,configs}` |
+| `touch` | Create empty file or update timestamp | `touch notes.txt` |
+| `tar -xz` | Extract a gzip-compressed tar archive | `tar -xz` (usually piped from curl) |
+
+## Text and Output
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
 | `echo` | Print text to terminal or redirect to file | `echo "Log entry" > file.txt` |
-| `seq` | Generate a sequence of numbers | `seq 1 25` → prints 1 through 25 |
-| `wc -l` | Count lines in input | `ls *.txt \| wc -l` → count of matching files |
+| `seq` | Generate a sequence of numbers | `seq 1 25` prints 1 through 25 |
+| `wc -l` | Count lines in input | `ls *.txt \| wc -l` |
+
+## Shell Operators
+
+| Operator | What It Does | Example |
+|----------|-------------|---------|
 | `>` | Redirect output to file (overwrites) | `echo "text" > file.txt` |
 | `\|` | Pipe: send output of one command as input to another | `ls \| wc -l` |
 | `&&` | Run next command only if previous succeeded | `cd dir && cat file.md` |
+| `;` | Run next command regardless of previous result | `cat bad_file; echo "continues"` |
+| `2>/dev/null` | Redirect stderr to discard (suppress errors) | `grep -r text /etc 2>/dev/null` |
+| `cat > file << 'EOF'` | Heredoc: write multi-line content to file | See heredoc-and-redirection.md |
+| `{a,b,c}` | Brace expansion: generates multiple arguments | `mkdir {src,lib,docs}` |
 | `for/do/done` | Loop construct in bash | `for i in $(seq 1 5); do echo $i; done` |
 
-## Command Categories
+## Command Categories Quick Reference
 
-### System Administration
-`sudo`, `apt install`, `apt update`
-
-### Networking
-`ip a`, `ssh`, `curl`
-
-### File Operations
-`cat`, `cd`, `ls -la`, `tar -xz`
-
-### Text & Output
-`echo`, `seq`, `wc -l`
-
-### Flow Control
-`>` (redirect), `|` (pipe), `&&` (chain), `for/do/done` (loop)
+| Need To... | Use |
+|------------|-----|
+| Read a short file | `cat` |
+| Read a long file | `less` |
+| Preview beginning of file | `head -n N` |
+| Preview end of file / monitor logs | `tail -n N` / `tail -f` |
+| Search text inside files | `grep` (add `-r` for recursive, `-i` for case-insensitive) |
+| Find files by name | `find path -name "pattern"` |
+| Create directories | `mkdir -p` |
+| Install software | `sudo apt install` |
+| Remote connect | `ssh user@host` |
+| Download files | `curl -L url` |

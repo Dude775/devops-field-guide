@@ -1,7 +1,7 @@
 # Module 02: Linux - Command Line Mastery
 
 > **Status**: In Progress
-> **Prerequisites**: [Module 01 - Foundations](../01-foundations/)
+> **Prerequisites**: [Module 01 - Foundations](../01-foundations)
 
 ## Overview
 
@@ -32,12 +32,17 @@ Hands-on from day one - setting up a real Linux server environment and learning 
 
 ### Exercises
 - [Log File Generator](exercises/log-file-generator.md) - Bash for loop for bulk file creation
+- [Weekend Labs](exercises/weekend-labs.md) - Reading Files, Search Basics, Scavenger Hunt (Labs 3-5, 80/100)
 
 ### Journal
-- [Week 02 Notes](journal/week-02-notes.md)
+- [Week 02 Notes](journal/week-02-notes.md) - Setup reflections, CLI discoveries, DevOps connections
 
 ## Key Takeaways
 
-*Updated as the module progresses.*
+- **Reading files**: `cat` for short, `less` for long, `head`/`tail` for a peek, `tail -f` for live monitoring
+- **Searching**: `grep` for content inside files, `find` for locating files by name - never confuse the two
+- **Efficiency matters**: `head -n 5 file` is better than `cat file | head -n 5` at scale
+- **Permission denied is a feature**: Linux protects sensitive files by design
+- **Everything is a file**: configs, logs, user data, service mappings - all plain text, all searchable
 
-Content will be added as the course progresses.
+_Updated as the module progresses._
