@@ -48,9 +48,48 @@ Commands learned during the Linux module, organized by category.
 | `cd` | Change directory | `cd project-folder` |
 | `ls -la` | List all files including hidden, with details | `ls -la` shows permissions, sizes, dates |
 | `ls -a` | List all files including hidden (short format) | `ls -a` reveals dot-files |
-| `mkdir -p` | Create directory with parent directories | `mkdir -p my_answers/{codes,passwords,configs}` |
-| `touch` | Create empty file or update timestamp | `touch notes.txt` |
 | `tar -xz` | Extract a gzip-compressed tar archive | `tar -xz` (usually piped from curl) |
+
+## File Management
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `mkdir` | Create a single directory | `mkdir projects` |
+| `mkdir -p` | Create nested directories (with parents) | `mkdir -p app/src/tests` |
+| `touch` | Create empty file or update timestamp | `touch notes.txt` |
+| `cp src dest` | Copy file (independent duplicate) | `cp config.sh config_backup.sh` |
+| `cp f1 f2 dir/` | Copy multiple files to directory | `cp main.sh utils.sh backups/` |
+| `mv src dest` | Move file to new location | `mv file.txt archive/` |
+| `mv old new` | Rename file | `mv draft.txt final.txt` |
+| `rm file` | Delete file permanently (no undo) | `rm temp.txt` |
+| `rmdir dir` | Delete empty directory only | `rmdir old_folder` |
+| `rm -r dir` | Delete directory and all contents | `rm -r build/` (use with caution) |
+| `find path -type f` | Find all files recursively | `find linux_lab -type f` |
+| `find path -type f \| sort` | Find and sort all files | `find . -type f \| sort` |
+
+## Links
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `ln` | Create hard link | `ln original.txt hardlink.txt` |
+| `ln -s` | Create symbolic (soft) link | `ln -s target.txt symlink.txt` |
+| `ls -i` | Show inode numbers | `ls -i` |
+| `stat` | Show detailed inode info | `stat file.txt` |
+
+## Pipes & Redirection
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `>` | Redirect STDOUT to file (overwrite) | `echo "hi" > file.txt` |
+| `>>` | Redirect STDOUT to file (append) | `echo "more" >> file.txt` |
+| `<` | Feed file to STDIN | `wc -l < file.txt` |
+| `\|` | Pipe STDOUT to next command | `cat file \| sort \| wc -l` |
+| `2>` | Redirect STDERR to file (overwrite) | `ls /fake 2> errors.txt` |
+| `2>>` | Redirect STDERR to file (append) | `ls /fake 2>> errors.txt` |
+| `2>&1` | Redirect STDERR to same destination as STDOUT | `command > all.txt 2>&1` |
+| `> f1 2> f2` | Split STDOUT and STDERR to separate files | `cmd > out.txt 2> err.txt` |
+| `sort` | Sort lines alphabetically | `sort names.txt` |
+| `wc` | Count lines/words/chars | `wc -l file.txt` |
 
 ## Text and Output
 
