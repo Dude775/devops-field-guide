@@ -112,6 +112,18 @@ Commands learned during the Linux module, organized by category.
 | `{a,b,c}` | Brace expansion: generates multiple arguments | `mkdir {src,lib,docs}` |
 | `for/do/done` | Loop construct in bash | `for i in $(seq 1 5); do echo $i; done` |
 
+## User Management
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `whoami` | Display current user | `whoami` |
+| `sudo adduser <name>` | Create user (friendly, interactive) | `sudo adduser alice` |
+| `sudo useradd <name>` | Create user (bare-bones) | `sudo useradd bob` |
+| `su - <name>` | Switch to user with full login shell | `su - alice` |
+| `passwd <name>` | Set/change user password | `sudo passwd bob` |
+| `chown <user>:<group> <path>` | Change file/directory ownership | `sudo chown bob:bob /home/bob` |
+| `cut -d<delim> -f<field>` | Extract fields from structured text | `cut -d: -f1 /etc/passwd` |
+
 ## Command Categories Quick Reference
 
 | Need To... | Use |
