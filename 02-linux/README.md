@@ -38,6 +38,7 @@ Hands-on from day one - setting up a real Linux server environment and learning 
 - [journalctl Lab](exercises/journalctl-lab.md) — Log investigation, filtering, real-time monitoring, boot logs, priority levels (100/100)
 - [Processes & systemd](exercises/processes-and-systemd.md) — Processes, PIDs, Signals, Services, systemd, systemctl, journalctl
 - [Users Getting Started Lab](exercises/users-getting-started-lab.md) — User management, adduser vs useradd, su, /etc/passwd (Lab 2.4, 100/100)
+- [Processes & systemd Lab](exercises/processes-systemd-lab.md) — Service self-healing: systemctl, ps, kill, systemd auto-recovery
 - [Weekend Labs](exercises/weekend-labs.md) - Reading Files, Search Basics, Scavenger Hunt (Labs 3-5, 80/100)
 
 ### Journal

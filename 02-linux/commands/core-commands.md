@@ -40,6 +40,7 @@ Commands learned during the Linux module, organized by category.
 | `ip a` | Show network interfaces and IP addresses | `ip a` shows `enp0s3: 10.0.2.15` |
 | `ssh` | Open a secure shell session to a remote host | `ssh david@127.0.0.1 -p 2222` |
 | `curl -L` | Download from a URL, following redirects | `curl -L https://example.com/file.tar.gz` |
+| `nmcli device status` | Show network interface status (managed by NetworkManager) | `nmcli device status` |
 
 ## File Operations
 
