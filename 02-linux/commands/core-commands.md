@@ -161,11 +161,16 @@ Commands learned during the Linux module, organized by category.
 | Command | What It Does | Example |
 |---------|-------------|---------|
 | `journalctl` | All systemd logs | `journalctl` |
-| `journalctl -u` | Logs for specific service | `journalctl -u nginx` |
-| `journalctl -b` | Logs since last boot | `journalctl -b` |
-| `journalctl -p` | Filter by priority level | `journalctl -p err` |
+| `journalctl -n N` | Last N log messages | `journalctl -n 20` |
 | `journalctl -f` | Follow logs in real-time | `journalctl -f` |
-| `journalctl --since/--until` | Filter by time range | `journalctl --since "10:00" --until "12:00"` |
+| `journalctl -u` | Logs for specific service | `journalctl -u ssh` |
+| `journalctl -u service -f` | Follow specific service live | `journalctl -u ssh -f` |
+| `journalctl -b` | Logs since current boot | `journalctl -b` |
+| `journalctl -b -1` | Logs from previous boot | `journalctl -b -1` |
+| `journalctl -p` | Filter by priority (and above) | `journalctl -p err` |
+| `journalctl --since/--until` | Filter by time range | `journalctl --since "1 hour ago"` |
+| `journalctl -o short-iso` | ISO timestamp format | `journalctl -o short-iso` |
+| `journalctl -xe` | Recent events with explanations | `journalctl -xe` |
 
 ## User Management
 
