@@ -112,6 +112,61 @@ Commands learned during the Linux module, organized by category.
 | `{a,b,c}` | Brace expansion: generates multiple arguments | `mkdir {src,lib,docs}` |
 | `for/do/done` | Loop construct in bash | `for i in $(seq 1 5); do echo $i; done` |
 
+## Process Management
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `ps` | Snapshot of current session processes | `ps` |
+| `ps -ef` | All processes with full details (UID, PID, PPID, CMD) | `ps -ef` |
+| `ps aux` | All processes BSD-style (CPU, MEM, STAT) | `ps aux` |
+| `ps -p PID` | Info on specific process | `ps -p 1024` |
+| `ps -pf PID` | Specific process with full details | `ps -pf 1024` |
+| `ps -C name` | Find processes by command name | `ps -C nginx` |
+| `ps -u user` | Processes by user | `ps -u www-data` |
+| `ps --forest` | Tree view of parent/child relationships | `ps -ef --forest` |
+| `ps -eLf` | All threads in full format | `ps -eLf` |
+| `ps -o fields` | Custom output format | `ps -eo pid,ppid,%cpu,%mem,cmd` |
+| `ps aux --sort=-%cpu` | Sort by CPU usage (descending) | `ps aux --sort=-%cpu` |
+| `top` | Real-time process monitor | `top` |
+| `htop` | Enhanced real-time monitor (install separately) | `htop` |
+
+## Signals & Kill
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `kill PID` | Send SIGTERM (graceful stop) | `kill 1234` |
+| `kill -9 PID` | Send SIGKILL (force kill) | `kill -9 1234` |
+| `kill -STOP PID` | Freeze process (stays in memory) | `kill -STOP 1234` |
+| `kill -CONT PID` | Resume frozen process | `kill -CONT 1234` |
+| `kill -HUP PID` | Reload config without restart | `kill -HUP 1234` |
+| `kill -l` | List all available signals | `kill -l` |
+
+## systemd & Services
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `systemctl status` | Show service status, PID, memory | `systemctl status nginx` |
+| `systemctl start` | Start a service | `sudo systemctl start nginx` |
+| `systemctl stop` | Stop a service gracefully | `sudo systemctl stop nginx` |
+| `systemctl restart` | Stop and start a service | `sudo systemctl restart nginx` |
+| `systemctl reload` | Reload config without stopping | `sudo systemctl reload nginx` |
+| `systemctl enable` | Start service on boot | `sudo systemctl enable nginx` |
+| `systemctl disable` | Don't start service on boot | `sudo systemctl disable nginx` |
+| `systemctl is-active` | Quick check if running | `systemctl is-active nginx` |
+| `systemctl is-enabled` | Quick check if enabled on boot | `systemctl is-enabled nginx` |
+| `systemctl list-units` | List all services | `systemctl list-units --type=service` |
+
+## Logs (journalctl)
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `journalctl` | All systemd logs | `journalctl` |
+| `journalctl -u` | Logs for specific service | `journalctl -u nginx` |
+| `journalctl -b` | Logs since last boot | `journalctl -b` |
+| `journalctl -p` | Filter by priority level | `journalctl -p err` |
+| `journalctl -f` | Follow logs in real-time | `journalctl -f` |
+| `journalctl --since/--until` | Filter by time range | `journalctl --since "10:00" --until "12:00"` |
+
 ## User Management
 
 | Command | What It Does | Example |

@@ -35,6 +35,7 @@ Hands-on from day one - setting up a real Linux server environment and learning 
 - [File Management Lab](exercises/file-management-lab.md) - mkdir, touch, cp, mv, rm (Lab 2, 100/100)
 - [Links & Pipes Labs](exercises/links-and-pipes-lab.md) — Hard links, soft links, pipes, redirection, sort, wc (Labs 6-7, 100/100)
 - [STDOUT/STDERR Practice Lab](exercises/stdout-stderr-lab.md) — Output redirection, STDOUT, STDERR, 2>&1 (100/100)
+- [Processes & systemd](exercises/processes-and-systemd.md) — Processes, PIDs, Signals, Services, systemd, systemctl, journalctl
 - [Users Getting Started Lab](exercises/users-getting-started-lab.md) — User management, adduser vs useradd, su, /etc/passwd (Lab 2.4, 100/100)
 - [Weekend Labs](exercises/weekend-labs.md) - Reading Files, Search Basics, Scavenger Hunt (Labs 3-5, 80/100)
 
