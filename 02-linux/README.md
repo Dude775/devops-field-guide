@@ -29,6 +29,7 @@ Hands-on from day one - setting up a real Linux server environment and learning 
 - [Core Commands Reference](commands/core-commands.md) - All commands learned, categorized
 - [curl | tar Pipe Pattern](commands/curl-tar-pipe.md) - The download-extract-navigate one-liner
 - [Heredoc and Redirection](commands/heredoc-and-redirection.md) - Output redirection, pipes, heredocs
+- [Linux Commands Field Guide](commands/linux-commands-field-guide.md) - Complete reference: files, text processing, permissions, users, packages, processes, bash scripting
 
 ### Exercises
 - [Log File Generator](exercises/log-file-generator.md) - Bash for loop for bulk file creation
