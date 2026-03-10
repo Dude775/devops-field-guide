@@ -41,6 +41,7 @@ Hands-on from day one - setting up a real Linux server environment and learning 
 - [Users Getting Started Lab](exercises/users-getting-started-lab.md) — User management, adduser vs useradd, su, /etc/passwd (Lab 2.4, 100/100)
 - [Processes & systemd Lab](exercises/processes-systemd-lab.md) — Service self-healing: systemctl, ps, kill, systemd auto-recovery
 - [Weekend Labs](exercises/weekend-labs.md) - Reading Files, Search Basics, Scavenger Hunt (Labs 3-5, 80/100)
+- [Shared Server Scenario Lab](exercises/shared-server-scenario-lab.md) - Full server setup: users, groups, permissions, log analysis, admin access, debugging (Bonus Lab)
 
 ### Journal
 - [Week 02 Notes](journal/week-02-notes.md) - Setup reflections, CLI discoveries, DevOps connections

@@ -83,6 +83,8 @@ Commands learned during the Linux module, organized by category.
 |---------|-------------|---------|
 | `>` | Redirect STDOUT to file (overwrite) | `echo "hi" > file.txt` |
 | `>>` | Redirect STDOUT to file (append) | `echo "more" >> file.txt` |
+| `echo "x" \| sudo tee file` | Write to root-owned file (sudo-safe redirect) | `echo "report" \| sudo tee /opt/report.txt` |
+| `echo "x" \| sudo tee -a file` | Append to root-owned file | `echo "line" \| sudo tee -a /opt/report.txt` |
 | `<` | Feed file to STDIN | `wc -l < file.txt` |
 | `\|` | Pipe STDOUT to next command | `cat file \| sort \| wc -l` |
 | `2>` | Redirect STDERR to file (overwrite) | `ls /fake 2> errors.txt` |
@@ -183,6 +185,11 @@ Commands learned during the Linux module, organized by category.
 | `su - <name>` | Switch to user with full login shell | `su - alice` |
 | `passwd <name>` | Set/change user password | `sudo passwd bob` |
 | `chown <user>:<group> <path>` | Change file/directory ownership | `sudo chown bob:bob /home/bob` |
+| `chown -R <user>:<group> <path>` | Recursive ownership change | `sudo chown -R root:devteam /opt/project` |
+| `chmod <mode> <path>` | Set file/directory permissions | `sudo chmod 770 /opt/project` |
+| `chmod -R <mode> <path>` | Recursive permission change | `sudo chmod -R 770 /opt/project` |
+| `groupadd <name>` | Create a new group | `sudo groupadd devteam` |
+| `usermod -aG <group> <user>` | Add user to group (append, keeps existing groups) | `sudo usermod -aG devteam dev1` |
 | `cut -d<delim> -f<field>` | Extract fields from structured text | `cut -d: -f1 /etc/passwd` |
 
 ## Command Categories Quick Reference
