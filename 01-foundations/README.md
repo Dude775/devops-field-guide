@@ -22,7 +22,8 @@ This is the foundation everything else builds on.
 ## Contents
 
 ### Concepts
-- [What Is an Application](concepts/what-is-an-application.md)
+- [From Idea to Production](concepts/from-idea-to-production.md) - Why DevOps exists: the journey from coffee shop idea to production system
+- [Client-Server Model](concepts/client-server-model.md) - The fundamental communication pattern of the internet
 - [Production vs Development](concepts/production-vs-development.md)
 - [SDLC - Software Development Life Cycle](concepts/sdlc.md)
 - [Team Dynamics](concepts/team-dynamics.md)
@@ -32,6 +33,10 @@ This is the foundation everything else builds on.
 - [Hardware and CPU Basics](concepts/hardware-cpu-basics.md)
 - [Beta Releases](concepts/beta-releases.md)
 - [Vibe Coding vs Agentic Engineering](concepts/vibe-coding-vs-agentic.md)
+
+### Slides
+- [From Idea to Production](slides/00-from-idea-to-production.pdf) - Visual deck
+- [Client-Server Model](slides/01-client-server-model.pdf) - Visual deck
 
 ### Principles
 - [Iron Rules](iron-rules.md) - Collected truths from Week 1
