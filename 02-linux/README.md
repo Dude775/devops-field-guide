@@ -43,6 +43,7 @@ Hands-on from day one - setting up a real Linux server environment and learning 
 - [Weekend Labs](exercises/weekend-labs.md) - Reading Files, Search Basics, Scavenger Hunt (Labs 3-5, 80/100)
 - [Shared Server Scenario Lab](exercises/shared-server-scenario-lab.md) - Full server setup: users, groups, permissions, log analysis, admin access, debugging (Bonus Lab)
 - [systemd Node.js Service Lab](exercises/systemd-node-service-lab.md) - Process vs service, unit file structure, self-healing, boot flow, troubleshooting
+- [Immortal Bash Service Lab](exercises/immortal-service-lab.md) - Bash script as systemd service, chmod +x, pgrep -f, file ownership trap
 
 ### Journal
 - [Week 02 Notes](journal/week-02-notes.md) - Setup reflections, CLI discoveries, DevOps connections

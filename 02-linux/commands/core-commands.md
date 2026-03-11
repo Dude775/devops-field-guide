@@ -119,7 +119,8 @@ Commands learned during the Linux module, organized by category.
 
 | Command | What It Does | Example |
 |---------|-------------|---------|
-| `pgrep <name>` | Get PIDs of processes by name | `pgrep node` |
+| `pgrep <name>` | Get PIDs of processes by name (searches process name) | `pgrep node` |
+| `pgrep -f <pattern>` | Get PIDs by full command line (use for scripts) | `pgrep -f immortal` |
 | `ps` | Snapshot of current session processes | `ps` |
 | `ps -ef` | All processes with full details (UID, PID, PPID, CMD) | `ps -ef` |
 | `ps aux` | All processes BSD-style (CPU, MEM, STAT) | `ps aux` |
@@ -188,6 +189,7 @@ Commands learned during the Linux module, organized by category.
 | `passwd <name>` | Set/change user password | `sudo passwd bob` |
 | `chown <user>:<group> <path>` | Change file/directory ownership | `sudo chown bob:bob /home/bob` |
 | `chown -R <user>:<group> <path>` | Recursive ownership change | `sudo chown -R root:devteam /opt/project` |
+| `chmod +x <file>` | Make file executable | `chmod +x ~/immortal.sh` |
 | `chmod <mode> <path>` | Set file/directory permissions | `sudo chmod 770 /opt/project` |
 | `chmod -R <mode> <path>` | Recursive permission change | `sudo chmod -R 770 /opt/project` |
 | `groupadd <name>` | Create a new group | `sudo groupadd devteam` |
