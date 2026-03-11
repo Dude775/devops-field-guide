@@ -119,6 +119,7 @@ Commands learned during the Linux module, organized by category.
 
 | Command | What It Does | Example |
 |---------|-------------|---------|
+| `pgrep <name>` | Get PIDs of processes by name | `pgrep node` |
 | `ps` | Snapshot of current session processes | `ps` |
 | `ps -ef` | All processes with full details (UID, PID, PPID, CMD) | `ps -ef` |
 | `ps aux` | All processes BSD-style (CPU, MEM, STAT) | `ps aux` |
@@ -148,6 +149,7 @@ Commands learned during the Linux module, organized by category.
 
 | Command | What It Does | Example |
 |---------|-------------|---------|
+| `systemctl daemon-reload` | Reload unit files after editing (required after every change) | `sudo systemctl daemon-reload` |
 | `systemctl status` | Show service status, PID, memory | `systemctl status nginx` |
 | `systemctl start` | Start a service | `sudo systemctl start nginx` |
 | `systemctl stop` | Stop a service gracefully | `sudo systemctl stop nginx` |
