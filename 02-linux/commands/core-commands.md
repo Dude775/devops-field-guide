@@ -196,6 +196,79 @@ Commands learned during the Linux module, organized by category.
 | `usermod -aG <group> <user>` | Add user to group (append, keeps existing groups) | `sudo usermod -aG devteam dev1` |
 | `cut -d<delim> -f<field>` | Extract fields from structured text | `cut -d: -f1 /etc/passwd` |
 
+## Bash Scripting
+
+| Command / Syntax | What It Does | Example |
+|-----------------|-------------|---------|
+| `#!/bin/bash` | Shebang - declares the interpreter | Must be line 1 of every script |
+| `chmod +x script.sh` | Grant execute permission to a script | `chmod +x hello.sh` |
+| `echo` | Print text or variables to stdout | `echo "Hello, $NAME"` |
+| `read VAR` | Read user input into variable | `read NAME` |
+| `read -p "prompt" VAR` | Read with inline prompt (no newline) | `read -p "Enter name: " NAME` |
+| `read -s VAR` | Read silently (no echo - for passwords) | `read -s PASSWORD` |
+| `NAME="value"` | Variable assignment (no spaces around `=`) | `NAME="david"` |
+| `$NAME` | Variable reference | `echo $NAME` |
+| `$(command)` | Command substitution - capture output | `DATE=$(date +"%Y-%m-%d")` |
+| `$(( expr ))` | Arithmetic expression | `RESULT=$(( 5 + 3 ))` |
+| `$0` | Script name (special variable) | `echo "Script: $0"` |
+| `$?` | Exit code of last command | `echo "Exit: $?"` |
+
+## System Info
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `whoami` | Print current username | `whoami` → `david` |
+| `hostname` | Print system hostname | `hostname` → `ubuntu-lab` |
+| `date` | Print current date and time | `date` |
+| `date +"%Y-%m-%d"` | Format date for filenames | `DATE=$(date +"%Y-%m-%d")` |
+| `df -h` | Disk usage by filesystem (human-readable) | `df -h /` |
+| `du -sh path` | Size of a file or directory | `du -sh notes.txt` → `4.0K` |
+
+## Text Processing (Extended)
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `rev` | Reverse each line character by character | `echo "devops" \| rev` → `spoved` |
+| `sed -i 's/old/new/g'` | In-place substitution in file (global) | `sed -i 's/error/warning/g' app.log` |
+| `wc -w` | Count words in input | `wc -w < notes.txt` |
+| `wc -l` | Count lines in input | `ls \| wc -l` |
+| `cut -f1` | Extract first tab-delimited field | `du -sh file \| cut -f1` |
+
+## Archives
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `tar -czf archive.tar.gz files` | Create gzip-compressed archive | `tar -czf backup.tar.gz *.sh` |
+| `tar -xzf archive.tar.gz` | Extract gzip-compressed archive | `tar -xzf backup.tar.gz` |
+
+## Conditional Logic
+
+| Syntax | What It Does |
+|--------|-------------|
+| `if [ cond ]; then` | Open conditional block |
+| `elif [ cond ]; then` | Additional condition |
+| `else` | Fallback block |
+| `fi` | Close the if block (`if` backwards) |
+
+## Test Operators (Numeric)
+
+| Operator | Meaning | Note |
+|----------|---------|------|
+| `-eq` | Equal to | `[ $A -eq $B ]` |
+| `-ne` | Not equal to | `[ $A -ne $B ]` |
+| `-gt` | Greater than | Can't use `>` (it's redirect) |
+| `-lt` | Less than | Can't use `<` (it's redirect) |
+| `-ge` | Greater than or equal | `[ $A -ge 18 ]` |
+| `-le` | Less than or equal | `[ $A -le 100 ]` |
+
+## Test Operators (File)
+
+| Operator | Meaning | Example |
+|----------|---------|---------|
+| `-f file` | File exists (regular file) | `[ -f notes.txt ]` |
+| `-d dir` | Directory exists | `[ -d /etc ]` |
+| `-e path` | Path exists (file or dir) | `[ -e /tmp ]` |
+
 ## Command Categories Quick Reference
 
 | Need To... | Use |
