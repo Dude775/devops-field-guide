@@ -1,3 +1,4 @@
+"""Basic welcome message exercise."""
 # Lab 01 - Task 1: Welcome Message
 # Basic print() usage - outputting text to the screen
 

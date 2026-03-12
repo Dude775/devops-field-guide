@@ -1,3 +1,4 @@
+"""Demonstrate the print() sep parameter."""
 # Lab 01 - Task 2: The sep Parameter
 # sep controls what appears BETWEEN print arguments
 

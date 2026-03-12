@@ -1,3 +1,4 @@
+"""Demonstrate combining sep and end parameters in print()."""
 # Lab 01 - Task 4: Combining sep and end
 # Using both parameters together for precise output control
 

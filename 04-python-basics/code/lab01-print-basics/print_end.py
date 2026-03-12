@@ -1,3 +1,4 @@
+"""Demonstrate the print() end parameter."""
 # Lab 01 - Task 3: The end Parameter
 # end controls what appears AFTER the last argument (default: newline)
 

@@ -1,3 +1,4 @@
+"""Build a formatted status line using print parameters."""
 # Lab 01 - Task 5: Status Line
 # Practical application - building formatted output like a deployment status
 
