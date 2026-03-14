@@ -20,8 +20,12 @@ Practice creating, copying, moving, renaming, and deleting files and directories
 | `mv old new` | Rename file (same directory) | Same command, different use case |
 | `mv dir1/old.txt dir2/new.txt` | Move + rename in one operation | Relocate and rename simultaneously |
 | `rm file` | Delete file permanently | No confirmation, no trash, no undo |
+| `rm -r dir` | Delete directory and all contents recursively | Recursive - use with extreme caution |
+| `rm -f file` | Force delete - no error if file doesn't exist | `-f` = force (suppresses errors) |
+| `rm -rf dir` | Force recursive delete - no prompts, no errors | Most dangerous command in Linux |
 | `rmdir dir` | Delete empty directory only | Fails with error if directory has contents |
-| `rm -r dir` | Delete directory and all contents recursively | Nuclear option - use with extreme caution |
+| `find dir -type f` | Find all files recursively (no directories) | `-type f` = files only |
+| `ls -R` | Recursive listing of all subdirectories | Capital R = Recursive |
 
 ## Level 1: File Creation and Deletion
 
@@ -149,6 +153,35 @@ rm linux_lab/backups/utils.sh
 ```
 
 Final structure verified with `find linux_lab -type f | sort` - 19 files across a clean directory tree.
+
+## Quotes in Bash
+
+| Type | Syntax | Behavior | Use When |
+|------|--------|----------|----------|
+| Single quotes | `'text'` | Literal — bash does NOT interpret anything | String contains `!`, `$`, or special chars you want preserved |
+| Double quotes | `"text"` | Bash interprets `$VAR`, `$()`, etc. | You want variable expansion |
+
+```bash
+echo "Hello $USER"   # → Hello david   (interprets $USER)
+echo 'Hello $USER'   # → Hello $USER   (literal, no interpretation)
+echo "It's done!"    # → error on some shells (! triggers history)
+echo 'It'"'"'s done' # → It's done (workaround with single quotes)
+```
+
+**Rule of thumb:** When in doubt with special characters, use single quotes.
+
+## Common Mistakes
+
+| Mistake | What Happens | How to Avoid |
+|---------|-------------|-------------|
+| Using `mv` when task says "copy" | Original file disappears | Re-read the task. `cp` keeps original, `mv` removes it |
+| `cp dir/` without `-r` flag | Error: omitting directory | Use `cp -r src dest` for directories |
+| Confusing `-r` (recursive) with `-f` (force) | Wrong behavior, possible data loss | `-r` = goes deep, `-f` = no errors. `rm -rf` = both |
+| Typo in directory name (`docks` vs `docs`) | Creates wrong dir silently | Always `ls` after creation to verify |
+| Wrong path prefix (`linux_lab/` vs `linux_lab2/`) | Operates on wrong location | Double-check prefix before Enter |
+| Using double quotes with `!` | bash history expansion error | Use single quotes: `echo 'text!'` |
+| `rmdir` on non-empty directory | Error, nothing deleted | Use `rm -r` or clear contents first |
+| `rm -rf` with wrong path | Deletes unintended tree | Triple-check path. No undo. |
 
 ## Decision Matrix: Which Command When?
 

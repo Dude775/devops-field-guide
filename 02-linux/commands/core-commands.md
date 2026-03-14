@@ -63,8 +63,10 @@ Commands learned during the Linux module, organized by category.
 | `mv src dest` | Move file to new location | `mv file.txt archive/` |
 | `mv old new` | Rename file | `mv draft.txt final.txt` |
 | `rm file` | Delete file permanently (no undo) | `rm temp.txt` |
+| `rm -r dir` | Delete directory and all contents (recursive) | `rm -r build/` |
+| `rm -f file` | Force delete — no error if file doesn't exist | `rm -f maybe_exists.txt` |
+| `rm -rf dir` | Force recursive delete — no prompts, no errors | `rm -rf dist/` (most dangerous) |
 | `rmdir dir` | Delete empty directory only | `rmdir old_folder` |
-| `rm -r dir` | Delete directory and all contents | `rm -r build/` (use with caution) |
 | `find path -type f` | Find all files recursively | `find linux_lab -type f` |
 | `find path -type f \| sort` | Find and sort all files | `find . -type f \| sort` |
 
