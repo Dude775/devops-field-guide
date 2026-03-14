@@ -33,6 +33,7 @@ Hands-on from day one - setting up a real Linux server environment and learning 
 
 ### Exercises
 - [Log File Generator](exercises/log-file-generator.md) - Bash for loop for bulk file creation
+- [Navigation Basics Lab](exercises/navigation-basics-lab.md) - cd, ls, pwd, hidden files, error messages (Lab 1)
 - [File Management Lab](exercises/file-management-lab.md) - mkdir, touch, cp, mv, rm (Lab 2, 100/100)
 - [Links & Pipes Labs](exercises/links-and-pipes-lab.md) — Hard links, soft links, pipes, redirection, sort, wc (Labs 6-7, 100/100)
 - [STDOUT/STDERR Practice Lab](exercises/stdout-stderr-lab.md) — Output redirection, STDOUT, STDERR, 2>&1 (100/100)

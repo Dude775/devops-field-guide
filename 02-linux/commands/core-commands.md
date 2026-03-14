@@ -269,6 +269,28 @@ Commands learned during the Linux module, organized by category.
 | `-d dir` | Directory exists | `[ -d /etc ]` |
 | `-e path` | Path exists (file or dir) | `[ -e /tmp ]` |
 
+## Navigation
+
+| Command | What It Does | Example |
+|---------|-------------|---------|
+| `pwd` | Print current working directory (full absolute path) | `pwd` → `/home/david/projects` |
+| `cd <path>` | Change directory | `cd documents` |
+| `cd ~` | Go to home directory | `cd ~` |
+| `cd ..` | Go up one level (parent directory) | `cd ..` |
+| `cd -` | Toggle to previous directory | `cd -` |
+| `cd ../..` | Go up two levels | `cd ../..` |
+| `ls` | List files and directories | `ls` |
+| `ls -l` | Long format (permissions, owner, size, date) | `ls -l` |
+| `ls -a` | Show all files including hidden (dot-prefix) | `ls -a` |
+| `ls -la` | Long format + hidden files | `ls -la` |
+| `ls -lh` | Long format + human-readable sizes | `ls -lh` |
+| `ls -lt` | Long format + sorted by modification time | `ls -lt` |
+| `ls -R` | Recursive listing of all subdirectories | `ls -R` |
+| `clear` | Clear terminal screen | `clear` |
+| `cat > file` | Write to file (overwrite) — Ctrl+D to save | `cat > notes.txt` |
+| `cat >> file` | Append to file | `cat >> notes.txt` |
+| `nano file` | Open interactive text editor | `nano config.txt` |
+
 ## Command Categories Quick Reference
 
 | Need To... | Use |
