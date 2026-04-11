@@ -1,19 +1,28 @@
 # Module 03: Networking - How Systems Talk
 
-> **Status**: Upcoming
-> **Prerequisites**: [Module 01 - Foundations](../01-foundations/)
+**Status**: In Progress
+**Prerequisites**: Module 01 - Foundations, Module 02 - Linux
 
 ## Overview
 
-Every DevOps tool communicates over a network. This module covers TCP/IP, DNS, HTTP, ports, firewalls, and load balancing - the invisible layer that connects everything.
+Every DevOps tool communicates over a network. This module covers the invisible layer
+that connects everything - from HTTP requests to DNS resolution to load balancing.
 
-## What Will Be Covered
+## Contents
 
-- TCP/IP stack and the OSI model
-- DNS resolution and configuration
-- HTTP/HTTPS and TLS
-- Ports, firewalls, and security groups
-- Load balancing concepts
-- Network troubleshooting tools
+| File | Topic | Status |
+|------|-------|--------|
+| concepts/http-https.md | HTTP vs HTTPS, TLS, Status Codes | Done |
+| concepts/ports.md | Ports, Well-Known ports, Socket | Done |
+| concepts/dns.md | DNS Resolution, Records, Caching | Done |
+| concepts/load-balancing.md | LB algorithms, types, health checks | Done |
+| concepts/tcp-ip.md | TCP/IP model, 3-Way Handshake, UDP vs TCP | Done |
+| resources.md | All course-provided links (videos + articles) | Done |
 
-Content will be added as the course progresses.
+## Iron Rules from This Module
+
+- "DNS is the phonebook of the internet - without it, you know IPs, not names."
+- "HTTP is stateless. Every request starts from zero."
+- "IP gets you to the device. Port gets you to the application."
+- "TCP is reliable. UDP is fast. Choose accordingly."
+- "A Load Balancer eliminates the Single Point of Failure."
