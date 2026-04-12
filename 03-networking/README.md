@@ -18,6 +18,7 @@ that connects everything - from HTTP requests to DNS resolution to load balancin
 | concepts/load-balancing.md | LB algorithms, types, health checks | Done |
 | concepts/tcp-ip.md | TCP/IP model, 3-Way Handshake, UDP vs TCP | Done |
 | resources.md | All course-provided links (videos + articles) | Done |
+| postman-labs.md | Postman API Labs - JSONPlaceholder + PokeAPI | Done |
 
 ## Iron Rules from This Module
 
@@ -26,3 +27,9 @@ that connects everything - from HTTP requests to DNS resolution to load balancin
 - "IP gets you to the device. Port gets you to the application."
 - "TCP is reliable. UDP is fast. Choose accordingly."
 - "A Load Balancer eliminates the Single Point of Failure."
+- "Read the docs before touching Postman."
+- "URLs inside a response are not decoration - they are the API's navigation."
+- "Unnamed endpoints only accept ID, never a name."
+- "Pagination exists everywhere - never pull 1300 records at once."
+- "POST returns 201. GET returns 200. The code tells you what happened."
+- "PUT replaces. PATCH patches. They are not interchangeable."
