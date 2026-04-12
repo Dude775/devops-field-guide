@@ -26,7 +26,8 @@
               "path": [
                 "posts"
               ]
-            }
+            },
+            "description": "brings all the posts, got like 100 of them"
           },
           "response": []
         },
@@ -47,7 +48,8 @@
                 "posts",
                 "1"
               ]
-            }
+            },
+            "description": "gets one specific post by its id, the 1 in the url"
           },
           "response": []
         },
@@ -76,7 +78,8 @@
               "path": [
                 "posts"
               ]
-            }
+            },
+            "description": "creates a new post, need to send json in the body"
           },
           "response": []
         },
@@ -106,7 +109,8 @@
                 "posts",
                 "1"
               ]
-            }
+            },
+            "description": "updates the whole post, need to send all fields not just one"
           },
           "response": []
         },
@@ -127,15 +131,8 @@
                 "posts",
                 "1"
               ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "et All Comments",
-          "request": {
-            "method": "GET",
-            "header": []
+            },
+            "description": "deletes a post by id, returns empty object which is weird"
           },
           "response": []
         }
@@ -160,7 +157,8 @@
               "path": [
                 "comments"
               ]
-            }
+            },
+            "description": "all comments in the system, alot of them like 500"
           },
           "response": []
         },
@@ -181,7 +179,8 @@
                 "comments",
                 "1\n"
               ]
-            }
+            },
+            "description": "single comment by id"
           },
           "response": []
         },
@@ -203,7 +202,8 @@
                 "1",
                 "comments"
               ]
-            }
+            },
+            "description": "comments of a specific post, nested route"
           },
           "response": []
         },
@@ -232,7 +232,8 @@
               "path": [
                 "comments"
               ]
-            }
+            },
+            "description": "new comment linked to a post by postId"
           },
           "response": []
         },
@@ -253,7 +254,8 @@
                 "comments",
                 "1"
               ]
-            }
+            },
+            "description": "deletes comment by id"
           },
           "response": []
         }
@@ -278,7 +280,8 @@
               "path": [
                 "photos"
               ]
-            }
+            },
+            "description": "all photos, alot like 5000 dont run this without limit"
           },
           "response": []
         },
@@ -299,7 +302,8 @@
                 "photos",
                 "1"
               ]
-            }
+            },
+            "description": "single photo by id"
           },
           "response": []
         },
@@ -328,7 +332,8 @@
               "path": [
                 "photos\n"
               ]
-            }
+            },
+            "description": "new photo linked to album"
           },
           "response": []
         }
@@ -353,7 +358,8 @@
               "path": [
                 "users"
               ]
-            }
+            },
+            "description": "all users, only 10 in this fake api"
           },
           "response": []
         },
@@ -374,7 +380,8 @@
                 "users",
                 "1"
               ]
-            }
+            },
+            "description": "one user by id"
           },
           "response": []
         },
@@ -403,7 +410,8 @@
               "path": [
                 "users"
               ]
-            }
+            },
+            "description": "creates new user, doesnt really save it its a fake api"
           },
           "response": []
         },
@@ -424,7 +432,8 @@
                 "users",
                 "1"
               ]
-            }
+            },
+            "description": "delete user by id"
           },
           "response": []
         }
@@ -449,7 +458,8 @@
               "path": [
                 "albums"
               ]
-            }
+            },
+            "description": "all albums"
           },
           "response": []
         },
@@ -470,7 +480,8 @@
                 "albums",
                 "1"
               ]
-            }
+            },
+            "description": "one album"
           },
           "response": []
         },
@@ -492,7 +503,8 @@
                 "1",
                 "photos"
               ]
-            }
+            },
+            "description": "all photos inside specific album"
           },
           "response": []
         },
@@ -521,7 +533,8 @@
               "path": [
                 "albums"
               ]
-            }
+            },
+            "description": "new album linked to user"
           },
           "response": []
         }
@@ -546,7 +559,8 @@
               "path": [
                 "todos"
               ]
-            }
+            },
+            "description": "all todos, around 200"
           },
           "response": []
         },
@@ -567,7 +581,8 @@
                 "todos",
                 "1"
               ]
-            }
+            },
+            "description": "single todo"
           },
           "response": []
         },
@@ -596,7 +611,8 @@
               "path": [
                 "todos\n"
               ]
-            }
+            },
+            "description": "new todo, completed is false by default"
           },
           "response": []
         },
@@ -626,7 +642,8 @@
                 "todos",
                 "1"
               ]
-            }
+            },
+            "description": "patch request - only updating completed field to true"
           },
           "response": []
         }
