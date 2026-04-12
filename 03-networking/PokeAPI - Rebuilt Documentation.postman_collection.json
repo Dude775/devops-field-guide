@@ -1,0 +1,808 @@
+{
+  "info": {
+    "_postman_id": "4b6860c7-2cc9-41a1-8574-da2ab67e4185",
+    "name": "PokeAPI - Rebuilt Documentation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53949983",
+    "_collection_link": "https://go.postman.co/collection/53949983-4b6860c7-2cc9-41a1-8574-da2ab67e4185?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Pokemon",
+      "item": [
+        {
+          "name": "get all pokemon",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/pokemon",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "pokemon"
+              ]
+            },
+            "description": "# get all pokemons\n\nbrings all the pokemons in the api, like 1300+ של היצורים האלה.\ndefault limit is 20 כי מי צריך 1300 פוקימונים בבת אחת\n\nexpected response: 200, json with count/next/previous/results\nהcount אומר לך כמה יש סך הכל, next זה הurl לעמוד הבא\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get pokemon by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/pokemon/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "pokemon",
+                "1"
+              ]
+            },
+            "description": "# get pokemon by id\n\ngets one specific pokemon by its id number.\nbulbasaur is 1, pikachu is 25\n\nהresponse ענק - abilities, moves, types, stats, sprites\nsprites זה urls לתמונות של הפוקימון, לא ציפיתי לזה\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get pokemon by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/pokemon/pikachu",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "pokemon",
+                "pikachu"
+              ]
+            },
+            "description": "# get pokemon by name\n\nsame as id but with the name.\nworks only with lowercase - tried Pikachu with capital P and got 404\n\nnote: הresponse מכיל urls למשאבים קשורים כמו abilities ו types\nככה הapi מחבר הכל ביחד - לא שדה רגיל אלא url שלם\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get all pokemon species",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/pokemon-species",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "pokemon-species"
+              ]
+            },
+            "description": "# pokemon species\n\nשונה מpokemon רגיל - species זה המשפחה\nלמשל pikachu ו raichu הם פוקימונים שונים אבל אותה species\n\nלא הבנתי את ההבדל בהתחלה, נראה כפול\nאבל אז ראיתי שspecies יש לו evolution chain בפנים\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get pokemon with pagination",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/pokemon?limit=5&offset=0",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "pokemon"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "# pagination test\n\ntested how pagination works here.\nlimit = כמה תוצאות להחזיר\noffset = מאיזה מספר להתחיל\n\nlimit=5&offset=0 = first 5\nlimit=5&offset=5 = next 5\n\nחשוב - אף פעם לא לבקש את כל 1300 הפוקימונים בבת אחת\nזה שיעור ביצועים בתוך שיעור על apis\n----\n\n[testing how pagination works on this api.  \nlimit = how many results to return  \noffset = how many to skip (like page number)\n\nlimit=5&offset=0 = first 5 pokemons  \nlimit=5&offset=5 = next 5 pokemons\n\nthis is important for devops - never pull 1300 records at once]"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Moves",
+      "item": [
+        {
+          "name": "get all moves",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/move",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "move"
+              ]
+            },
+            "description": "# get all moves\n\nall the attack moves in the game, there are 900+ of them.\npaginated by default - only shows 20.\n\n**expected response:** 200, paginated list with next/previous urls\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get move by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/move/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "move",
+                "1"
+              ]
+            },
+            "description": "# get move by id\n\nsingle move by its id.\nresponse contains damage class, type, power, accuracy etc.\n\n**note:** move contains url to its damage-class and type\nshows how everything is connected in this api\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get move by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/move/pound",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "move",
+                "pound"
+              ]
+            },
+            "description": "# get move by name\n\nsame as id but with name.\nuseful when you know the name but not the id\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get move damage classes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/move-damage-class",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "move-damage-class"
+              ]
+            },
+            "description": "# move damage classes\n\nphysical / special / status\nthese are the 3 categories of moves in the game\n\n**why this matters:** shows how sub-resources work in this api\ndamage class is its own endpoint, not just a field inside move\n"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Abilities",
+      "item": [
+        {
+          "name": "get all abilities",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/ability",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "ability"
+              ]
+            },
+            "description": "# get all abilities\n\nall pokemon abilities in the game, 300+ of them.\nabilities are special traits that affect battles.\n\n**expected response:** 200, paginated list\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get ability by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/ability/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "ability",
+                "1"
+              ]
+            },
+            "description": "# get ability by id\n\nsingle ability with full details.\nresponse includes which pokemons have this ability.\n\n**interesting:** the response links back to pokemon\nso from ability you can find which pokemons have it\nthis is the reverse relationship\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get ability by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/ability/stench\n\n",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "ability",
+                "stench\n\n"
+              ]
+            },
+            "description": "# get ability by name\n\nsame as id but with name.\nstench is ability number 1 btw\n\n**note:** names are always lowercase with dashes, no spaces\nfor example: \"speed-boost\" not \"Speed Boost\"\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get ability by Name - speed boost",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/ability/speed-boost\n\n",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "ability",
+                "speed-boost\n\n"
+              ]
+            },
+            "description": "# speed boost ability\n\nwanted to test if names with dashes work.\nturns out they do - just need to use dashes instead of spaces\n\ntried \"speed boost\" first and got 404, then figured out the dash thing\n"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Types",
+      "item": [
+        {
+          "name": "get all types",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/type",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "type"
+              ]
+            },
+            "description": "# get all types\n\nall the pokemon types - fire water grass electric etc.\nonly 18 types exist in the game.\n\n**expected response:** 200, small list this time, not 1000+ like pokemon\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get type by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/type/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "type",
+                "1"
+              ]
+            },
+            "description": "# get type by id\n\nsingle type with full details.\nresponse shows damage relations - what this type is strong/weak against.\n\n**this was interesting:** type 1 is normal\nthe response contains double_damage_to, half_damage_from etc.\nbasically the whole battle chart is inside here\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get Fire type",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/type/fire",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "type",
+                "fire"
+              ]
+            },
+            "description": "# fire type by name\n\ntested with fire because everyone knows fire beats grass.  \nresponse confirmed - gras is in double_damage_to list\n\nnote to myself:this is actually useful data,  \ncould build a damage calculator with just this endpoint"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Items",
+      "item": [
+        {
+          "name": "get item by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/item/master-ball",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "item",
+                "master-ball"
+              ]
+            },
+            "description": "# masterball by name\n\ntested with master-ball because its the most famous item.\nforgot the dash at first and got 404, then fixed it\n\nsame pattern as everything else - dashes not spaces\nstarting to see the pattern now, all names work the same way accross the whole api\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get All items",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/item",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "item"
+              ]
+            },
+            "description": "# all items\n\nbrings all the items in the game, alot of them like 900+.\npaginated ofcourse, default is 20.\n\nexpected response: 200, paginated list\nnext/previous urls inside the response like everything else in this api\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get item by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/item/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "item",
+                "1"
+              ]
+            },
+            "description": "# item by id\n\nsingle item, item 1 is master-ball btw.\nresponse has alot of fields - cost, effect, sprites(image url)\n\nnoticed the response has a category field with a url inside\nso item connects to item-category which is its own endpoint\neverything connects to everything in this api its actually pretty cool\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get item Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/item-category",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "item-category"
+              ]
+            },
+            "description": "# item categories\n\nall the categories of items - pokeballs, medicine, berries etc.\nwanted to understand how items are grouped\n\ntried to guess this endpoint from the pattern i saw in item response\nworked first try, the url patterns are very consistent in this api\n"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Locations",
+      "item": [
+        {
+          "name": "get all Locations",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/location",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "location"
+              ]
+            },
+            "description": "# all locations\n\nall the locations in the pokemon games.  \nthere are like 800+ locations, cities/routes/caves etc.\n\npaginated like everything else in this api"
+          },
+          "response": []
+        },
+        {
+          "name": "get location by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/location/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "location",
+                "1"
+              ]
+            },
+            "description": "# location by id\n\nsingle location with details.  \nresponse has the region it belongs to and areas inside it."
+          },
+          "response": []
+        },
+        {
+          "name": "get location area",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/location-area/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "location-area",
+                "1"
+              ]
+            },
+            "description": "# location area\n\nwent one level deeper into location.\nlocation-area has the actual encounter data - which pokemons appear here\n\nthis was the deepest nesting i found in the whole api\nlocation -> area -> encounters -> pokemon\npretty complex for a \"simple\" api\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get all Regions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/region",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "region"
+              ]
+            },
+            "description": "# regions\n\nonly 9 regions exist - kanto johto hoenn etc.  \neach region contains locations inside it\n\ntested this after location because i saw region url inside location response  \nthats how i found this endpoint, not from the docs"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Berry",
+      "item": [
+        {
+          "name": "get all berries",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/berry",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "berry"
+              ]
+            },
+            "description": "# פירות - berries\n\nכל הפירות במשחק, בערך 64 במספר.  \nהרבה פחות ממה שחשבתי בהשוואה לitems.\n\nberries הם טכנית items אבל יש להם endpoint משלהם  \nכנראה בגלל שיש להם שדות מיוחדים כמו growth_time וsoil_dryness  \nמה לי ולפוקימוניםםםם ?!"
+          },
+          "response": []
+        },
+        {
+          "name": "get bery by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/berry/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "berry",
+                "1"
+              ]
+            },
+            "description": "# berry לפי מספר\n\nberry מספר 1 הוא cheri-berry.  \nהresponse מלא בשדות מוזרים - growth_time, max_harvest, soil_dryness, smoothness\n\nמה זה smoothness בכלל??  \nגיליתי שberry מתחבר לitem endpoint  \nאותו דבר משתי זוויות שונות, די מעניין בעצם  \nכתוב ככה:  \n\"# berry by id\n\nberry number 1 is cheri-berry.  \nresponse has fields i didnt expect - growth_time, max_harvest, soil_dryness, smoothness\n\nalso has a url to item endpoint - so berry and item are connected  \nberry 1 links to item/cheri-berry, theyre basically the same thing from different angles  \n\""
+          },
+          "response": []
+        },
+        {
+          "name": "get berry Firmness",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/berry-firmness",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "berry-firmness"
+              ]
+            },
+            "description": "# כמה הפרי קשה - firmness\n\nvery-soft / soft / hard / very-hard  \nמצאתי את זה ברשימת הroot endpoints ולא ידעתי מה זה\n\nהתברר שזו פשוט קטגוריה של פירות לפי קושי  \nלא הכי מרגש מכל הendpoints שמצאתי היום נדמה לי\n\n---\n\nלא יודע למה, נראלי שזה שווה כמאגר כתוב ככה:\n# berry firmness\n\nok this one is weird.\nfirmness is how hard the berry is - very-soft/soft/hard/very-hard etc.\n\nfound this in the root endpoint list, had no idea what it was before testing it\nturned out its just a category for berries, not very exciting\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get berry flavors",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/berry-flavor",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "berry-flavor"
+              ]
+            },
+            "description": "# טעמים של פירות\n\nspicy / dry / sweet / bitter / sour - רק 5 טעמים.\nכל טעם משפיע על contests של פוקימון\n\nבכנות לא ידעתי שיש contests בפוקימון בכלל\nהapi מלמד אותי על המשחק בזמן שאני אמור ללמוד על apis\nדי אירוני\n\nexpected response: 200, רשימה קטנה של 5 פריטים בלבד\n--------------------------\n\nלחקירה בהרצה :\n\"# berry flavors\n\nspicy/dry/sweet/bitter/sour - 5 flavors total.\neach flavor affects pokemon contests apparently\n\nhonestly didnt know contests were a thing in pokemon\nthe api keeps teaching me stuff about the game while im supposed to be learning about apis lol\n\""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "item": [
+        {
+          "name": "get all Generations",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/generation",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "generation"
+              ]
+            },
+            "description": "# generations - דורות\n\nכל הדורות של המשחק, יש 9 סך הכל.\ngen 1 הוא הקלאסי עם 151 הפוקימונים המקוריים\n\neach generation has its own pokemons, moves and games\nראיתי שgeneration מחבר בין הכל - regions, versions, pokemons\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get generation by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/generation/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "generation",
+                "1"
+              ]
+            },
+            "description": "# gen 1 - דור ראשון\n\n151 הפוקימונים המקוריים, red and blue.\nהresponse מחזיר main_region, moves, pokemon_species, types, version_groups\n\ngeneration הוא כמו שורש של עץ - הכל מתחתיו\nהבנתי את המבנה של הapi רק אחרי שפתחתי את זה\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get all Versions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/version",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "version"
+              ]
+            },
+            "description": "# game versions - גרסאות\n\nall the games - red blue yellow gold silver וכו.\nיש 34 גרסאות, הרבה יותר ממה שחשבתי\n\nהמבנה הוא: generation -> version-group -> version\n3 רמות רק בשביל לארגן את הגרסאות של המשחק\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get version groups",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/version-group",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "version-group"
+              ]
+            },
+            "description": "# version groups\n\nred ו blue הם משחקים שונים אבל אותו version-group.\nזו שכבת הביניים בין generation לversion\n\nבהתחלה לא הבנתי למה צריך את זה\nאז הבנתי - red/blue יצאו ביחד אז הם אותו group\nmakes sense\n\nזה הfolder האחרון, אפשר לעשות export ולסיים\n"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "research_notes",
+      "item": [
+        {
+          "name": "api root - all endpoints",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2"
+              ]
+            },
+            "description": "# API Root\n\nthis is the entry point of the pokeapi.\nreturns all available endpoints in the api.\n\nused this to understand the structure before building anything.\n\n**what i found:**\n- read only api, no POST/PUT/DELETE\n- everything is connected with urls inside the response\n- pagination exists - default limit is 20\n"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
