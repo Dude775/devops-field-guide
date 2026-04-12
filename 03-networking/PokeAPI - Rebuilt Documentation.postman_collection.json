@@ -2,6 +2,7 @@
   "info": {
     "_postman_id": "4b6860c7-2cc9-41a1-8574-da2ab67e4185",
     "name": "PokeAPI - Rebuilt Documentation",
+    "description": "# PokeAPI - Rebuilt Documentation\n\nreverse engineering of pokeapi.co  \nbuilt by reading the docs only, no copy paste.\n\nbase url: [https://pokeapi.co/api/v2/](https://pokeapi.co/api/v2/)  \nread only api - GET requests only, no POST/PUT/DELETE  \npagination: default limit 20, use ?limit=&offset= to control\n\nresources covered: pokemon, moves, abilities, types, items, locations, berry, game\n\n<img src=\"https://content.pstmn.io/62e2c27f-b1f6-40d3-a294-da48dd44531c/bG9nby5wbmc=\" alt=\"\">",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "53949983",
     "_collection_link": "https://go.postman.co/collection/53949983-4b6860c7-2cc9-41a1-8574-da2ab67e4185?source=collection_link"
@@ -285,7 +286,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://pokeapi.co/api/v2/ability/stench\n\n",
+              "raw": "https://pokeapi.co/api/v2/ability/stench",
               "protocol": "https",
               "host": [
                 "pokeapi",
@@ -295,10 +296,10 @@
                 "api",
                 "v2",
                 "ability",
-                "stench\n\n"
+                "stench"
               ]
             },
-            "description": "# get ability by name\n\nsame as id but with name.\nstench is ability number 1 btw\n\n**note:** names are always lowercase with dashes, no spaces\nfor example: \"speed-boost\" not \"Speed Boost\"\n"
+            "description": "# get ability by name\n\nsame as id but with name.  \nstench is ability number 1 btw\n\n**note:** names are always lowercase with dashes, no spaces  \nfor example: \"speed-boost\" not \"Speed Boost\""
           },
           "response": []
         },
@@ -308,7 +309,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://pokeapi.co/api/v2/ability/speed-boost\n\n",
+              "raw": "https://pokeapi.co/api/v2/ability/speed-boost",
               "protocol": "https",
               "host": [
                 "pokeapi",
@@ -318,10 +319,10 @@
                 "api",
                 "v2",
                 "ability",
-                "speed-boost\n\n"
+                "speed-boost"
               ]
             },
-            "description": "# speed boost ability\n\nwanted to test if names with dashes work.\nturns out they do - just need to use dashes instead of spaces\n\ntried \"speed boost\" first and got 404, then figured out the dash thing\n"
+            "description": "# speed boost ability\n\nwanted to test if names with dashes work.  \nturns out they do - just need to use dashes instead of spaces\n\ntried \"speed boost\" first and got 404, then figured out the dash thing"
           },
           "response": []
         }
@@ -779,7 +780,363 @@
       ]
     },
     {
-      "name": "research_notes",
+      "name": "Contests",
+      "item": [
+        {
+          "name": "get all contest types",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/contest-type",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "contest-type"
+              ]
+            },
+            "description": "# contest types - סוגי תחרויות\n\n\"Contest types are categories judges used to weigh a Pokémon's condition in Pokémon contests\"\n\n- זה מהדוקס, לא ידעתי שיש בכלל תחרויות בפוקימון\n    \n\nמשאב קטן - רק 5 סוגים (cool, beauty, cute, smart, tough)  \nכל סוג קשור ל berry-flavor מסוים  \nלמשל cool קשור לspicy - הגיוני? לא הבנתי\n\nexpected response: 200, paginated list"
+          },
+          "response": []
+        },
+        {
+          "name": "get contest type by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/contest-type/cool",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "contest-type",
+                "cool"
+              ]
+            },
+            "description": "# single contest type\n\ntested with cool because it was first in the list  \nresponse has berry_flavor url inside - so contest connects to berry  \nstarting to see that everything in this api connects to everything else\n\n\"Contest types are categories judges used to weigh a Pokémon's condition\"  \nstill dont fully get what a contest is in pokemon context lol"
+          },
+          "response": []
+        },
+        {
+          "name": "get contest effects",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/contest-effect/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "contest-effect",
+                "1"
+              ]
+            },
+            "description": "# contest effects\n\n\"Contest effects refer to the effects of moves when used in contests\"\nזה endpoint ללא שם - אין לו name, רק id\nאי אפשר לקרוא לו לפי שם כמו שאר הendpoints\n\nresponse יש בו:\n- appeal - כמה נקודות מרוויחים\n- jam - כמה נקודות היריב מפסיד\nשני שדות שלא ציפיתי בכלל\n\nnote: this is unnamed endpoint - only id works, no name lookup\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get super contest effect",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/super-contest-effect/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "super-contest-effect",
+                "1"
+              ]
+            },
+            "description": "# super contest effect\n\n\"Super contest effects refer to the effects of moves when used in super contests\"\nיש גם SUPER contests?? לא ידעתי שזה דבר\n\nגם זה unnamed endpoint - רק id\nההבדל מcontест-effect רגיל:\n- אין שדה jam\n- יש moves בפנים - רשימת moves שמשתמשים באפקט הזה\n\nexpected: 200, קטן יחסית\n"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Encounters",
+      "item": [
+        {
+          "name": "get all encounter methods",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/encounter-method?limit\t=20&offset\t=0",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "encounter-method"
+              ],
+              "query": [
+                {
+                  "key": "limit\t",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "offset\t",
+                  "value": "0",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "# encounter methods - איך פוגשים פוקימונים\n\n\"Methods by which the player might can encounter Pokémon in the wild,  \ne.g., walking in tall grass\"\n\n- ישירות מהדוקס, הם בעצמם עשו טעות דקדוקית שם (\"might can\") 😂\n    \n\nרשימה של כל הדרכים למצוא פוקימון בטבע  \nwalk, surf, fish ....\n\nלא יודע, ככה כתוב, אם אתה קורא את זה פיטוסי, אני צריך הגיון ולהבין את המוצר..."
+          },
+          "response": []
+        },
+        {
+          "name": "get encounter method by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/encounter-method/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "encounter-method",
+                "1"
+              ]
+            },
+            "description": "# single encounter method\n\nid 1 is \"walk\" - walking in tall grass\nresponse has order field - for sorting apparently\n\npretty simple resource compared to others in this api\nno big connections to other resources here\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get all encounter conditions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/encounter-condition?limit=20&offset=0",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "encounter-condition"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "# encounter conditions - תנאים למפגש\n\n\"Conditions which affect what pokemon might appear in the wild, \ne.g., day or night\"\n\nאז יש תנאים שמשפיעים על אילו פוקימונים מופיעים\nלמשל בלילה מופיעים פוקימונים שונים מאשר ביום\nהגיוני בעצם\n\neach condition has values - like swarm-yes / swarm-no\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get encounter condition by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/encounter-condition/swarm",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "encounter-condition",
+                "swarm"
+              ]
+            },
+            "description": "# single encounter condition - swarm\n\ntested with swarm because it was the first one i saw in the docs  \nresponse has values inside - swarm-yes and swarm-no\n\nso the pattern is: condition → condition-values  \ntwo levels just for \"is there a swarm or not\"  \n\\# זה בשביל המשחק"
+          },
+          "response": []
+        },
+        {
+          "name": "get encounter condition values",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/encounter-condition-value/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "encounter-condition-value",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Evoltuion",
+      "item": [
+        {
+          "name": "get evolution chains",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/evolution-chain?limit=20&offset=0",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "evolution-chain"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "# evolution chains - שרשראות אבולוציה\n\n\"Evolution chains are essentially family trees\"\n- ישירות מהדוקס, הסבר טוב בעצם\n\nזה unnamed endpoint - רק id, אין שם\nיש 541 שרשראות סך הכל (ראיתי בroot endpoint)\n\nבקיצור: unnamed = no name lookup, only /evolution-chain/1\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get evolution chain by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/evolution-chain/1",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "evolution-chain",
+                "1"
+              ]
+            },
+            "description": "# single evolution chain\n\n\"They start with the lowest stage within a family and detail evolution \nconditions for each as well as Pokémon they can evolve into up through \nthe hierarchy\"\n\nזה ה JSON הכי מורכב שראיתי בכל הapi\nמקונן בתוך מקונן בתוך מקונן:\n\nchain → evolves_to → evolves_to → evolves_to...\n\nכל שלב מכיל:\n- is_baby\n- species (עם url לpokemon-species)\n- evolution_details - התנאים לאבולוציה\n- evolves_to - רשימת השלבים הבאים\n\nchain id 1 הוא bulbasaur → ivysaur → venusaur\nהבנתי את זה רק אחרי שהסתכלתי על הjson כמה פעמים\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get evolution triggers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/evolution-trigger?limit=20&offset=0",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "evolution-trigger"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "20",
+                  "type": "text"
+                },
+                {
+                  "key": "offset",
+                  "value": "0",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "# evolution triggers - מה גורם לאבולוציה\n\n\"Evolution triggers are the events and conditions that cause a Pokémon \nto evolve\"\n\nרשימה קטנה - רק כמה טריגרים:\nlevel-up, trade, use-item, shed וכו\n\nכל טריגר מחזיר רשימה של pokemon_species שמתאבלות בגלל הטריגר הזה\n"
+          },
+          "response": []
+        },
+        {
+          "name": "get evolution trigger by name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://pokeapi.co/api/v2/evolution-trigger/level-up",
+              "protocol": "https",
+              "host": [
+                "pokeapi",
+                "co"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "evolution-trigger",
+                "level-up"
+              ]
+            },
+            "description": "# level-up trigger\n\ntesttted with level-up becuase its the most commmmon one\nmost pokemons evolve this way, trade and use-item wayyyy less\n\nthe trigger shows up inside evolution_details in the chain\nso yeah,,, everything connects to everything in this api !!!!\n"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "_research notes",
       "item": [
         {
           "name": "api root - all endpoints",
@@ -798,7 +1155,7 @@
                 "v2"
               ]
             },
-            "description": "# API Root\n\nthis is the entry point of the pokeapi.\nreturns all available endpoints in the api.\n\nused this to understand the structure before building anything.\n\n**what i found:**\n- read only api, no POST/PUT/DELETE\n- everything is connected with urls inside the response\n- pagination exists - default limit is 20\n"
+            "description": "# API Root\n\nthis is the entry point of the pokeapi.  \nreturns all available endpoints in the api.\n\nused this to understand the structure before building anything.\n\n**what i found:**\n\n- read only api, no POST/PUT/DELETE\n    \n- everything is connected with urls inside the response\n    \n- pagination exists - default limit is 20"
           },
           "response": []
         }
