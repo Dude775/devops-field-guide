@@ -21,11 +21,13 @@ Python is the lingua franca of DevOps automation. This module covers syntax, dat
 
 ### Concepts
 - [print() - sep and end](concepts/print-sep-end.md) - Output formatting fundamentals
+- [MongoDB + Flask Integration](concepts/mongodb-flask-integration.md) - pymongo setup, CRUD, ObjectId, connection pattern
 
 ### Labs
 - [Lab 01 - Print Basics](code/lab01-print-basics/) - 5 exercises covering print, sep, end
 - [Lab 01 Summary](exercises/lab01-summary.md) - Patterns learned and real-world connections
 - [Lab 02 - Error Handling](exercises/lab02-error-handling.md) - try/except/else/finally/raise/custom exceptions
+- [Lab 03 - Flask + MongoDB Integration](exercises/lab03-flask-mongodb.md) - MongoDB Atlas, pymongo, ObjectId, .env, circular imports
 
 ### Journal
 *To be added.*

@@ -45,6 +45,9 @@ Principles collected throughout the course. These are non-negotiable truths earn
 - "A requirement not defined correctly doesn't disappear - it comes back as bugs."
 - "Bug in code = incident. Bug in data = crisis."
 - "Code that works in dev is not necessarily production-ready."
+- "insert_one() mutates your dict — handle `_id` before responding."
+- "Credentials in code = credentials in git. Use .env from day one."
+- "Circular imports? Extract shared resources to their own module."
 
 *This list grows with each module.*
 
