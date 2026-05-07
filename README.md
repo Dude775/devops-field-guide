@@ -1,4 +1,4 @@
-# DevOps Field Guide - From Theory to Production
+﻿# DevOps Field Guide - From Theory to Production
 
 A practitioner's field guide for the journey from fundamentals to production-grade DevOps engineering.
 
@@ -45,7 +45,7 @@ Principles collected throughout the course. These are non-negotiable truths earn
 - "A requirement not defined correctly doesn't disappear - it comes back as bugs."
 - "Bug in code = incident. Bug in data = crisis."
 - "Code that works in dev is not necessarily production-ready."
-- "insert_one() mutates your dict — handle `_id` before responding."
+- "insert_one() mutates your dict â€” handle `_id` before responding."
 - "Credentials in code = credentials in git. Use .env from day one."
 - "Circular imports? Extract shared resources to their own module."
 
@@ -59,3 +59,4 @@ Currently bridging the gap between business needs and technical implementation, 
 
 - GitHub: [@Dude775](https://github.com/Dude775)
 - Portfolio: [system-portfolio.vercel.app](https://system-portfolio.vercel.app)
+
