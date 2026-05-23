@@ -1,0 +1,34 @@
+זה סיכום טכני ממוקד למטלה 4.1, עם הממצאים המרכזיים והמשמעות שלהם. כל הנתונים על Ubuntu image, tags, digests ו-latest מבוססים על Docker Hub והמסמכים הרשמיים.
+## Docker Hub
+בעמוד של `ubuntu` רואים שזהו **Docker Official Image**, עם יותר ממיליארד pulls ו-10K+ כוכבים, יחד עם תיאור קצר, maintainer, tags נתמכים, ארכיטקטורות נתמכות וקישורים לתיעוד ול-source metadata.
+ההבחנה החשובה בתוצאות חיפוש היא בין Official Images לבין images של publishers או קהילת משתמשים, כי Official Images הם curated, מתועדים היטב, ומכוונים ל-use cases נפוצים עם best practices ברורים.
+## עמוד ה-image
+לפני שמורידים image אפשר ללמוד לפחות את הדברים הבאים: מי מתחזק אותו, אילו tags רשמיים נתמכים, אילו architectures זמינות, מה גודל ה-image, ומה מדיניות העדכון שלו.
+ב-`ubuntu` למשל מופיעים tags כמו `22.04`, `24.04`, `26.04`, `jammy`, `noble`, `resolute`, `latest`, `rolling`, וגם מוסבר ש-`latest` מצביע ל-"latest LTS" בעוד `rolling` מצביע ל-release האחרון בלי קשר ל-LTS.
+## Tags ו-digest
+בראש רשימת ה-tags של Ubuntu מופיעים למשל `rolling`, `resolute-20260421`, `resolute`, `latest` ו-`26.04`, ולפחות עבור `linux/amd64` כולם חולקים את אותו digest `d31acef2a964`.
+אם שני tags שונים חולקים אותו digest, המשמעות היא שהם aliases לאותו תוכן image בדיוק עבור אותה ארכיטקטורה, כלומר names שונים שמצביעים לאותו artifact immutable.
+## Aliases ומשמעותם
+דוגמאות טובות ל-aliases בעמוד הן `noble` מול `24.04`, `jammy` מול `22.04`, וגם `resolute` מול `26.04`, כשבחלק מהמקרים גם tag מתוארך כמו `resolute-20260421` מצביע כרגע לאותו digest.
+היתרון ב-alias הוא נוחות וקריאות, במיוחד כשאתה רוצה להיצמד ל-major release ולא לזכור tag מלא.
+החיסרון הוא ש-alias יכול לזוז עם הזמן ולמשוך image שונה בעתיד, ולכן הוא פחות deterministic מ-digest או מ-tag versioned צר יותר.
+## latest ו-version pinning
+Docker מסביר ש-`ubuntu:latest` מצביע ל-latest LTS, לא בהכרח ל-release החדש ביותר, ולכן גם אם זה נשמע "עדכני", זו עדיין הפניה שיכולה להשתנות.
+אם תשתמש ב-`latest` ב-production, build עתידי או redeploy עלול למשוך image שונה מזה שנבדק אצלך קודם, מה שעלול לגרום לשינוי חבילות, behavior שונה, או rollback פחות צפוי.
+Version pinning הוא שימוש ב-tag ספציפי, או חזק יותר, ב-`name@sha256:digest`, כדי להבטיח שתקבל בדיוק את אותו image בכל סביבה ובכל build.
+## Vulnerabilities ואחריות תפעולית
+בלשונית tags של Docker Hub ל-Ubuntu מופיע שדה `Vulnerabilities`, כלומר Docker Hub מציג מידע אבטחתי פר tag.
+נעיצת גרסה היא best practice לרפרודוסביליות, אבל אם תנעל לגרסה ישנה ופגיעה ולא תעדכן אותה, אתה מקבל יציבות על חשבון exposure לחולשות ידועות.
+כלומר pinning פותר drift, אבל לא מחליף lifecycle של patching, scanning ותחזוקת base images.
+## ניסוח להגשה
+- Docker Hub מציג עבור image רשמי מידע תפעולי חשוב לפני pull: maintainer, supported tags, architectures, גודל, digest, תדירות עדכון ותיעוד.
+- ב-Ubuntu ניתן לראות ש-tags שונים כמו `latest`, `26.04`, `resolute` ו-`rolling` יכולים להצביע לאותו digest, ולכן tag הוא label ואילו digest הוא הזהות הבלתי משתנה של התוכן.
+- aliases נוחים לשימוש, אבל הם פחות בטוחים לפרודקשן כי הם עשויים להשתנות בעתיד.
+- שימוש ב-`latest` מסוכן ב-production כי redeploy עתידי עלול למשוך image שונה מזה שנבדק.
+- version pinning נחשב best practice כי הוא מבטיח reproducibility, במיוחד כשנועצים לפי digest.
+- מצד שני, pinning לא פוטר מעדכוני אבטחה, ואם לא מרעננים גרסה נעוצה אפשר להישאר עם vulnerabilities ידועות.
+
+זוויות המשך שכדאי לבדוק במטלה הבאה:
+- ההבדל בין `tag pinning` ל-`digest pinning`.
+- איך `docker pull ubuntu`, `docker pull ubuntu:latest` ו-`docker pull ubuntu@sha256:...` שונים בפועל.
+- איך זה מתחבר ל-`FROM ubuntu:22.04` מול `FROM ubuntu@sha256:...` ב-Dockerfile, שזה כבר מאוד רלוונטי ל-CI/CD ול-AWS CLF-C02.

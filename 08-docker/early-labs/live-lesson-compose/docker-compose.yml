@@ -1,0 +1,40 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.db-key-value
+    environment:
+      - MONGODB_HOST=db
+      - PORT=3000
+    networks:
+      - key-value-net
+    develop:
+      watch:
+        - action: sync
+          path: ./backend/src
+          target: /app/src
+          ignore:
+            - node_modules/
+    
+    # volumes: (אפשרות ישנה - פחות נפוצה)
+    #   - type: bind
+    #     source: ./backend/src
+    #     target: /app/src:ro
+
+  db:
+    image: mongo:7.0
+    container_name: db
+    networks:
+      - key-value-net
+    volumes:
+      - mongo_data:/data/db
+
+networks:
+  key-value-net:
+
+volumes:
+  mongo_data:

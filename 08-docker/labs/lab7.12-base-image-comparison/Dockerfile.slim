@@ -1,0 +1,19 @@
+# Lab 7.12 - Base Image Comparison
+# Base: node:22-slim (Debian slim, minimal)
+
+FROM node:22-slim
+
+WORKDIR /app
+
+# package files first - layer caching
+COPY package*.json ./
+
+# npm ci - דטרמיניסטי, מהיר, דורש package-lock.json
+RUN npm ci
+
+# קוד אפליקציה
+COPY index.js ./
+
+EXPOSE 3000
+
+CMD ["node", "index.js"]

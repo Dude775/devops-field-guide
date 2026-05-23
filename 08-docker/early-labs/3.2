@@ -1,0 +1,136 @@
+
+### סיכום טכני: מטלה 3.2 Docker
+
+#### **1. מטרת המטלה**
+הכירו את פקודות Docker CLI הבסיסיות:
+- `docker ps`, `docker images` – צפייה בקונטיינרים ו- images
+- `docker run` – הרצת קונטיינרים עם אופציות (detached, port mapping, שם)
+- `docker logs` ו-`docker logs -f` – צפייה ב-logs
+- `docker exec -it` – כניסה אינטראקטיבית לתוך קונטיינר
+- `docker build` – בניית image מותאם מ-Dockerfile
+- `docker push`/`docker pull` – שתף images ב-Docker Hub
+
+---
+
+#### **2. הליך הביצוע (Step-by-Step)**
+
+**בדיקת סביבה קיימת**
+```bash
+docker ps
+docker images
+```
+- קונטיינרים קיימים: `smartbasket-frontend`, `smartbasket-backend`, `personalknowledgeblog-web`, `personalknowledgeblog-mongo`
+- Images: `nginx`, `ubuntu`, `mongo:7`, `mongo:8.0`, `smartbasket-frontend`, `smartbasket-backend`, `personal-knowledge-hub`
+
+**הרצת nginx**
+```bash
+docker run -d -p 80:80 --name web_server nginx
+```
+- `-d` – ריצה ברקע (detached)
+- `-p 80:80` – מיפוי פורט 80 של המארח לפורט 80 בקונטיינר
+- `--name web_server` – שיוך שם לקונטיינר
+
+**צפייה ב-logs**
+```bash
+docker logs web_server          # צפייה חד-פעמית
+docker logs -f web_server       # מעקב live
+curl http://localhost           # בדיקת תגובה
+```
+
+**כניסה לאינטראקטיבי**
+```bash
+docker exec -it web_server bash
+```
+בתוך הקונטיינר:
+```bash
+ls /usr/share/nginx/html
+cat index.html
+```
+
+**בניית image מותאם**
+- Dockerfile:
+  ```
+  FROM ubuntu:latest
+  RUN echo "Hello from custom image!"
+  ```
+- בנייה:
+  ```bash
+  docker build -t my-custom-image:latest .
+  ```
+
+**הרצת image מותאם**
+```bash
+docker run -it my-custom-image:latest bash
+```
+
+**Docker Hub: יצירת חשבון וזרימת CLI**
+1. יצירת חשבון (אם אין): [Docker Hub signup](https://app.docker.com/signup)
+2. כניסה:
+   ```bash
+   docker login
+   ```
+3. תיוג ל-Docker Hub:
+   ```bash
+   docker tag my-custom-image:latest idf775/my-custom-image:latest
+   ```
+4. העלאה:
+   ```bash
+   docker push idf775/my-custom-image:latest
+   ```
+5. אימות הורדה:
+   ```bash
+   docker pull idf775/my-custom-image:latest
+   docker run -it idf775/my-custom-image:latest bash
+   ```
+
+**Docker Scout – סריקת אבטחה**
+```bash
+docker scout quickview idf775/my-custom-image:latest
+```
+
+---
+
+#### **3. מצב נוכחי על המחשב (May 16, 2026)**
+
+**קונטיינרים פעילים/מושהים:**
+- `web_server` (nginx, port 80)
+- `smartbasket-frontend`
+- `smartbasket-backend`
+- `personalknowledgeblog-web`
+- `personalknowledgeblog-mongo`
+
+**Images קיימים:**
+- `nginx`
+- `ubuntu`
+- `mongo:7`, `mongo:8.0`
+- `smartbasket-frontend`
+- `smartbasket-backend`
+- `my-custom-image`
+- `personal-knowledge-hub`
+
+**Docker Hub:**
+- חשבון: `idf775`
+- Image: `idf775/my-custom-image:latest` – מותקם וזמין להורדה
+
+---
+
+#### **4. למידות מרכזיות**
+
+- **Docker CLI** עובד בקלות לניהול קונטיינרים ו- images.
+- **Port mapping** (`-p`) חיוני לגישה חיצונית לשירותים.
+- **Docker Hub** הוא מאגר ציבורי לשיתוף images – חיוני לעבודות צוות ו-CI/CD.
+- **Docker Scout** מאפשר סריקת אבטחה של images לזיהוי vulnerability.
+- **התוכנית לעתיד:** השתמש ב-`docker push`/`pull` ב-CI/CD, והשתמש בסריקת אבטחה בכל שלבי פיתוח.
+
+---
+
+#### **5. הצעה להמשך**
+- עדכן ב-`devops-field-guide` את הנושאים:
+  - Docker Hub: Push/Pull workflow
+  - Docker Scout: Security scanning
+  - Docker Commands Cheat Sheet
+- המשך ל-Lab 4.2: Docker Hub Account Creation and CLI Usage.
+
+---
+
+**סיכום:** סיימת את מטלה 3.2 בהצלחה – הפעלת קונטיינרים, בניית image, שיתוף ב-Docker Hub, וסריקת אבטחה. כל הפקודות עובדות וה-image מוכן לשימוש נוסף.

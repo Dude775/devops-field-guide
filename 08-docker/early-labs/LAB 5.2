@@ -1,0 +1,348 @@
+## כותרת: LAB 5.2 נסגר בדוק
+
+כן. **LAB 5.2 סיימנו בדוק.**
+
+ההוכחות:
+
+1. הקונטיינר הסופי רץ:
+   - <u>**`lab52-nginx-final`**</u>
+   - image: <u>**`lab52-nginx:1.0`**</u>
+   - port: <u>**`80:80`**</u>
+
+2. ה-HTTP עובד:
+   - <u>**`curl -i http://localhost`**</u>
+   - החזיר:
+   - `HTTP/1.1 200 OK`
+   - ואת ה-HTML שלך:
+     - `<h1>LAB 5.2 - Custom index.html</h1>`
+     - `<p>Copied into nginx image</p>`
+
+3. ה-`COPY` עבד:
+   - הקובץ נמצא בתוך הקונטיינר בנתיב:
+   - <u>**`/usr/share/nginx/html/index.html`**</u>
+
+4. תיקון ההרשאות עבד:
+   - לפני: `root root`
+   - אחרי:
+   - `-rwxr-xr-x 1 nginx nginx 68 ... /usr/share/nginx/html/index.html`
+
+5. ה-`Dockerfile` הסופי כולל את מה שהמעבדה ביקשה:
+   - `FROM nginx:1.27.0`
+   - התקנת `nano`
+   - `COPY index.html ...`
+   - `RUN chown nginx:nginx ...`
+
+6. שאלת ה-cache גם מכוסה:
+   - `RUN apt-get...` הגיע מ-cache
+   - `COPY index.html...` הגיע מ-cache
+   - `RUN chown...` נבנה מחדש
+
+---
+
+## תשובות קצרות למטלה
+
+### מי המשתמש שמריץ את nginx בתוך הקונטיינר?
+
+ה-master process רץ כ-root, אבל ה-worker processes של nginx בדרך כלל רצים כמשתמש:
+
+`nginx`
+
+לכן במעבדה ביקשו לשנות בעלות ל:
+
+<u>**`nginx:nginx`**</u>
+
+---
+
+### למה לא קיבלנו 403?
+
+כי הקובץ שהועתק היה קריא לכולם:
+
+`-rwxr-xr-x`
+
+כלומר גם אם הבעלים היה `root root`, למשתמש `nginx` עדיין הייתה הרשאת קריאה.
+
+אבל המטלה עדיין נכונה עקרונית: אם הקובץ היה מגיע בלי הרשאת read למשתמש שמריץ nginx, היינו מקבלים `403 Forbidden`.
+
+---
+
+### מה היה הטריק עם Git Bash?
+
+ב-Git Bash, path שמתחיל ב-`/usr/...` עלול להפוך בטעות ל:
+
+`C:/Program Files/Git/usr/...`
+
+לכן השתמשנו ב:
+
+<u>**`MSYS_NO_PATHCONV=1 docker exec ...`**</u>
+
+וזה פתר את העיוות. קלאסי Windows עושה Windows.
+
+---
+
+## מצב סביבת Docker כרגע
+
+רצים לך עכשיו:
+
+1. <u>**`lab52-nginx-final`**</u> על port `80`
+2. <u>**`my-nginx-v2`**</u> על port `8080`
+3. <u>**`friendly_shamir`**</u> - קונטיינר bash מה-image שלך
+
+לא חייב לנקות אם אתה ממשיך למעבדה הבאה, אבל אם המטלה הבאה משתמשת ב-port `80`, נצטרך לעצור את <u>**`lab52-nginx-final`**</u>.
+
+---
+
+# Document Docker Labs 5.1 and 5.2 in devops-field-guide
+
+## What was completed
+
+Document two completed Docker labs from the IITC DevOps course.
+
+### Lab 5.1: Custom NGINX Image with Custom Config
+Topic: Dockerfile, custom Nginx configuration, custom HTML, port mapping, troubleshooting
+
+What was completed:
+- Created a custom Docker image based on nginx:1.27.0
+- Fixed an incorrect Dockerfile that originally did not copy nginx.conf or index.html into the image
+- Used a custom nginx.conf that listens on port 8080
+- Copied nginx.conf into /etc/nginx/nginx.conf
+- Copied index.html into /usr/share/nginx/html/index.html
+- Built image custom-nginx:3.0
+- Ran container my-nginx-v2 with port mapping 8080:8080
+- Verified with curl http://localhost:8080
+- Final response:
+  <h1>LAB 5.1 - Custom NGINX</h1>
+  <p>Port 8080</p>
+
+Key troubleshooting:
+- Empty reply from server happened because the Dockerfile did not copy nginx.conf and index.html into the image
+- Dockerfile build output only showed:
+  FROM nginx:1.27.0
+  RUN apt-get update && apt-get install -y nano
+- After adding COPY instructions, the lab worked
+- Important distinction:
+  - Full nginx.conf with events and http blocks belongs in /etc/nginx/nginx.conf
+  - conf.d/default.conf should usually contain only server blocks
+
+Final Dockerfile for Lab 5.1:
+FROM nginx:1.27.0
+RUN apt-get update && apt-get install -y nano
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 8080
+
+Commands used:
+- docker build -t custom-nginx:3.0 .
+- docker rm -f my-nginx-v2
+- docker run -d -p 8080:8080 --name my-nginx-v2 custom-nginx:3.0
+- curl http://localhost:8080
+- docker logs my-nginx-v2
+- docker ps
+
+---
+
+### Lab 5.2: Copying a Custom index.html into a Docker Image
+Topic: Dockerfile COPY, default Nginx document root, image rebuilds, Docker cache, Linux ownership, chown
+
+What was completed:
+- Created a clean lab directory:
+  E:\Genspark\DevOps-Materials\Docker\lab5.2-copy-index
+- Created a local index.html:
+  <h1>LAB 5.2 - Custom index.html</h1>
+  <p>Copied into nginx image</p>
+- Built an initial image without COPY:
+  lab52-nginx:1.0
+- Ran a container on port 80:
+  lab52-nginx-before
+- Verified default Nginx page with curl http://localhost
+- Added COPY instruction to Dockerfile:
+  COPY index.html /usr/share/nginx/html/index.html
+- Rebuilt image with the same tag:
+  lab52-nginx:1.0
+- Ran container:
+  lab52-nginx-after
+- Verified custom HTML with:
+  curl -i http://localhost
+- Checked file ownership inside the container using:
+  MSYS_NO_PATHCONV=1 docker exec lab52-nginx-after ls -l /usr/share/nginx/html/index.html
+- Saw initial ownership:
+  root root
+- Added permission fix:
+  RUN chown nginx:nginx /usr/share/nginx/html/index.html
+- Rebuilt image again
+- Ran final container:
+  lab52-nginx-final
+- Verified final result:
+  HTTP/1.1 200 OK
+  <h1>LAB 5.2 - Custom index.html</h1>
+  <p>Copied into nginx image</p>
+- Verified final ownership:
+  -rwxr-xr-x 1 nginx nginx 68 ... /usr/share/nginx/html/index.html
+
+Final Dockerfile for Lab 5.2:
+FROM nginx:1.27.0
+RUN apt-get update && apt-get install -y nano
+COPY index.html /usr/share/nginx/html/index.html
+RUN chown nginx:nginx /usr/share/nginx/html/index.html
+
+Commands used:
+- docker build -t lab52-nginx:1.0 .
+- docker rm -f lab52-nginx-before 2>/dev/null || true
+- docker run -d -p 80:80 --name lab52-nginx-before lab52-nginx:1.0
+- curl http://localhost
+- docker stop lab52-nginx-before
+- docker rm lab52-nginx-before
+- docker images | grep -E 'lab52-nginx|<none>'
+- docker run -d -p 80:80 --name lab52-nginx-after lab52-nginx:1.0
+- curl -i http://localhost
+- MSYS_NO_PATHCONV=1 docker exec lab52-nginx-after ls -l /usr/share/nginx/html/index.html
+- docker stop lab52-nginx-after
+- docker rm lab52-nginx-after
+- docker run -d -p 80:80 --name lab52-nginx-final lab52-nginx:1.0
+- MSYS_NO_PATHCONV=1 docker exec lab52-nginx-final ls -l /usr/share/nginx/html/index.html
+- docker ps
+
+Important Git Bash note:
+- Git Bash on Windows may rewrite Linux container paths like /usr/share/nginx/html/index.html into Windows paths such as C:/Program Files/Git/usr/share/nginx/html/index.html
+- Fix:
+  MSYS_NO_PATHCONV=1 docker exec ...
+
+Important learning notes:
+- docker exec runs commands inside the container, but Docker CLI commands like docker stop must be run from the host, not from inside the container
+- Docker Hub tokens are unrelated to local docker build, docker run, docker exec, or localhost curl testing
+- 403 Forbidden may happen when Nginx cannot read the copied file because of ownership or permissions
+- In this run there was no 403 because the file was still readable, but ownership was fixed anyway according to the lab requirement
+- Nginx master process often runs as root, while worker processes usually run as nginx
+- COPY adds files into the image during build
+- RUN chown changes ownership inside the image during build
+- Docker cache behavior observed:
+  - FROM was cached
+  - RUN apt-get install nano was cached
+  - COPY was cached when index.html did not change
+  - RUN chown was rebuilt after being added
+
+## Files to create/update
+
+### 1. 06-docker/exercises/lab-5-1-custom-nginx-image.md
+Create a full exercise documentation file for Lab 5.1.
+
+Include:
+- Lab goal
+- Directory used:
+  E:\Genspark\DevOps-Materials\Docker\lab5.1-nginx-docker
+- Initial problem
+- Broken Dockerfile
+- Root cause analysis
+- Correct Dockerfile
+- Commands table
+- Troubleshooting table
+- Final verification output
+- Iron Rules earned
+
+Iron Rules for Lab 5.1:
+- If a file is not copied into the image, it does not exist in the container
+- Build output tells the truth. If COPY does not appear in the build steps, it did not happen
+- Full nginx.conf goes to /etc/nginx/nginx.conf
+- A server block config belongs under /etc/nginx/conf.d/
+- docker stop and docker rm are host commands, not container commands
+- Empty reply from server usually means something is listening, but not responding correctly
+
+### 2. 06-docker/exercises/lab-5-2-copy-index-html.md
+Create a full exercise documentation file for Lab 5.2.
+
+Include:
+- Lab goal
+- Directory used:
+  E:\Genspark\DevOps-Materials\Docker\lab5.2-copy-index
+- Part 1: default Nginx page
+- Part 2: local index.html
+- Part 3: COPY instruction
+- Part 4: rebuild and run
+- Part 5: permissions and chown
+- Commands table
+- Before and after Dockerfiles
+- Ownership before and after chown
+- Git Bash MSYS_NO_PATHCONV issue
+- Cache behavior explanation
+- Why 403 may happen
+- Why 403 did not happen in this run
+- Final verification output
+- Iron Rules earned
+
+Iron Rules for Lab 5.2:
+- COPY moves files into the image at build time
+- File ownership inside a container matters
+- chown changes owner and group in Linux
+- If Nginx cannot read the file, expect 403
+- Git Bash may rewrite Linux-style paths. Use MSYS_NO_PATHCONV=1 when needed
+- Rebuilding with the same tag replaces what that tag points to
+- Cache is useful, but build output must be read carefully
+
+### 3. 06-docker/commands/dockerfile-reference.md
+Create or append a Dockerfile reference section.
+
+Include:
+- FROM
+- RUN
+- COPY
+- EXPOSE
+- COPY destination paths
+- RUN chown
+- COPY vs RUN
+- Cache behavior
+- Example Dockerfile for Nginx default port 80
+- Example Dockerfile for custom Nginx port 8080
+
+### 4. 06-docker/commands/docker-container-debugging.md
+Create or append a debugging reference section.
+
+Include:
+- docker ps
+- docker ps -a
+- docker logs
+- docker exec
+- curl localhost
+- docker rm -f
+- docker images
+- docker build --no-cache
+- MSYS_NO_PATHCONV=1 docker exec ...
+- Common errors:
+  - Empty reply from server
+  - Conflict. container name already in use
+  - Port is already allocated
+  - No such file or directory caused by Git Bash path conversion
+  - executable file not found in $PATH inside container
+
+### 5. 06-docker/README.md
+Update the Docker module README contents table.
+
+Add links to:
+- lab-5-1-custom-nginx-image.md
+- lab-5-2-copy-index-html.md
+- dockerfile-reference.md
+- docker-container-debugging.md
+
+Update progress/status to show these labs are completed.
+
+### 6. README.md
+Update the main Course Roadmap table only if Docker module status exists there.
+Mark Docker as IN PROGRESS or update the completed lab count if the repo tracks that.
+
+## Style requirements
+- Keep documentation practical and student-level
+- Do not make it sound like official vendor documentation
+- Use clear tables where useful
+- Include short Hebrew comments/explanations where helpful
+- Commands should be easy to copy
+- Mention real mistakes and fixes, because that is valuable learning evidence
+- Do not over-polish
+- Keep it aligned with David's current DevOps student level
+
+## Commit
+
+Run:
+
+cd E:\Genspark\devops-field-guide
+git status
+git add 06-docker/ README.md
+git commit -m "docs(docker): add nginx image labs 5.1 and 5.2"
+git push

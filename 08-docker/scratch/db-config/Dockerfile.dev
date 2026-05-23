@@ -1,0 +1,11 @@
+FROM node: 20-alpine (last pushed 1 month ago)
+
+WORKDIR /app
+
+COPY package *. json
+
+RUN npm ci
+
+COPY
+
+CMD ["npm", "run", "dev"]

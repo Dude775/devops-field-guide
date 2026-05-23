@@ -1,0 +1,9 @@
+
+# Added 2026-05-23 - protect secrets and build artifacts
+*.key
+*.csr
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
