@@ -10,7 +10,7 @@
 
 ארבעת ה-labs האלה הם המשך ישיר של Lab 5.3, שם יצרנו Deployment של nginx עם 5 replicas. כאן נבדוק מה קורה כשמחליפים image, איך rollout history עובד, מה ההבדל בין scale ידני לבין YAML declarative, ואיך מאבחנים rollout שנתקע בגלל image שגוי.
 
-הסדרה הזאת היא הבסיס לעבוד עם Deployments בפועל. מי שמבין את הארבעה האלה מבין את ה-lifecycle של Deployment.
+הסדרה הזאת היא הבסיס לעבוד עם Deploymnets בפועל. מי שמבין את הארבעה האלה מבין את ה-lifecycle של Deployment.
 
 ---
 
