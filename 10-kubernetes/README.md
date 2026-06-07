@@ -1,19 +1,41 @@
 # Module 10: Kubernetes - Container Orchestration
 
-> **Status**: Upcoming
+> **Status**: IN PROGRESS
 > **Prerequisites**: [Module 08 - Docker](../08-docker/)
 
 ## Overview
 
-Kubernetes orchestrates containers at scale. This module covers pods, services, deployments, ConfigMaps, and the declarative model that makes managing hundreds of containers manageable.
+Kubernetes is the industry-standard container orchestrator. Where Docker runs containers, Kubernetes manages them at scale - handling availability, scaling, self-healing, and configuration across fleets of machines. This module covers the full picture from architecture to production patterns.
 
-## What Will Be Covered
+## Module Goals
 
-- Kubernetes architecture (control plane, nodes)
-- Pods, ReplicaSets, Deployments
-- Services and networking
-- ConfigMaps and Secrets
-- Namespaces and RBAC
-- kubectl mastery
+- Understand why Kubernetes exists and when to use it (and when not to)
+- Map the cluster architecture: Control Plane + Data Plane
+- Master the declarative model and reconciliation loop
+- Learn core objects: Pod, ReplicaSet, Deployment, Service, Ingress
+- Develop kubectl fluency for day-to-day operations
 
-Content will be added as the course progresses.
+## Contents
+
+| Date | Exercise | Topics |
+|------|----------|--------|
+| 2026-06-03 | [Day 01 - Why Kubernetes + Architecture Overview](./exercises/day-01-overview-and-architecture.md) | K8s motivation, cluster architecture, control plane, worker nodes, object hierarchy |
+
+## Key Concepts
+
+- **Declarative model** - you describe the desired state, K8s makes it happen
+- **Reconciliation loop** - continuous comparison of current state vs desired state
+- **Control Plane** - the brain: etcd, API Server, Scheduler, Controller Manager
+- **Data Plane** - the muscle: worker nodes running actual workloads
+- **Pod** - smallest deployable unit (one or more containers)
+- **ReplicaSet** - ensures N copies of a pod are always running
+- **Deployment** - manages ReplicaSets, enables rolling updates
+- **Service** - stable network endpoint in front of pods
+- **Ingress** - HTTP routing rules into the cluster
+
+## Resources
+
+- [NetworkChuck - Kubernetes](https://www.youtube.com/@NetworkChuck)
+- [TechWorld with Nana - Kubernetes Tutorial](https://www.youtube.com/@TechWorldwithNana)
+- [Official Kubernetes Docs](https://kubernetes.io/docs/)
+- [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
