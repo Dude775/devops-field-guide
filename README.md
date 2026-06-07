@@ -54,6 +54,9 @@ Principles collected throughout the course. These are non-negotiable truths earn
 - "`kubectl create` does not write `last-applied-configuration`. Migrating to `apply` triggers a one-time warning, then the annotation is backfilled automatically."
 - "Old ReplicaSets at 0 replicas are not junk - they are rollback history. Don't delete them manually."
 - "Never assume your working directory. `pwd` + `ls -la` before every lab."
+- "ReplicaSet counts every Pod matching its selector - including manually created Pods. Do not mix them casually."
+- "Changing ReplicaSet template does not update existing Pods. Only future Pods use the new template."
+- "pod-template-hash connects Deployment template, ReplicaSet name, and Pod names. Never set it manually."
 
 *This list grows with each module.*
 
