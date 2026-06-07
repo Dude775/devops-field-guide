@@ -1,7 +1,7 @@
 # Day 01 - Why Kubernetes + Architecture Overview
 
 > **Date**: 2026-06-03
-> **Module**: 10 - Kubernetes
+> **Module**: 09 - Kubernetes
 > **Status**: Complete
 
 ---
@@ -336,3 +336,18 @@ These are where Junior engineers get filtered. The instructor was explicit about
 
 **Q: When would you NOT use Kubernetes?**
 > Simple applications (1-3 services), small teams without ops capacity, tight deadlines where infra complexity is a risk, or when a managed alternative (ECS, App Runner, Heroku) covers your requirements with less overhead. K8s complexity must be justified by the problems it solves.
+
+---
+
+## Course Materials
+
+No external course materials were found at the expected source paths during repo restructure (2026-06-07):
+- `E:\Genspark\DevOps-Materials\K8s` - not found
+- `C:\Users\David\Desktop\Kubeinertis` - not found
+
+When materials become available, copy them to `09-kubernetes/resources/` with this structure:
+- `.pdf`, `.pptx` → `resources/slides/`
+- `.png`, `.jpg`, `.jpeg`, `.svg`, `.gif` → `resources/images/`
+- `.yaml`, `.yml` → `resources/examples/`
+- `.md` notes → `resources/notes/`
+- `.sh` scripts → `resources/scripts/`
