@@ -160,21 +160,52 @@ kubectl get all
 
 ---
 
-## Manifest Generation
+## Manifest Generation (dry-run)
 
 ```bash
 # generate pod manifest
 kubectl run <name> --image=<img> --dry-run=client -o yaml > pod.yaml
 
-# generate service manifest
-kubectl expose pod <name> --port=N --dry-run=client -o yaml > svc.yaml
+# generate pod with custom labels (default is run:<name>, not app:<name>)
+kubectl run <name> --image=<img> --labels=app=<name> --dry-run=client -o yaml > pod.yaml
+
+# generate service from existing pod
+kubectl expose pod <name> --type=NodePort --port=80 --dry-run=client -o yaml > svc.yaml
+
+# generate service with custom name (default is same as pod name)
+kubectl expose pod <name> --name=<svc-name> --type=NodePort --port=80 --dry-run=client -o yaml > svc.yaml
 
 # generate deployment manifest
-kubectl create deployment <name> --image=<img> --dry-run=client -o yaml > deploy.yaml
+kubectl create deployment <name> --image=<img> --replicas=3 --dry-run=client -o yaml > deploy.yaml
+
+# generate configmap from literal values
+kubectl create configmap <name> --from-literal=KEY=VALUE --dry-run=client -o yaml > cm.yaml
+
+# generate job manifest
+kubectl create job <name> --image=<img> --dry-run=client -o yaml > job.yaml
 ```
 
-`--dry-run=client` - simulates locally, nothing hits the API server  
-`-o yaml` - outputs the result as YAML
+### dry-run flags
+
+| Flag | Behavior |
+|------|----------|
+| `--dry-run=client` | Validates locally in kubectl only. Nothing sent to API server. Faster. Safe on any cluster. |
+| `--dry-run=server` | Sends to API server for validation but doesn't persist. Catches admission webhook errors, quota limits, name conflicts. |
+| `-o yaml` | Output manifest as YAML to stdout. Combine with `>` to save to file. |
+| `-o json` | Output as JSON instead. Useful if you need to pipe to `jq`. |
+
+### workflow
+
+```
+generate → cat (verify) → edit (clean up + add fields) → kubectl apply -f
+```
+
+### noise fields to clean up before committing
+
+- `creationTimestamp: null` - not set until object is created
+- `resources: {}` - add limits/requests or remove
+- `status: {}` / `status: { loadBalancer: {} }` - always empty in a manifest
+- `dnsPolicy: ClusterFirst` - default, safe to remove if you're not changing it
 
 ---
 
