@@ -200,7 +200,7 @@ kubectl create job <name> --image=<img> --dry-run=client -o yaml > job.yaml
 generate → cat (verify) → edit (clean up + add fields) → kubectl apply -f
 ```
 
-### noize fields to clean up before committing
+### noise fields to clean up before committing
 
 - `creationTimestamp: null` - not set until object is created
 - `resources: {}` - add limits/requests or remove
