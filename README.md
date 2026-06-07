@@ -51,6 +51,9 @@ Principles collected throughout the course. These are non-negotiable truths earn
 - "`spec.containers` is required in every Pod manifest - it's a list, not a single object."
 - "`kubectl describe` is your proof that actual state == desired state."
 - "`connection refused` on the API server = cluster probably isn't running. Check `docker ps` first."
+- "`kubectl create` does not write `last-applied-configuration`. Migrating to `apply` triggers a one-time warning, then the annotation is backfilled automatically."
+- "Old ReplicaSets at 0 replicas are not junk - they are rollback history. Don't delete them manually."
+- "Never assume your working directory. `pwd` + `ls -la` before every lab."
 
 *This list grows with each module.*
 
