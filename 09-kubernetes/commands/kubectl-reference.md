@@ -241,11 +241,17 @@ kubectl apply -f ./manifests/
 # create only - fails if exists
 kubectl create -f file.yaml
 
+# create and write last-applied annotation (so apply works cleanly after)
+kubectl create -f file.yaml --save-config
+
 # full overwrite - breaks with managed fields
 kubectl replace -f file.yaml
 
 # delete objects defined in file
 kubectl delete -f file.yaml
+
+# delete multiple objects by file in one command
+kubectl delete -f file1.yaml -f file2.yaml
 
 # preview what will change
 kubectl diff -f file.yaml
