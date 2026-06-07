@@ -279,6 +279,20 @@ kubectl diff -f file.yaml
 
 ---
 
+## create vs apply: Quick Comparison
+
+| | `kubectl create` | `kubectl apply` |
+|--|-----------------|-----------------|
+| Writes `last-applied-configuration` | No (add `--save-config` to force it) | Yes, always |
+| Idempotent | No - errors if object exists | Yes - updates if exists |
+| 3-way merge on update | No | Yes |
+| Use for one-off imperative ops | Yes | Overkill |
+| Use for GitOps / declarative workflow | No | Yes |
+
+When migrating a `create`-d object to `apply`, the first `apply` triggers a warning and backfills the annotation automatically. After that it's fully declarative. See [Lab 4.6](../exercises/04.6-create-to-apply-migration.md) for the full walkthrough.
+
+---
+
 ## Label & Selector Queries
 
 ```bash
