@@ -88,6 +88,33 @@ kubectl get pods
 
 ---
 
+## Verify DNS requires Service
+
+```powershell
+# create a Service exposing the nginx Pod
+kubectl expose pod nginx --port=80 --name=nginx-svc
+
+# then re-enter Alpine and run
+kubectl run alpine-test -it --image=alpine:3.20 -- sh
+```
+
+Inside Alpine:
+
+```sh
+apk add curl
+curl nginx-svc
+# expected: HTML from nginx
+exit
+```
+
+```powershell
+# cleanup service
+kubectl delete service nginx-svc
+kubectl delete pod alpine-test --ignore-not-found
+```
+
+---
+
 ## Optional - Full cleanup
 
 ```powershell
