@@ -57,6 +57,15 @@ Principles collected throughout the course. These are non-negotiable truths earn
 - "ReplicaSet counts every Pod matching its selector - including manually created Pods. Do not mix them casually."
 - "Changing ReplicaSet template does not update existing Pods. Only future Pods use the new template."
 - "pod-template-hash connects Deployment template, ReplicaSet name, and Pod names. Never set it manually."
+- "Changing pod template (image, env, etc.) creates a new ReplicaSet. Changing replicas does not."
+- "Rollback creates a new revision. It does not restore the old revision number."
+- "`kubectl scale` is temporary. `kubectl apply` always wins."
+- "Scaling replicas does not create a new rollout revision because pod template did not change."
+- "`ImagePullBackOff` is diagnosed at Pod level, not at Deployment level. Use `kubectl describe pod`."
+- "RollingUpdate keeps old Pods running until new Pods are healthy. A broken image does not kill availability."
+- "Rollback is fast recovery. If the manifest still has the bad image, the next apply brings it back."
+- "`change-cause` annotation is documentation, not action. It can lie. Check the actual image."
+- "`kubectl diff` before `kubectl apply` is not optional."
 
 *This list grows with each module.*
 
