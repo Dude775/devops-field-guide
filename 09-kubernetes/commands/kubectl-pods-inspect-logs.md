@@ -31,3 +31,4 @@
 - כל הפקודות ב-Host PowerShell מניחות שה-context הוא `minikube`
 - Inside Alpine Pod - הפקודות רצות בתוך `kubectl run alpine -it --image=alpine:3.20 -- sh`
 - Pod IP משתנה בכל פעם שה-Pod נמחק ונוצר מחדש - לא להניח שהוא קבוע
+- `kubectl logs -f <pod>` מציג לוגים בזמן אמת (streaming)
