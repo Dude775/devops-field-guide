@@ -225,7 +225,7 @@ Port semantics:
 1. Always `cat` + `wc -l` a manifest before `kubectl apply`. Empty file = `error: no objects passed to apply`.
 2. `code file.yaml` from terminal can open an unrelated VS Code workspace. Edits won't land where you think. Prefer heredoc when in doubt.
 3. Never mix shell syntaxes. Bash heredoc inside PowerShell fails with `The '<' operator is reserved for future use`.
-4. Service `selector` must match Pod `labels` exactly. Empty `Endpoints` in describe = selector miss.
+4. Service `selektor` must match Pod `labels` exactly. Empty `Endpoints` in describe = selector miss.
 5. NodePort range is 30000-32767. Outside that range = validation error from the API server.
 6. Each lab gets its own folder. Never mix manifests between labs.
 
