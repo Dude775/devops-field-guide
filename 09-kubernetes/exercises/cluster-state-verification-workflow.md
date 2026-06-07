@@ -227,3 +227,38 @@ Before each lab:
 - [ ] `kubectl config current-context` - confirm correct cluster
 - [ ] `kubectl get pods,svc,deploy,rs -o wide` - baseline cluster state
 - [ ] `cat <file>.yaml` + `wc -l <file>.yaml` before every apply/create
+
+---
+
+## What the Old ReplicaSet Tells You
+
+In the cluster snapshot above, there are two ReplicaSets:
+
+```
+replicaset.apps/color-api-deployment-77946bd689  3   3   3   (active)
+replicaset.apps/color-api-deployment-7c78664cc8  0   0   0   (old)
+```
+
+The old one (`7c78664cc8`) shows `lironefitoussi/color-api:1.1.0` as its image. The active one shows `idf775/color-api:1.1.0`. This is the record of an image update: at some point the instructor's image was swapped for a personal build.
+
+Kubernetes keeps the old RS at 0 replicas so it can roll back instantly:
+
+```bash
+kubectl rollout undo deployment/color-api-deployment
+```
+
+That command scales the old RS back up and scales the active RS down to 0. No re-pulling images. No re-scheduling. The old RS is sitting there ready to take traffic again.
+
+This is why you should not `kubectl delete rs` old ReplicaSets manually - you'd be throwing away your rollback history.
+
+---
+
+## Interview Questions
+
+1. Why should you always run `kubectl config current-context` before starting a lab?
+2. You run `kubectl apply -f .` and it modifies something you didn't expect. What pre-lab step would have caught this?
+3. What does `kubectl get pods,svc,deploy,rs -o wide` show that `kubectl get all` does not?
+4. A Deployment has two ReplicaSets - one with 3 replicas and one with 0. What does the zero-replica RS represent?
+5. How do you roll back a Deployment to a previous image, and what actually happens to the ReplicaSets?
+6. Why does each lab need its own isolated folder?
+7. You run `wc -l nginx-pod.yaml` and it returns 0. What does that mean and what do you do?
