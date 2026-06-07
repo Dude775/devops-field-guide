@@ -24,6 +24,7 @@ Kubernetes is the industry-standard container orchestrator. Where Docker runs co
 | 2026-06-04 | [Module 4 - Object Management & YAML Manifests](./exercises/04-object-management-yaml.md) | 3 management approaches, manifest structure, apply vs create vs replace, --dry-run, 3-way merge |
 | 2026-06-04 | [Module 5 - ReplicaSets](./exercises/05-replicasets.md) | Self-healing demo, selector/template matching, RS limitations, image update problem |
 | 2026-06-04 | [Module 6 - Deployments](./exercises/06-deployments-intro.md) | Deployment hierarchy, pod-template-hash, RollingUpdate strategy, rollout commands |
+| 2026-06-07 | [Day 03 Lab 4.1 + 4.2 - Pod & NodePort Service](./exercises/day03-pod-and-nodeport-service.md) | Pod manifest, NodePort Service, selector-to-label binding, in-cluster DNS, ephemeral debug pods |
 
 ## Key Concepts
 
