@@ -278,6 +278,12 @@ Events מציגים את ה-timeline: Scheduled, Pulled, Created, Started. אם 
 
 ---
 
+## Next Steps
+
+הלאב הבא ידגים יצירת Service כדי להוכיח DNS-by-name. ברגע שיש Service מסוג ClusterIP בשם `nginx`, הפקודה `curl nginx` מבפנים ב-Alpine תחזיר תשובה.
+
+---
+
 ## Suggested Screenshots
 
 צלם ושמור בתיקייה `09-kubernetes/resources/images/day03-hands-on-3-2/`:
