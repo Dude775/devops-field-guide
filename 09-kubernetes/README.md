@@ -20,6 +20,7 @@ Kubernetes is the industry-standard container orchestrator. Where Docker runs co
 | Date | Exercise | Topics |
 |------|----------|--------|
 | 2026-06-03 | [Day 01 - Why Kubernetes + Architecture Overview](./exercises/day-01-overview-and-architecture.md) | K8s motivation, cluster architecture, control plane, worker nodes, object hierarchy |
+| 2026-06-03 | [Day 03 Hands-On 3.2 - Inspect, Communication and Logs](./exercises/kubernetes-day03-hands-on-3-2-inspect-communication-logs.md) | kubectl get/describe, Pod-to-Pod IP communication, kubectl logs, DNS-by-name vs Service |
 
 ## Key Concepts
 
