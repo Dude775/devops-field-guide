@@ -24,7 +24,7 @@ This repository operates on three levels:
 | 07 | [AWS](07-aws/) | Cloud fundamentals, core services | Upcoming |
 | 08 | [Docker](08-docker/) | Containers, images, Compose | Upcoming |
 | 09 | [CI/CD](09-ci-cd/) | Pipelines, automation, deployment strategies | Upcoming |
-| 10 | [Kubernetes](10-kubernetes/) | Orchestration, pods, services | Upcoming |
+| 10 | [Kubernetes](10-kubernetes/) | Orchestration, pods, services | In Progress |
 | 11 | [Helm](11-helm/) | Package management for Kubernetes | Upcoming |
 | 12 | [Terraform](12-terraform/) | Infrastructure as Code | Upcoming |
 | 13 | [ArgoCD](13-argocd/) | GitOps, continuous delivery | Upcoming |
