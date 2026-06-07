@@ -199,3 +199,68 @@ kubectl delete -f file.yaml
 # preview what will change
 kubectl diff -f file.yaml
 ```
+
+---
+
+## Label & Selector Queries
+
+```bash
+# show labels on pods
+kubectl get pods --show-labels
+
+# filter pods by label
+kubectl get pods -l app=nginx
+
+# filter pods by label (equality)
+kubectl get pods -l app=nginx,tier=frontend
+
+# show labels on all resource types
+kubectl get all --show-labels
+```
+
+---
+
+## Ephemeral Debug Pods
+
+```bash
+# launch temporary Alpine pod with interactive shell
+kubectl run tmp-alpine --rm -it --image=alpine --restart=Never -- sh
+
+# launch temporary busybox pod
+kubectl run tmp-busybox --rm -it --image=busybox --restart=Never -- sh
+
+# one-off command without interactive shell
+kubectl run tmp-curl --rm -it --image=curlimages/curl --restart=Never -- curl -I http://nginx-svc:80
+```
+
+`--rm` - deletes the pod when you exit  
+`--restart=Never` - prevents K8s from restarting it (keeps it as a plain Pod, not a Job)
+
+---
+
+## Service YAML Authoring (heredoc, Git Bash)
+
+```bash
+# safe way to author YAML - avoids VS Code workspace path bugs
+cat > nginx-svc.yaml << 'EOF'
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-svc
+spec:
+  type: NodePort
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30080
+EOF
+
+# always verify before applying
+cat nginx-svc.yaml
+wc -l nginx-svc.yaml
+```
+
+> WARNING: heredoc syntax (`<< 'EOF'`) is Bash only. It fails in PowerShell with `The '<' operator is reserved for future use`. Use Git Bash.
