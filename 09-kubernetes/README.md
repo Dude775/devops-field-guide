@@ -27,6 +27,8 @@ Kubernetes is the industry-standard container orchestrator. Where Docker runs co
 | 2026-06-07 | [Hands-On 4.1 - Pod via YAML](./exercises/4.1-pod-via-yaml.md) | Imperative with config file, Pod manifest structure, containers list, labels vs annotations, kubectl describe verification |
 | 2026-06-07 | [Day 03 Lab 4.1 + 4.2 - Pod & NodePort Service](./exercises/day03-pod-and-nodeport-service.md) | Pod manifest, NodePort Service, selector-to-label binding, in-cluster DNS, ephemeral debug pods |
 | 2026-06-07 | [Hands-On 4.3 - Generating YAML from Imperative Commands](./exercises/4.3-dry-run-yaml-generation.md) | --dry-run=client, -o yaml, imperative-to-declarative bridge, Service from Pod, ErrImagePull gotcha |
+| 2026-06-07 | [Lab 4.6 - create to apply: Migrating an Object to Declarative Management](./exercises/04.6-create-to-apply-migration.md) | kubectl create vs apply, last-applied-configuration annotation, migration warning, --save-config, ReplicaSet rollback history |
+| 2026-06-07 | [Cluster State Verification Workflow](./exercises/cluster-state-verification-workflow.md) | Pre-lab discipline, pwd + ls -la + context check + combined get, lab folder isolation, cat + wc before apply |
 
 ## Key Concepts
 
