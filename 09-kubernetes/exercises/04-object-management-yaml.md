@@ -215,7 +215,7 @@ Active manifests in the main folder. Old versions in `archive/`. Don't clutter.
 
 | Lab | Topic | Status |
 |-----|-------|--------|
-| 4.1 | Pod + Service via YAML | TODO (skipped in class) |
+| 4.1 | Pod via YAML | [Done](./4.1-pod-via-yaml.md) |
 | 4.2 | NodePort Service via YAML | TODO |
 | 4.3 | Generate YAML with --dry-run | TODO |
 | 4.4 | Limits of imperative with files | Covered theoretically |
