@@ -47,6 +47,10 @@ Principles collected throughout the course. These are non-negotiable truths earn
 - "insert_one() mutates your dict â€” handle `_id` before responding."
 - "Credentials in code = credentials in git. Use .env from day one."
 - "Circular imports? Extract shared resources to their own module."
+- "`kubectl create -f` is imperative-with-file, not declarative. Declarative is `kubectl apply`."
+- "`spec.containers` is required in every Pod manifest - it's a list, not a single object."
+- "`kubectl describe` is your proof that actual state == desired state."
+- "`connection refused` on the API server = cluster probably isn't running. Check `docker ps` first."
 
 *This list grows with each module.*
 
