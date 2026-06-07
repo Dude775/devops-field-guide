@@ -42,7 +42,7 @@
 kubectl run nginx --image=nginx:1.27.0
 ```
 
-יוצר Pod עצמאי בשם nginx עם nginx גרסה 1.27.0
+יוצר Pod עצמאי בשם nginx עם nginx גרסה 1.27.00
 
 ### שלב 2 - בדיקה מהירה
 
