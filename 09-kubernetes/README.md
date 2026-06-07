@@ -29,6 +29,7 @@ Kubernetes is the industry-standard container orchestrator. Where Docker runs co
 | 2026-06-07 | [Hands-On 4.3 - Generating YAML from Imperative Commands](./exercises/4.3-dry-run-yaml-generation.md) | --dry-run=client, -o yaml, imperative-to-declarative bridge, Service from Pod, ErrImagePull gotcha |
 | 2026-06-07 | [Lab 4.6 - create to apply: Migrating an Object to Declarative Management](./exercises/04.6-create-to-apply-migration.md) | kubectl create vs apply, last-applied-configuration annotation, migration warning, --save-config, ReplicaSet rollback history |
 | 2026-06-07 | [Cluster State Verification Workflow](./exercises/cluster-state-verification-workflow.md) | Pre-lab discipline, pwd + ls -la + context check + combined get, lab folder isolation, cat + wc before apply |
+| 2026-06-07 | [Series 5 - ReplicaSets and Deployments: Labs 5.0 to 5.3](./exercises/series-05-replicasets-and-deployments-5-0-to-5-3.md) | ReplicaSet reconciliation, image update limitation, selector adoption, Deployment hierarchy, pod-template-hash |
 
 ## Key Concepts
 
