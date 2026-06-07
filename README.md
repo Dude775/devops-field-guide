@@ -14,23 +14,22 @@ This repository operates on three levels:
 
 | # | Module | Focus | Status |
 |---|--------|-------|--------|
-| 00 | [Pre-Course](00-pre-course/) | HTML, CSS, JavaScript fundamentals | Done |
-| 01 | [Foundations](01-foundations/) | DevOps philosophy, SDLC, team dynamics | Done |
-| 02 | [Linux](02-linux/) | Command line, filesystem, permissions | In Progress |
-| 03 | [Networking](03-networking/) | TCP/IP, DNS, HTTP, firewalls | In Progress |
-| 04 | [Python Basics](04-python-basics/) | Syntax, data structures, scripting | In Progress |
-| 05 | [Git & GitHub](05-git-github/) | Version control, branching, collaboration | Upcoming |
-| 06 | [Python Advanced](06-python-advanced/) | OOP, APIs, automation scripts | Upcoming |
-| 07 | [AWS](07-aws/) | Cloud fundamentals, core services | Upcoming |
-| 08 | [Docker](08-docker/) | Containers, images, Compose | Upcoming |
-| 09 | [CI/CD](09-ci-cd/) | Pipelines, automation, deployment strategies | Upcoming |
-| 10 | [Kubernetes](10-kubernetes/) | Orchestration, pods, services | In Progress |
-| 11 | [Helm](11-helm/) | Package management for Kubernetes | Upcoming |
+| 00 | [Intro](00-intro/) | DevOps philosophy, SDLC, team dynamics | Done |
+| 01 | [Linux](01-linux/) | Command line, filesystem, permissions, scripting | Done |
+| 02 | [Python Basics](02-python-basics/) | Syntax, data structures, scripting | Done |
+| 03 | [Git & GitHub](03-git/) | Version control, branching, collaboration | Done |
+| 04 | [Advanced Python](04-advanced-python/) | OOP, Flask, APIs, automation | Done |
+| 05 | [Networking](05-networking/) | TCP/IP, DNS, HTTP, firewalls | Done |
+| 06 | [AWS](06-aws/) | Cloud fundamentals, core services | Done |
+| 07 | [Docker](07-docker/) | Containers, images, Compose | Done |
+| 08 | [CI/CD](08-ci-cd/) | Pipelines, automation, deployment strategies | Upcoming |
+| 09 | [Kubernetes](09-kubernetes/) | Orchestration, pods, services | In Progress |
+| 10 | [Helm](10-helm/) | Package management for Kubernetes | Upcoming |
+| 11 | [AWS Advanced](11-aws-advanced/) | ECS, ECR, EKS | Upcoming |
 | 12 | [Terraform](12-terraform/) | Infrastructure as Code | Upcoming |
-| 13 | [ArgoCD](13-argocd/) | GitOps, continuous delivery | Upcoming |
-| 14 | [Ansible](14-ansible/) | Configuration management, playbooks | Upcoming |
-| 15 | [Jenkins](15-jenkins/) | Build automation, pipeline orchestration | Upcoming |
-| 16 | [Grafana](16-grafana/) | Monitoring, dashboards, observability | Upcoming |
+| 13 | [Jenkins](13-jenkins/) | Build automation, pipeline orchestration | Upcoming |
+| 14 | [Observability](14-observability/) | Grafana, monitoring, dashboards | Upcoming |
+| 15 | [ArgoCD](15-argocd/) | GitOps, continuous delivery | Upcoming |
 
 ## Iron Rules
 
