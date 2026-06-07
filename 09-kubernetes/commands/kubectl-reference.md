@@ -178,6 +178,26 @@ kubectl create deployment <name> --image=<img> --dry-run=client -o yaml > deploy
 
 ---
 
+## Minikube
+
+```bash
+# start local cluster (Docker Desktop must be running first)
+minikube start
+
+# check minikube status
+minikube status
+
+# stop the cluster
+minikube stop
+
+# get the node IP (for NodePort access from host)
+minikube ip
+```
+
+> If `kubectl cluster-info` returns `connection refused`, check `docker ps` first. If the minikube container is missing, the cluster is down - run `minikube start`.
+
+---
+
 ## Apply / Create / Delete
 
 ```bash
