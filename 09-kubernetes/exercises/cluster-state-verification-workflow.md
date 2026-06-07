@@ -24,7 +24,7 @@ The routine is always the same four steps.
 pwd
 ```
 
-Never asume. If you closed your terminal and reopened it, you're probably in your home directory, not in the lab folder. A `kubectl apply -f .` in the wrong directory can apply completely unrelated YAMLs.
+Never assume. If you closed your terminal and reopened it, you're probably in your home directory, not in the lab folder. A `kubectl apply -f .` in the wrong directory can apply completely unrelated YAMLs.
 
 ### Step 2: What's here?
 
