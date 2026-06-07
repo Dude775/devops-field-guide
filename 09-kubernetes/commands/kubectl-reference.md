@@ -13,6 +13,9 @@ kubectl config current-context
 # list all contexts
 kubectl config get-contexts
 
+# switch context
+kubectl config use-context <context-name>
+
 # cluster info
 kubectl cluster-info
 
@@ -20,6 +23,23 @@ kubectl cluster-info
 kubectl get nodes
 kubectl get nodes -o wide
 ```
+
+---
+
+## Combined Resource Queries
+
+```bash
+# full cluster snapshot - pods, services, deployments, replicasets in one shot
+kubectl get pods,svc,deploy,rs -o wide
+
+# same but for all resource types kubectl knows about
+kubectl get all -o wide
+
+# useful pre-lab baseline check: run this before starting any lab
+kubectl get pods,svc,deploy,rs -o wide
+```
+
+`-o wide` adds the IP address and Node columns for pods. Saves you a separate `kubectl describe` when you just need to know which node a pod landed on.
 
 ---
 
