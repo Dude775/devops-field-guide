@@ -1,0 +1,23 @@
+
+
+Lab: Kubernetes StorageClass ReclaimPolicy
+
+Goal:
+Keep a dynamically provisioned PersistentVolume after deleting its PVC,
+without changing the existing StorageClass.
+
+What happened:
+- StorageClass standard uses ReclaimPolicy: Delete.
+- A PVC named reclaim-demo-pvc was created with storageClassName: standard.
+- Kubernetes dynamically created a PV.
+- The new PV initially had persistentVolumeReclaimPolicy: Delete.
+- The PV reclaim policy was patched to Retain after creation.
+- The PVC was deleted.
+- The PV was not deleted and moved to Released state.
+
+Key point:
+Do not change an existing StorageClass in production.
+Patch the specific dynamically-created PV after it exists.
+
+Result:
+PASS - PV was retained after PVC deletion.

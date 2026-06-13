@@ -1,0 +1,2 @@
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS     CLAIM                                  STORAGECLASS   VOLUMEATTRIBUTESCLASS   REASON   AGE
+pvc-74cf6da6-96f2-40cd-b3d5-e936ea106ee9   1Gi        RWO            Retain           Released   storage-reclaim-lab/reclaim-demo-pvc   standard       <unset>                          52s

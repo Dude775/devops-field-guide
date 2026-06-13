@@ -1,0 +1,5 @@
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                                      STORAGECLASS    VOLUMEATTRIBUTESCLASS   REASON   AGE
+pvc-74cf6da6-96f2-40cd-b3d5-e936ea106ee9   1Gi        RWO            Delete           Bound    storage-reclaim-lab/reclaim-demo-pvc       standard        <unset>                          0s
+statefulset-0                              128Mi      RWO            Retain           Bound    default/local-storage-demo-statefulset-0   local-storage   <unset>                          3d8h
+statefulset-1                              128Mi      RWO            Retain           Bound    default/local-storage-demo-statefulset-1   local-storage   <unset>                          3d8h
+statefulset-2                              128Mi      RWO            Retain           Bound    default/local-storage-demo-statefulset-2   local-storage   <unset>                          3d8h

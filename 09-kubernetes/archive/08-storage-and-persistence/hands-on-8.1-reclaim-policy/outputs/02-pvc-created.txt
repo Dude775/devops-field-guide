@@ -1,0 +1,2 @@
+NAME               STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE   VOLUMEMODE
+reclaim-demo-pvc   Bound    pvc-74cf6da6-96f2-40cd-b3d5-e936ea106ee9   1Gi        RWO            standard       <unset>                 0s    Filesystem
