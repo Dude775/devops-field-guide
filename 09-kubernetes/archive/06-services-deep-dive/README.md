@@ -29,3 +29,4 @@ This module covers all four Service types, DNS-based discovery, and how the K8s 
 ## Key Takeaway
 
 Before wiring a Service, you need a stable, versioned image in a registry. Hands-On 6.0 builds that foundation: run the app locally, verify endpoints, containerise it, and push it to Docker Hub — so that later labs can reference `idf775/color-api:1.1.0` in a Deployment manifest.
+- [Hands-On 6.0 - Color API update for Services Devs Only](hands-on-6.0-color-api-update-devs-only/)
