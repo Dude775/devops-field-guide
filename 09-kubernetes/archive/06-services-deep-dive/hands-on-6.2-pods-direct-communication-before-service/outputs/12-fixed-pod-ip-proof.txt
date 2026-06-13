@@ -1,0 +1,2 @@
+traffic generator still points to: 10.244.0.179
+old target ip not found in current pods

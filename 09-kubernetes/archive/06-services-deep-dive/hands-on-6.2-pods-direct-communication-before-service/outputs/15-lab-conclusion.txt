@@ -1,0 +1,17 @@
+
+
+Hands-On 6.2 conclusion
+
+Traffic generator was configured to send requests directly to one Pod IP.
+After deleting that target Pod, the Deployment created a replacement Pod with a new IP.
+The traffic-generator Pod kept using the old IP from traffic-generator.yaml.
+
+Result:
+- Deployment recovered the missing replica.
+- Client did not discover the new Pod IP.
+- Direct Pod-to-Pod communication by Pod IP is unstable.
+- This is why Kubernetes needs a Service abstraction, usually ClusterIP.
+
+Observed behavior:
+Before delete: logs included COLOR and HOSTNAME.
+After delete: logs showed empty timestamp lines without COLOR/HOSTNAME.

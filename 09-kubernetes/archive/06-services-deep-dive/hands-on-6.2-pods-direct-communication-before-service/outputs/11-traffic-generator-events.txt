@@ -1,0 +1,8 @@
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  2m26s  default-scheduler  Successfully assigned default/traffic-generator to minikube
+  Normal  Pulling    2m26s  kubelet            Pulling image "lironefitoussi/traffic-generator:1.0.0"
+  Normal  Pulled     2m21s  kubelet            Successfully pulled image "lironefitoussi/traffic-generator:1.0.0" in 4.692s (4.692s including waiting). Image size: 13231916 bytes.
+  Normal  Created    2m21s  kubelet            Container created
+  Normal  Started    2m21s  kubelet            Container started

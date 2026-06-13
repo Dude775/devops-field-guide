@@ -1,0 +1,2 @@
+TARGET_IP=10.244.0.179
+TARGET_POD=color-api-deployment-7dd66bdc46-5zgn6
