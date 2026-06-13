@@ -1,0 +1,2 @@
+NAME              TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE    SELECTOR
+my-external-svc   ExternalName   <none>       google.com    <none>    110s   <none>

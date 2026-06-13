@@ -1,0 +1,5 @@
+service "color-api-clusterip" force deleted from default namespace
+deployment.apps "color-api-deployment" force deleted from default namespace
+service "color-api-nodeport" force deleted from default namespace
+service "my-external-svc" force deleted from default namespace
+pod "traffic-generator" force deleted from default namespace

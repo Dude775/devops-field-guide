@@ -1,0 +1,12 @@
+Name:              my-external-svc
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          <none>
+Type:              ExternalName
+IP Families:       <none>
+IP:                
+IPs:               <none>
+External Name:     google.com
+Session Affinity:  None
+Events:            <none>

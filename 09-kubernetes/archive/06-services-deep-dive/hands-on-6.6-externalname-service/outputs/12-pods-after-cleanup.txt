@@ -1,0 +1,15 @@
+NAME                                    READY   STATUS        RESTARTS      AGE
+color-api-deployment-7dd66bdc46-4bdhw   1/1     Terminating   0             31m
+color-api-deployment-7dd66bdc46-52zzx   1/1     Terminating   0             31m
+color-api-deployment-7dd66bdc46-jt7tc   1/1     Terminating   0             31m
+color-api-deployment-7dd66bdc46-v6lnt   1/1     Terminating   0             31m
+color-api-deployment-7dd66bdc46-vj8t9   1/1     Terminating   0             31m
+demo-statefulset-0                      1/1     Running       6 (24m ago)   3d5h
+demo-statefulset-1                      1/1     Running       6 (24m ago)   3d5h
+demo-statefulset-2                      1/1     Running       6 (24m ago)   3d5h
+empty-dir-demo                          1/1     Running       4 (45m ago)   3d4h
+movie-api-deployment-6f6cccf475-2f62s   1/1     Running       0             3h47m
+movie-api-deployment-6f6cccf475-dvmhs   1/1     Running       0             3h47m
+movie-api-deployment-6f6cccf475-rl7mb   1/1     Running       0             3h47m
+movie-api-deployment-6f6cccf475-rwzhq   1/1     Running       0             3h47m
+movie-api-deployment-6f6cccf475-tlvl9   1/1     Running       0             3h47m

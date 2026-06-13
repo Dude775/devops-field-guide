@@ -1,0 +1,4 @@
+NAME                TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+busybox             ClusterIP   None           <none>        80/TCP         3d6h
+kubernetes          ClusterIP   10.96.0.1      <none>        443/TCP        3d6h
+movie-api-service   NodePort    10.102.232.9   <none>        80:30478/TCP   3h50m

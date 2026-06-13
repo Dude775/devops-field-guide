@@ -1,0 +1,10 @@
+total 13
+drwxr-xr-x 1 David 197121   0 Jun 13 21:07 ./
+drwxr-xr-x 1 David 197121   0 Jun 13 21:07 ../
+-rw-r--r-- 1 David 197121 198 Jun 13 21:07 color-api-clusterip.yaml
+-rw-r--r-- 1 David 197121 391 Jun 13 21:07 color-api-deployment.yaml
+-rw-r--r-- 1 David 197121 218 Jun 13 21:07 color-api-nodeport.yaml
+-rw-r--r-- 1 David 197121 119 Jun 13 21:07 google-externalname.yaml
+drwxr-xr-x 1 David 197121   0 Jun 13 21:07 images/
+drwxr-xr-x 1 David 197121   0 Jun 13 21:07 outputs/
+-rw-r--r-- 1 David 197121 271 Jun 13 21:07 traffic-generator.yaml

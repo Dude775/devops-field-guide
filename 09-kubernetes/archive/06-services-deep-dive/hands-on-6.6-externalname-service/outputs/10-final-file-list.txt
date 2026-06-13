@@ -1,0 +1,13 @@
+./color-api-clusterip.yaml
+./color-api-deployment.yaml
+./color-api-nodeport.yaml
+./google-externalname.yaml
+./images/README.md
+./outputs/01-lab-files.txt
+./outputs/04-externalname-describe.txt
+./outputs/05-curl-externalname-html.txt
+./outputs/06-curl-externalname-headers.txt
+./outputs/07-externalname-service-wide.txt
+./outputs/08-externalname-no-endpoints.txt
+./outputs/09-lab-conclusion.txt
+./traffic-generator.yaml

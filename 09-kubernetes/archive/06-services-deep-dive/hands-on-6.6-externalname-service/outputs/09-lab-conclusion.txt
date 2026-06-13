@@ -1,0 +1,22 @@
+
+
+Hands-On 6.6 conclusion
+
+ExternalName Service was created:
+my-external-svc -> google.com
+
+The Service does not create a ClusterIP.
+It does not use selectors.
+It does not create normal Endpoints.
+It does not load balance between Pods.
+
+The traffic-generator Pod was used as an internal client.
+Running curl against my-external-svc returned an HTTP response from Google.
+
+Observed result:
+curl -I -k https://my-external-svc
+HTTP/2 404
+
+The 404 is still a valid proof.
+It means DNS resolution worked and the request reached Google.
+This Service is only a DNS alias handled by CoreDNS.
