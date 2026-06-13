@@ -1,0 +1,29 @@
+# Local API Tests - Hands-On 6.0
+# Color API running locally via: npm start (port 80 -> localhost)
+
+$ npm ci
+npm warn deprecated inflight@1.0.6: ...
+added 103 packages in 2s
+
+$ npm start
+
+> color-api@1.0.0 start
+> node src/index.js
+
+Color API listening on port: 80
+
+# --- In a separate terminal ---
+
+$ curl localhost
+<h1 style="color:blue;">Hello from Color API</h1>
+    <h2>DESKTOP-DAVID</h2>
+
+$ curl localhost/api
+COLOR: blue, HOSTNAME: DESKTOP-DAVID
+
+$ curl "localhost/api?format=json"
+{"color":"blue","hostname":"DESKTOP-DAVID"}
+
+# RESULT: All three endpoints passed.
+# Hostname shows the local machine name.
+# After containerisation, hostname will change to the container ID.
