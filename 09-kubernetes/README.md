@@ -50,3 +50,5 @@ Kubernetes is the industry-standard container orchestrator. Where Docker runs co
 - [TechWorld with Nana - Kubernetes Tutorial](https://www.youtube.com/@TechWorldwithNana)
 - [Official Kubernetes Docs](https://kubernetes.io/docs/)
 - [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
+
+- [E2E Movie Recommendation API](./exercises/e2e-movie-recommendation-api/) - Docker image, Deployment, Service, Scaling, Self-Healing, Rolling Update, Rollback.
