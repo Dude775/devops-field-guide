@@ -51,13 +51,13 @@ npm start
 # -> Color API listening on port: 80
 
 curl localhost
-# <h1 style="color:blue;">Hello from Color API</h1> <h2>DESKTOP-DAVID</h2>
+# <h1 style="color:blue;">Hello from Color API</h1> <h2>DDDD</h2>
 
 curl localhost/api
-# COLOR: blue, HOSTNAME: DESKTOP-DAVID
+# COLOR: blue, HOSTNAME: DDDD
 
 curl "localhost/api?format=json"
-# {"color":"blue","hostname":"DESKTOP-DAVID"}
+# {"color":"blue","hostname":"DDDD"}
 ```
 
 ### Build Docker image
@@ -112,7 +112,7 @@ docker manifest inspect idf775/color-api:1.1.0
 
 | Context | Hostname |
 |---------|---------|
-| `npm start` (local machine) | `DESKTOP-DAVID` (OS hostname) |
+| `npm start` (local machine) | `DDDD` (OS hostname) |
 | `docker run` (container) | `c1b79c850ae5` (container ID prefix) |
 | Kubernetes Pod | `color-api-deployment-abc12-xyz99` (Pod name) |
 
