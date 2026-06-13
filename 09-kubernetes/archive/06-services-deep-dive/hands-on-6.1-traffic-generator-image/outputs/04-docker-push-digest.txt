@@ -1,0 +1,27 @@
+# Output: Docker Push and Digest
+
+## Push Command
+
+$ docker push idf775/traffic-generator:1.0.0
+
+## Push Output
+
+The push refers to repository [docker.io/idf775/traffic-generator]
+390faa1ae55b: Pushed
+4f4fb700ef54: Layer already exists
+25f1d6b1951a: Layer already exists
+73bb190d42c6: Layer already exists
+55f0df30866d: Pushed
+221770ddd1ab: Layer already exists
+1.0.0: digest: sha256:13a4f1fb7764515bd8e73ae5d9089c9528bc328d0fe53d1166a8496c522ba5b8 size: 856
+
+## Digest Inspect
+
+$ docker inspect --format='{{json .RepoDigests}}' idf775/traffic-generator:1.0.0
+
+["idf775/traffic-generator@sha256:13a4f1fb7764515bd8e73ae5d9089c9528bc328d0fe53d1166a8496c522ba5b8"]
+
+## Final Image Reference
+
+idf775/traffic-generator:1.0.0
+sha256:13a4f1fb7764515bd8e73ae5d9089c9528bc328d0fe53d1166a8496c522ba5b8

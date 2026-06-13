@@ -1,0 +1,23 @@
+# Output: Local Script Test
+
+## Verify Color API is responding
+
+$ curl -s http://localhost:8080/api
+color=blue hostname=d35333d1a137
+
+## Run traffic-gen.sh directly (before containerising)
+
+$ timeout 4s ./traffic-gen.sh http://localhost:8080/api 0.5
+Sending traffic to http://localhost:8080/api every 0.5 seconds...
+[2026-06-13 19:39:24] color=blue hostname=d35333d1a137
+[2026-06-13 19:39:25] color=blue hostname=d35333d1a137
+[2026-06-13 19:39:26] color=blue hostname=d35333d1a137
+[2026-06-13 19:39:27] color=blue hostname=d35333d1a137
+[2026-06-13 19:39:27] color=blue hostname=d35333d1a137
+[2026-06-13 19:39:28] color=blue hostname=d35333d1a137
+
+## Notes
+
+- Color API container: hands-on-6-dev-color-api (idf775/color-api:1.1.0)
+- Script correctly loops and prints timestamp + response
+- timeout exits cleanly after 4 seconds

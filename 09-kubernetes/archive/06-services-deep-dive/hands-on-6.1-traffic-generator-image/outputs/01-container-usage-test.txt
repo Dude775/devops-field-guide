@@ -1,0 +1,14 @@
+# Output: Container Usage Validation
+
+## Command
+
+$ docker run --rm idf775/traffic-generator:1.0.0
+
+## Output
+
+Usage: ./traffic-gen.sh <target> <interval>
+
+## Notes
+
+- Running without arguments correctly prints usage and exits
+- Confirms ENTRYPOINT and argument validation are working

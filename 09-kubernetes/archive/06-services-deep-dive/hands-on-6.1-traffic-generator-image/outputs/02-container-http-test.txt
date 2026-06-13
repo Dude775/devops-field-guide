@@ -1,0 +1,21 @@
+# Output: Container HTTP Test (Public URL)
+
+## Command
+
+$ timeout 5s docker run --rm idf775/traffic-generator:1.0.0 https://example.com 1
+
+## Result
+
+Container started, sent requests to https://example.com every 1 second.
+Each line printed a timestamp followed by the full HTML response body from example.com.
+
+Output not captured in full — confirmed that:
+- Container starts correctly
+- curl runs inside Alpine
+- Timestamped lines appear as expected
+- timeout exits cleanly after 5 seconds
+
+## Notes
+
+- Proves the image works end-to-end for any HTTP target
+- HTML response confirms curl is correctly installed and functional
