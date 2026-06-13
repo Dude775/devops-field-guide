@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(Get-ChildItem E:\\\\Genspark\\\\devops-field-guide *)",
+      "Read(//mnt/e/Genspark/DevOps-Materials/**)",
+      "Read(//mnt/c/Users/David/Desktop/**)",
+      "Read(//mnt/**)",
+      "Bash(ls /mnt/)"
     ]
   }
 }
