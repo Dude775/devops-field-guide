@@ -1,0 +1,22 @@
+Sending traffic to http://10.99.134.47/api every 0.5 seconds...
+[2026-06-13 17:37:47] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-h7hg5
+[2026-06-13 17:37:48] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-9frz7
+[2026-06-13 17:37:48] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-9frz7
+[2026-06-13 17:37:49] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-9frz7
+[2026-06-13 17:37:49] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-h7hg5
+[2026-06-13 17:37:50] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-vqj24
+[2026-06-13 17:37:50] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-8p4fc
+[2026-06-13 17:37:51] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-vqj24
+[2026-06-13 17:37:51] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-srjm9
+[2026-06-13 17:37:52] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-8p4fc
+[2026-06-13 17:37:52] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-9frz7
+[2026-06-13 17:37:53] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-h7hg5
+[2026-06-13 17:37:53] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-vqj24
+[2026-06-13 17:37:54] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-8p4fc
+[2026-06-13 17:37:54] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-h7hg5
+[2026-06-13 17:37:55] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-h7hg5
+[2026-06-13 17:37:55] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-9frz7
+[2026-06-13 17:37:56] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-8p4fc
+[2026-06-13 17:37:56] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-srjm9
+[2026-06-13 17:37:57] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-h7hg5
+[2026-06-13 17:37:57] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-9frz7

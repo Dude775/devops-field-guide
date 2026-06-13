@@ -1,0 +1,2 @@
+NAME                  TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE     SELECTOR
+color-api-clusterip   ClusterIP   10.99.134.47   <none>        80/TCP    3m28s   app=color-api

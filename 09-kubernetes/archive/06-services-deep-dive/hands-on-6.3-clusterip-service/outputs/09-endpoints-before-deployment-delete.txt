@@ -1,0 +1,2 @@
+NAME                  ENDPOINTS                                                     AGE
+color-api-clusterip   10.244.0.177:80,10.244.0.178:80,10.244.0.180:80 + 2 more...   3m14s

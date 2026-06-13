@@ -1,0 +1,1 @@
+coredns-7d764666f9-xxkhw           1/1     Running   6 (3h25m ago)   10d

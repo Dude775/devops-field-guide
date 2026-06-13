@@ -1,0 +1,23 @@
+Sending traffic to http://color-api-clusterip/api every 0.5 seconds...
+[2026-06-13 17:41:26] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-jt7tc
+[2026-06-13 17:41:28] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-vj8t9
+[2026-06-13 17:41:28] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-52zzx
+[2026-06-13 17:41:29] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-4bdhw
+[2026-06-13 17:41:29] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-jt7tc
+[2026-06-13 17:41:30] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-4bdhw
+[2026-06-13 17:41:30] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-jt7tc
+[2026-06-13 17:41:31] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-vj8t9
+[2026-06-13 17:41:31] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-52zzx
+[2026-06-13 17:41:32] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-v6lnt
+[2026-06-13 17:41:32] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-jt7tc
+[2026-06-13 17:41:33] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-vj8t9
+[2026-06-13 17:41:33] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-v6lnt
+[2026-06-13 17:41:34] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-52zzx
+[2026-06-13 17:41:34] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-4bdhw
+[2026-06-13 17:41:35] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-jt7tc
+[2026-06-13 17:41:36] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-v6lnt
+[2026-06-13 17:41:36] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-vj8t9
+[2026-06-13 17:41:37] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-4bdhw
+[2026-06-13 17:41:37] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-v6lnt
+[2026-06-13 17:41:38] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-jt7tc
+[2026-06-13 17:41:38] COLOR: blue, HOSTNAME: color-api-deployment-7dd66bdc46-4bdhw

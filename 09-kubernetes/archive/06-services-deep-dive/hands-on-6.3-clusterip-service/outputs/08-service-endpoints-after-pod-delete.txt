@@ -1,0 +1,16 @@
+Name:                     color-api-clusterip
+Namespace:                default
+Labels:                   app=color-api
+Annotations:              <none>
+Selector:                 app=color-api
+Type:                     ClusterIP
+IP Family Policy:         SingleStack
+IP Families:              IPv4
+IP:                       10.99.134.47
+IPs:                      10.99.134.47
+Port:                     <unset>  80/TCP
+TargetPort:               80/TCP
+Endpoints:                10.244.0.180:80,10.244.0.178:80,10.244.0.177:80 + 2 more...
+Session Affinity:         None
+Internal Traffic Policy:  Cluster
+Events:                   <none>

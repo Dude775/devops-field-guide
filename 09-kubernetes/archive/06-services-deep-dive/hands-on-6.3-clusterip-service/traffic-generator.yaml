@@ -1,0 +1,15 @@
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: traffic-generator
+  labels:
+    app: traffic-generator
+spec:
+  containers:
+    - name: traffic-generator
+      image: lironefitoussi/traffic-generator:1.0.0
+      args:
+        - "http://color-api-clusterip/api"
+        - "0.5"

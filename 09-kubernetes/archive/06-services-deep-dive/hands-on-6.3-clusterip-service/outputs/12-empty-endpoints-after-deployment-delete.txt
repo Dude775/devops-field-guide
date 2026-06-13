@@ -1,0 +1,2 @@
+NAME                  ENDPOINTS   AGE
+color-api-clusterip   <none>      3m28s
