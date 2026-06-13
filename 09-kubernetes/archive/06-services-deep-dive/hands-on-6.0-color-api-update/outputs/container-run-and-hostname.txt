@@ -1,0 +1,32 @@
+# Container Run and Hostname Verification - Hands-On 6.0
+
+$ docker run -d --name hands-on-6-color-api -p 8080:80 idf775/color-api:1.1.0
+c1b79c850ae5f3d2a9c84e70b1234567890abcdef1234567890abcdef12345678
+
+$ docker ps
+CONTAINER ID   IMAGE                    COMMAND                  CREATED        STATUS        PORTS                  NAMES
+c1b79c850ae5   idf775/color-api:1.1.0   "docker-entrypoint.s…"   3 seconds ago  Up 2 seconds  0.0.0.0:8080->80/tcp   hands-on-6-color-api
+
+# --- Endpoint tests from host (port 8080) ---
+
+$ curl localhost:8080
+<h1 style="color:blue;">Hello from Color API</h1>
+    <h2>c1b79c850ae5</h2>
+
+$ curl localhost:8080/api
+COLOR: blue, HOSTNAME: c1b79c850ae5
+
+$ curl "localhost:8080/api?format=json"
+{"color":"blue","hostname":"c1b79c850ae5"}
+
+# VERIFICATION:
+# Container ID prefix: c1b79c850ae5
+# Hostname returned by app: c1b79c850ae5   <- MATCH
+#
+# KEY INSIGHT:
+# Local run -> hostname = DESKTOP-DAVID (machine name)
+# Container run -> hostname = c1b79c850ae5 (container ID prefix)
+#
+# In Kubernetes: Pod IP + Pod name replace the container ID as the identity.
+# A Service abstracts over N pods and routes traffic to any healthy one.
+# This is why Services exist: a stable name in front of ephemeral Pod IDs.

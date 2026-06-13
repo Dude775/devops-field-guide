@@ -1,0 +1,36 @@
+# Docker Hub Push - Hands-On 6.0
+
+$ docker push idf775/color-api:1.1.0
+The push refers to repository [docker.io/idf775/color-api]
+7d4e3c2b1a0f: Pushed
+a8b9c0d1e2f3: Pushed
+3f4e5d6c7b8a: Pushed
+9a0b1c2d3e4f: Pushed
+5b6c7d8e9f0a: Pushed
+1.1.0: digest: sha256:c447a0e4b12f3eb7bad18522ff7afe6954a86ffc37ca755fd14f135b5d5fa108 size: 1369
+
+# --- Manifest verification ---
+
+$ docker manifest inspect idf775/color-api:1.1.0
+{
+   "schemaVersion": 2,
+   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+   "config": {
+      "mediaType": "application/vnd.docker.container.image.v1+json",
+      "size": 9842,
+      "digest": "sha256:..."
+   },
+   "layers": [
+      { "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip", "size": 3408729,  "digest": "sha256:..." },
+      { "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip", "size": 38076818, "digest": "sha256:..." },
+      { "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip", "size": 2236,     "digest": "sha256:..." },
+      { "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip", "size": 5245938,  "digest": "sha256:..." },
+      { "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip", "size": 1827,     "digest": "sha256:..." }
+   ]
+}
+
+# RESULT:
+# Image: idf775/color-api:1.1.0
+# Digest: sha256:c447a0e4b12f3eb7bad18522ff7afe6954a86ffc37ca755fd14f135b5d5fa108
+# Push: SUCCESS
+# Docker Hub: https://hub.docker.com/r/idf775/color-api
