@@ -1,0 +1,12 @@
+./dev-ns.yaml
+./dev-quota.yaml
+./outputs/01-apply-all.txt
+./outputs/02-namespaces.txt
+./outputs/03-resourcequotas-all.txt
+./outputs/04-describe-dev-quota.txt
+./outputs/05-describe-prod-quota.txt
+./outputs/06-lab-conclusion.txt
+./outputs/07-final-resourcequotas-all.txt
+./outputs/08-final-namespaces.txt
+./prod-ns.yaml
+./prod-quota.yaml

@@ -1,0 +1,35 @@
+
+
+Hands-On 7.2 conclusion
+
+Created Namespace:
+- dev
+
+Created Pod:
+- color-api
+- namespace: dev
+- image: lironefitoussi/color-api:1.1.0
+
+Tested:
+- kubectl get namespaces
+- kubectl get pods in default namespace
+- kubectl get pods -n kube-system
+- kubectl get pods -n dev
+- kubectl config current-context
+- kubectl config set-context --current --namespace=dev
+- kubectl config view --minify
+- kubectl get pods -A
+- kubectl config set-context --current --namespace=default
+- kubectl delete -f dev-ns.yaml
+
+Observed behavior:
+The color-api Pod existed inside the dev namespace.
+After setting the current context namespace to dev, kubectl get pods showed the dev Pod without using -n dev.
+Before deleting the namespace, kubectl get pods -A showed dev/color-api.
+After deleting the dev namespace, the Pod inside it was deleted as well.
+
+Important note:
+Deleting a Namespace is destructive because Kubernetes removes the resources inside that Namespace.
+
+Conclusion:
+Namespaces isolate resources, and kubectl works against the current namespace unless -n or --namespace is specified.

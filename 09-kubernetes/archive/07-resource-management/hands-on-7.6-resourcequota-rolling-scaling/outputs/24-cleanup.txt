@@ -1,0 +1,3 @@
+Error from server (NotFound): error when deleting "color-api-deployment.yaml": deployments.apps "color-api-deployment" not found
+Error from server (NotFound): error when deleting "dev-ns.yaml": namespaces "dev" not found
+Error from server (NotFound): error when deleting "dev-quota.yaml": resourcequotas "dev-quota" not found

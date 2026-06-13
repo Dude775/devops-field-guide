@@ -1,0 +1,30 @@
+
+
+Hands-On 7.4 conclusion
+
+Created Namespaces:
+- dev
+- prod
+
+Created ResourceQuotas:
+- dev-quota in dev
+- prod-quota in prod
+
+dev quota:
+- requests.cpu: 1
+- requests.memory: 1Gi
+- limits.cpu: 2
+- limits.memory: 2Gi
+
+prod quota:
+- requests.cpu: 2
+- requests.memory: 2Gi
+- limits.cpu: 4
+- limits.memory: 4Gi
+
+Observed behavior:
+kubectl get resourcequota -A shows quotas in both namespaces.
+kubectl describe resourcequota shows Used=0 because no workloads are consuming quota yet.
+
+Important point:
+ResourceQuota defines namespace-level limits. Actual enforcement becomes visible when Pods with requests and limits are created.

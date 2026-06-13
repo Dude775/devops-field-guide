@@ -1,0 +1,2 @@
+pod "color-api" deleted from dev namespace
+Error from server (NotFound): error when deleting "heavy-api-pod.yaml": pods "heavy-api" not found

@@ -1,0 +1,2 @@
+pod/color-api unchanged
+Error from server (Forbidden): error when creating "heavy-api-pod.yaml": pods "heavy-api" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=2,limits.memory=2Gi,requests.cpu=1,requests.memory=1Gi, used: limits.cpu=500m,limits.memory=512Mi,requests.cpu=200m,requests.memory=256Mi, limited: limits.cpu=2,limits.memory=2Gi,requests.cpu=1,requests.memory=1Gi

@@ -1,0 +1,8 @@
+Name:            dev-quota
+Namespace:       dev
+Resource         Used  Hard
+--------         ----  ----
+limits.cpu       2     2
+limits.memory    2Gi   2Gi
+requests.cpu     800m  1
+requests.memory  1Gi   1Gi

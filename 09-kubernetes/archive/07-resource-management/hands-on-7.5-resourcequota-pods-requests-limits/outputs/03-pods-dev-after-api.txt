@@ -1,0 +1,2 @@
+NAME        READY   STATUS    RESTARTS   AGE   IP             NODE       NOMINATED NODE   READINESS GATES
+color-api   1/1     Running   0          7s    10.244.0.201   minikube   <none>           <none>

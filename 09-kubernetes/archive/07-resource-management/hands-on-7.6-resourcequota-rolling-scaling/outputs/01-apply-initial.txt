@@ -1,0 +1,3 @@
+namespace/dev unchanged
+resourcequota/dev-quota unchanged
+deployment.apps/color-api-deployment created

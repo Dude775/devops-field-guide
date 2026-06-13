@@ -1,0 +1,8 @@
+NAME                               READY   STATUS    RESTARTS        AGE
+coredns-7d764666f9-xxkhw           1/1     Running   6 (4h18m ago)   10d
+etcd-minikube                      1/1     Running   6 (4h18m ago)   10d
+kube-apiserver-minikube            1/1     Running   6 (4h18m ago)   10d
+kube-controller-manager-minikube   1/1     Running   6 (4h18m ago)   10d
+kube-proxy-96rf6                   1/1     Running   6 (4h18m ago)   10d
+kube-scheduler-minikube            1/1     Running   6 (4h18m ago)   10d
+storage-provisioner                1/1     Running   15 (97m ago)    10d

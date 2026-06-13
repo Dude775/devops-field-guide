@@ -1,0 +1,4 @@
+namespace/dev created
+resourcequota/dev-quota created
+namespace/prod created
+resourcequota/prod-quota created

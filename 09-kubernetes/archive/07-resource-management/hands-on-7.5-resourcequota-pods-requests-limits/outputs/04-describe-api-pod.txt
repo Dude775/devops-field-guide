@@ -1,0 +1,57 @@
+Name:             color-api
+Namespace:        dev
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sat, 13 Jun 2026 21:53:50 +0300
+Labels:           app=color-api
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.201
+IPs:
+  IP:  10.244.0.201
+Containers:
+  color-api:
+    Container ID:   docker://3149fbde54f9ed79664111c5a385a5575b8cb084621fa32563445832042c4948
+    Image:          lironefitoussi/color-api:1.1.0
+    Image ID:       docker-pullable://lironefitoussi/color-api@sha256:75bab7cec66824af84efde1d66c224ee52d223aeb79d95b9fd03ba6bc73114c1
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sat, 13 Jun 2026 21:53:50 +0300
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:        200m
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qqbg5 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-qqbg5:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  48s   default-scheduler  Successfully assigned dev/color-api to minikube
+  Normal  Pulled     48s   kubelet            Container image "lironefitoussi/color-api:1.1.0" already present on machine and can be accessed by the pod
+  Normal  Created    48s   kubelet            Container created
+  Normal  Started    48s   kubelet            Container started

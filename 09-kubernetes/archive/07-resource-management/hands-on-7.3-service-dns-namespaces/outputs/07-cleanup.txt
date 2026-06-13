@@ -1,0 +1,4 @@
+service "color-api" deleted from dev namespace
+pod "color-api" deleted from dev namespace
+namespace "dev" deleted
+pod "traffic-generator" deleted from default namespace

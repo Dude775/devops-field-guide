@@ -1,0 +1,13 @@
+./color-api.yaml
+./color-api-service.yaml
+./dev-ns.yaml
+./outputs/01-apply-namespace.txt
+./outputs/02-apply-resources.txt
+./outputs/03-pods-default.txt
+./outputs/04-dev-resources.txt
+./outputs/05-traffic-generator-logs.txt
+./outputs/06-lab-conclusion.txt
+./outputs/07-cleanup.txt
+./outputs/08-pods-default-after-cleanup.txt
+./outputs/09-dev-namespace-after-cleanup.txt
+./traffic-generator.yaml

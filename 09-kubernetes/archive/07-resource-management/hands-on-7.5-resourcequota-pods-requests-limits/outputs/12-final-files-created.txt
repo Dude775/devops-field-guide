@@ -1,0 +1,12 @@
+./api-pod.yaml
+./outputs/01-check-dev-quota.txt
+./outputs/02-apply-api-pod.txt
+./outputs/03-pods-dev-after-api.txt
+./outputs/04-describe-api-pod.txt
+./outputs/05-quota-after-api-pod.txt
+./outputs/06-apply-heavy-forbidden.txt
+./outputs/07-pods-dev-after-heavy-attempt.txt
+./outputs/08-cleanup.txt
+./outputs/09-pods-dev-after-cleanup.txt
+./outputs/10-quota-after-cleanup.txt
+./outputs/11-lab-conclusion.txt

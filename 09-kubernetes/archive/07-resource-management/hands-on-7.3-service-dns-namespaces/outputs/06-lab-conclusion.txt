@@ -1,0 +1,24 @@
+
+
+Hands-On 7.3 conclusion
+
+Created:
+- dev Namespace
+- color-api Pod in dev
+- color-api ClusterIP Service in dev
+- traffic-generator Pod in default
+
+DNS used:
+http://color-api.dev.svc.cluster.local/api
+
+Observed behavior:
+traffic-generator in default successfully reached the color-api Service in dev.
+Logs returned repeated API responses:
+COLOR: blue, HOSTNAME: color-api
+
+Key point:
+For Service access across namespaces, use FQDN:
+service-name.namespace.svc.cluster.local
+
+Cleanup:
+kubectl delete -f .

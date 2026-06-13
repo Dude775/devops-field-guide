@@ -1,0 +1,171 @@
+Name:             color-api-deployment-7c78664cc8-57grl
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sat, 13 Jun 2026 21:26:02 +0300
+Labels:           app=color-api
+                  environment=local
+                  managed=deployment
+                  pod-template-hash=7c78664cc8
+                  tier=backend
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.197
+IPs:
+  IP:           10.244.0.197
+Controlled By:  ReplicaSet/color-api-deployment-7c78664cc8
+Containers:
+  color-backend:
+    Container ID:   docker://f99002378dbb02643ff8234d922e7e3f9eb984ba383aa89f16c1eccf95807341
+    Image:          lironefitoussi/color-api:1.1.0
+    Image ID:       docker-pullable://lironefitoussi/color-api@sha256:75bab7cec66824af84efde1d66c224ee52d223aeb79d95b9fd03ba6bc73114c1
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sat, 13 Jun 2026 21:26:03 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-g8zx8 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-g8zx8:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  8m41s  default-scheduler  Successfully assigned default/color-api-deployment-7c78664cc8-57grl to minikube
+  Normal  Pulled     8m40s  kubelet            Container image "lironefitoussi/color-api:1.1.0" already present on machine and can be accessed by the pod
+  Normal  Created    8m40s  kubelet            Container created
+  Normal  Started    8m40s  kubelet            Container started
+
+Name:             color-api-deployment-7c78664cc8-dd5p5
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sat, 13 Jun 2026 21:26:02 +0300
+Labels:           app=color-api
+                  environment=local
+                  managed=deployment
+                  pod-template-hash=7c78664cc8
+                  tier=backend
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.196
+IPs:
+  IP:           10.244.0.196
+Controlled By:  ReplicaSet/color-api-deployment-7c78664cc8
+Containers:
+  color-backend:
+    Container ID:   docker://b163e0cfa4e5ae39f74cef6777a8cf62386a02e067afa3168c147a3dc7115cb4
+    Image:          lironefitoussi/color-api:1.1.0
+    Image ID:       docker-pullable://lironefitoussi/color-api@sha256:75bab7cec66824af84efde1d66c224ee52d223aeb79d95b9fd03ba6bc73114c1
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sat, 13 Jun 2026 21:26:03 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9s4hl (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-9s4hl:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  8m41s  default-scheduler  Successfully assigned default/color-api-deployment-7c78664cc8-dd5p5 to minikube
+  Normal  Pulled     8m40s  kubelet            Container image "lironefitoussi/color-api:1.1.0" already present on machine and can be accessed by the pod
+  Normal  Created    8m40s  kubelet            Container created
+  Normal  Started    8m40s  kubelet            Container started
+
+Name:             color-api-deployment-7c78664cc8-rcrrz
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sat, 13 Jun 2026 21:26:02 +0300
+Labels:           app=color-api
+                  environment=local
+                  managed=deployment
+                  pod-template-hash=7c78664cc8
+                  tier=backend
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.195
+IPs:
+  IP:           10.244.0.195
+Controlled By:  ReplicaSet/color-api-deployment-7c78664cc8
+Containers:
+  color-backend:
+    Container ID:   docker://0ea777e3892ae9a4dce9e8aa9416d669e97bcf239c31a7237d7b028a948aef7a
+    Image:          lironefitoussi/color-api:1.1.0
+    Image ID:       docker-pullable://lironefitoussi/color-api@sha256:75bab7cec66824af84efde1d66c224ee52d223aeb79d95b9fd03ba6bc73114c1
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sat, 13 Jun 2026 21:26:03 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-dh6g5 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-dh6g5:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  8m41s  default-scheduler  Successfully assigned default/color-api-deployment-7c78664cc8-rcrrz to minikube
+  Normal  Pulled     8m40s  kubelet            Container image "lironefitoussi/color-api:1.1.0" already present on machine and can be accessed by the pod
+  Normal  Created    8m40s  kubelet            Container created
+  Normal  Started    8m40s  kubelet            Container started
+

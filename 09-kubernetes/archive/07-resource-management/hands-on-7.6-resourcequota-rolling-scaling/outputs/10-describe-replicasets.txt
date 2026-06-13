@@ -1,0 +1,91 @@
+Name:           color-api-deployment-6b755dbf9b
+Namespace:      dev
+Selector:       app=color-api,pod-template-hash=6b755dbf9b
+Labels:         app=color-api
+                pod-template-hash=6b755dbf9b
+Annotations:    deployment.kubernetes.io/desired-replicas: 4
+                deployment.kubernetes.io/max-replicas: 5
+                deployment.kubernetes.io/revision: 2
+Controlled By:  Deployment/color-api-deployment
+Replicas:       2 current / 4 desired
+Pods Status:    2 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:  app=color-api
+           pod-template-hash=6b755dbf9b
+  Containers:
+   color-api:
+    Image:      lironefitoussi/color-api:1.1.0
+    Port:       80/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:         200m
+      memory:      256Mi
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  <none>
+  Tolerations:     <none>
+Conditions:
+  Type             Status  Reason
+  ----             ------  ------
+  ReplicaFailure   True    FailedCreate
+Events:
+  Type     Reason            Age                 From                   Message
+  ----     ------            ----                ----                   -------
+  Warning  FailedCreate      64s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-7wghg" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Warning  FailedCreate      64s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-7g79m" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Warning  FailedCreate      64s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-sz8bm" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Warning  FailedCreate      64s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-gldqd" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Warning  FailedCreate      64s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-ldpb9" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Warning  FailedCreate      64s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-zh2x7" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Warning  FailedCreate      64s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-jspzf" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Warning  FailedCreate      63s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-2txxj" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Normal   SuccessfulCreate  63s                 replicaset-controller  Created pod: color-api-deployment-6b755dbf9b-l5qcf
+  Warning  FailedCreate      63s                 replicaset-controller  Error creating: pods "color-api-deployment-6b755dbf9b-hxx6n" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+  Normal   SuccessfulCreate  39s                 replicaset-controller  Created pod: color-api-deployment-6b755dbf9b-rkrc4
+  Warning  FailedCreate      38s (x16 over 63s)  replicaset-controller  (combined from similar events): Error creating: pods "color-api-deployment-6b755dbf9b-9ft4n" is forbidden: exceeded quota: dev-quota, requested: limits.cpu=500m,limits.memory=512Mi,requests.memory=256Mi, used: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi, limited: limits.cpu=2,limits.memory=2Gi,requests.memory=1Gi
+
+
+Name:           color-api-deployment-6c46896cc9
+Namespace:      dev
+Selector:       app=color-api,pod-template-hash=6c46896cc9
+Labels:         app=color-api
+                pod-template-hash=6c46896cc9
+Annotations:    deployment.kubernetes.io/desired-replicas: 4
+                deployment.kubernetes.io/max-replicas: 5
+                deployment.kubernetes.io/revision: 1
+Controlled By:  Deployment/color-api-deployment
+Replicas:       1 current / 1 desired
+Pods Status:    0 Running / 1 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:  app=color-api
+           pod-template-hash=6c46896cc9
+  Containers:
+   color-api:
+    Image:      lironefitoussi/color-api:1.0.0
+    Port:       80/TCP
+    Host Port:  0/TCP
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:         200m
+      memory:      256Mi
+    Environment:   <none>
+    Mounts:        <none>
+  Volumes:         <none>
+  Node-Selectors:  <none>
+  Tolerations:     <none>
+Events:
+  Type    Reason            Age   From                   Message
+  ----    ------            ----  ----                   -------
+  Normal  SuccessfulCreate  96s   replicaset-controller  Created pod: color-api-deployment-6c46896cc9-99rpd
+  Normal  SuccessfulCreate  96s   replicaset-controller  Created pod: color-api-deployment-6c46896cc9-6rfbv
+  Normal  SuccessfulCreate  96s   replicaset-controller  Created pod: color-api-deployment-6c46896cc9-r9jwc
+  Normal  SuccessfulCreate  96s   replicaset-controller  Created pod: color-api-deployment-6c46896cc9-zdb5n
+  Normal  SuccessfulDelete  64s   replicaset-controller  Deleted pod: color-api-deployment-6c46896cc9-zdb5n
+  Normal  SuccessfulDelete  61s   replicaset-controller  Deleted pod: color-api-deployment-6c46896cc9-99rpd
+  Normal  SuccessfulDelete  38s   replicaset-controller  Deleted pod: color-api-deployment-6c46896cc9-6rfbv

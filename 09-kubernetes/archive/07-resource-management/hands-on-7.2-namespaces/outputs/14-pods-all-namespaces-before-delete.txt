@@ -1,0 +1,21 @@
+NAMESPACE     NAME                                    READY   STATUS    RESTARTS        AGE
+default       color-api-deployment-7c78664cc8-57grl   1/1     Running   0               10m
+default       color-api-deployment-7c78664cc8-dd5p5   1/1     Running   0               10m
+default       color-api-deployment-7c78664cc8-rcrrz   1/1     Running   0               10m
+default       demo-statefulset-0                      1/1     Running   6 (49m ago)     3d6h
+default       demo-statefulset-1                      1/1     Running   6 (49m ago)     3d6h
+default       demo-statefulset-2                      1/1     Running   6 (49m ago)     3d6h
+default       empty-dir-demo                          1/1     Running   5 (7m35s ago)   3d5h
+default       movie-api-deployment-6f6cccf475-2f62s   1/1     Running   0               4h12m
+default       movie-api-deployment-6f6cccf475-dvmhs   1/1     Running   0               4h12m
+default       movie-api-deployment-6f6cccf475-rl7mb   1/1     Running   0               4h12m
+default       movie-api-deployment-6f6cccf475-rwzhq   1/1     Running   0               4h12m
+default       movie-api-deployment-6f6cccf475-tlvl9   1/1     Running   0               4h12m
+dev           color-api                               1/1     Running   0               2m12s
+kube-system   coredns-7d764666f9-xxkhw                1/1     Running   6 (4h20m ago)   10d
+kube-system   etcd-minikube                           1/1     Running   6 (4h20m ago)   10d
+kube-system   kube-apiserver-minikube                 1/1     Running   6 (4h20m ago)   10d
+kube-system   kube-controller-manager-minikube        1/1     Running   6 (4h20m ago)   10d
+kube-system   kube-proxy-96rf6                        1/1     Running   6 (4h20m ago)   10d
+kube-system   kube-scheduler-minikube                 1/1     Running   6 (4h20m ago)   10d
+kube-system   storage-provisioner                     1/1     Running   15 (99m ago)    10d

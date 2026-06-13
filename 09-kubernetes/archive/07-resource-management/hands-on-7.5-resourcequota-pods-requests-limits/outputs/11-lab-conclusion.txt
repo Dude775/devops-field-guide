@@ -1,0 +1,35 @@
+
+
+Hands-On 7.5 conclusion
+
+Created Pod:
+- color-api in dev namespace
+
+Resources:
+requests:
+- cpu: 200m
+- memory: 256Mi
+
+limits:
+- cpu: 500m
+- memory: 512Mi
+
+Observed quota usage after creating color-api:
+- requests.cpu used: 200m / 1
+- requests.memory used: 256Mi / 1Gi
+- limits.cpu used: 500m / 2
+- limits.memory used: 512Mi / 2Gi
+
+Heavy Pod attempt:
+- heavy-api requested too much for the remaining dev quota
+- Kubernetes API Server rejected it with Forbidden exceeded quota
+- heavy-api was not created
+
+Important point:
+ResourceQuota is enforced by the API Server during resource creation.
+The quota calculation includes existing used resources plus the new requested resources.
+
+Cleanup:
+- deleted color-api
+- heavy-api did not exist
+- removed heavy-api-pod.yaml to avoid accidental future creation

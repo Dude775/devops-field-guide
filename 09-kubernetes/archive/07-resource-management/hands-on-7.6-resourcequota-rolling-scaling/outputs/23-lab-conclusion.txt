@@ -1,0 +1,47 @@
+
+
+Hands-On 7.6 conclusion
+
+Created:
+- dev Namespace
+- dev-quota ResourceQuota
+- color-api-deployment in dev namespace
+
+Initial Deployment:
+- replicas: 4
+- image: lironefitoussi/color-api:1.0.0
+- each Pod used:
+  - requests.cpu: 200m
+  - requests.memory: 256Mi
+  - limits.cpu: 500m
+  - limits.memory: 512Mi
+
+Initial quota usage:
+- limits.cpu reached 2 / 2
+- limits.memory reached 2Gi / 2Gi
+- requests.memory reached 1Gi / 1Gi
+
+Rolling Update:
+- image changed to lironefitoussi/color-api:1.1.0
+- rollout got stuck because Kubernetes needed temporary extra Pods
+- ReplicaSet showed FailedCreate events with exceeded quota
+
+Fix:
+- dev-quota was expanded:
+  - requests.cpu: 2
+  - requests.memory: 2Gi
+  - limits.cpu: 4
+  - limits.memory: 4Gi
+- rollout restart completed successfully after quota expansion
+
+Scaling:
+- scaling to 10 replicas was attempted
+- Kubernetes again blocked new Pod creation because quota was fully used
+- ReplicaSet events showed exceeded quota
+
+Important note:
+The original 1.0.0 image showed ImagePullBackOff in this environment, but the quota behavior was still visible and correctly proven through ReplicaSet events.
+
+Conclusion:
+ResourceQuota affects every new Pod creation, including Rolling Updates and Scaling.
+The real failure is usually visible in ReplicaSet events, not only in kubectl apply output.

@@ -1,0 +1,5 @@
+NAME            READY   STATUS    RESTARTS   AGE
+pod/color-api   1/1     Running   0          7s
+
+NAME                TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
+service/color-api   ClusterIP   10.96.12.155   <none>        80/TCP    7s

@@ -1,0 +1,5 @@
+NAME                                    READY   STATUS         RESTARTS   AGE   IP             NODE       NOMINATED NODE   READINESS GATES
+color-api-deployment-6b755dbf9b-l5qcf   1/1     Running        0          2s    10.244.0.206   minikube   <none>           <none>
+color-api-deployment-6c46896cc9-6rfbv   0/1     ErrImagePull   0          35s   10.244.0.203   minikube   <none>           <none>
+color-api-deployment-6c46896cc9-99rpd   0/1     Terminating    0          35s   10.244.0.204   minikube   <none>           <none>
+color-api-deployment-6c46896cc9-r9jwc   0/1     ErrImagePull   0          35s   10.244.0.202   minikube   <none>           <none>

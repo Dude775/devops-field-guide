@@ -1,0 +1,2 @@
+NAME        REQUEST                                     LIMIT                                   AGE
+dev-quota   requests.cpu: 0/1, requests.memory: 0/1Gi   limits.cpu: 0/2, limits.memory: 0/2Gi   3m36s
