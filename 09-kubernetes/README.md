@@ -1,54 +1,67 @@
-# Module 10: Kubernetes - Container Orchestration
+# 09 - Kubernetes: Container Orchestration
 
 > **Status**: IN PROGRESS
 > **Prerequisites**: [Module 08 - Docker](../08-docker/)
 
 ## Overview
 
-Kubernetes is the industry-standard container orchestrator. Where Docker runs containers, Kubernetes manages them at scale - handling availability, scaling, self-healing, and configuration across fleets of machines. This module covers the full picture from architecture to production patterns.
+Kubernetes is the industry-standard container orchestrator. Where Docker runs containers, Kubernetes manages them at scale — handling availability, scaling, self-healing, and configuration across fleets of machines.
 
-## Module Goals
+---
 
-- Understand why Kubernetes exists and when to use it (and when not to)
-- Map the cluster architecture: Control Plane + Data Plane
-- Master the declarative model and reconciliation loop
-- Learn core objects: Pod, ReplicaSet, Deployment, Service, Ingress
-- Develop kubectl fluency for day-to-day operations
+## Structure
 
-## Contents
+### [archive/](./archive/)
 
-| Date | Exercise | Topics |
-|------|----------|--------|
-| 2026-06-03 | [Day 01 - Why Kubernetes + Architecture Overview](./exercises/day-01-overview-and-architecture.md) | K8s motivation, cluster architecture, control plane, worker nodes, object hierarchy |
-| 2026-06-03 | [Day 03 Hands-On 3.2 - Inspect, Communication and Logs](./exercises/kubernetes-day03-hands-on-3-2-inspect-communication-logs.md) | kubectl get/describe, Pod-to-Pod IP communication, kubectl logs, DNS-by-name vs Service |
-| 2026-06-04 | [Module 4 - Object Management & YAML Manifests](./exercises/04-object-management-yaml.md) | 3 management approaches, manifest structure, apply vs create vs replace, --dry-run, 3-way merge |
-| 2026-06-04 | [Module 5 - ReplicaSets](./exercises/05-replicasets.md) | Self-healing demo, selector/template matching, RS limitations, image update problem |
-| 2026-06-04 | [Module 6 - Deployments](./exercises/06-deployments-intro.md) | Deployment hierarchy, pod-template-hash, RollingUpdate strategy, rollout commands |
-| 2026-06-07 | [Hands-On 4.1 - Pod via YAML](./exercises/4.1-pod-via-yaml.md) | Imperative with config file, Pod manifest structure, containers list, labels vs annotations, kubectl describe verification |
-| 2026-06-07 | [Day 03 Lab 4.1 + 4.2 - Pod & NodePort Service](./exercises/day03-pod-and-nodeport-service.md) | Pod manifest, NodePort Service, selector-to-label binding, in-cluster DNS, ephemeral debug pods |
-| 2026-06-07 | [Hands-On 4.3 - Generating YAML from Imperative Commands](./exercises/4.3-dry-run-yaml-generation.md) | --dry-run=client, -o yaml, imperative-to-declarative bridge, Service from Pod, ErrImagePull gotcha |
-| 2026-06-07 | [Lab 4.6 - create to apply: Migrating an Object to Declarative Management](./exercises/04.6-create-to-apply-migration.md) | kubectl create vs apply, last-applied-configuration annotation, migration warning, --save-config, ReplicaSet rollback history |
-| 2026-06-07 | [Cluster State Verification Workflow](./exercises/cluster-state-verification-workflow.md) | Pre-lab discipline, pwd + ls -la + context check + combined get, lab folder isolation, cat + wc before apply |
-| 2026-06-07 | [Series 5 - ReplicaSets and Deployments: Labs 5.0 to 5.3](./exercises/series-05-replicasets-and-deployments-5-0-to-5-3.md) | ReplicaSet reconciliation, image update limitation, selector adoption, Deployment hierarchy, pod-template-hash |
-| 2026-06-07 | [Series 5 - Deployments: Rolling Updates, Rollouts, Scaling, Debugging - Labs 5.4 to 5.7](./exercises/series-05-deployments-rollouts.md) | Rolling update flow, rollout history, revisions, annotations, kubectl scale vs declarative, ImagePullBackOff debugging |
+Numbered course series (modules 02–11). Structured content from the Kubernetes learning path.
+
+| Series | Topic |
+|--------|-------|
+| [02 - Installing Tools](./archive/02-installing-tools/) | kubectl, minikube, cluster setup |
+| [03 - Running Containers in Kubernetes](./archive/03-running-containers-in-kubernetes/) | Pods, kubectl basics, inspect & logs |
+| [04 - Object Management & YAML Manifests](./archive/04-object-management-and-yaml-manifests/) | Declarative vs imperative, apply vs create, dry-run |
+| [05 - ReplicaSets and Deployments](./archive/05-replicasets-and-deployments/) | Self-healing, rolling updates, rollout commands |
+| [06 - Services Deep Dive](./archive/06-services-deep-dive/) | ClusterIP, NodePort, LoadBalancer, DNS |
+| [07 - Resource Management](./archive/07-resource-management/) | Requests, limits, QoS classes |
+| [08 - Storage and Persistence](./archive/08-storage-and-persistence/) | PV, PVC, StorageClass |
+| [09 - Configuration Management](./archive/09-configuration-management/) | ConfigMaps, Secrets, env injection |
+| [10 - Project: Deploying a MongoDB Database](./archive/10-project-deploying-a-mongodb-database/) | End-to-end stateful workload |
+| [11 - Security Fundamentals](./archive/11-security-fundamentals/) | RBAC, ServiceAccounts, TLS |
+
+---
+
+### [rolling-lab/](./rolling-lab/)
+
+Hands-on labs and e2e projects built outside the numbered series.
+
+| Lab | Description |
+|-----|-------------|
+| [Interview Q&A - K8s Basic Architecture](./rolling-lab/interview-q-and-a-k8s-basic-architechture/) | Architecture concepts, interview prep |
+| [Kubernetes e2e Lab Part 1](./rolling-lab/kubernetes-e2e-lab-part-1/) | Movie Recommendation API: Dockerfile → Deployment → Service → Scaling → Rolling Update → Rollback |
+| [Kubernetes e2e Lab Part 2](./rolling-lab/kubernetes-e2e-lab-part-2/) | (in progress) |
+
+---
+
+### [_inbox-review/](./_inbox-review/)
+
+Files not yet classified into the hierarchy above — preserved intact, pending review.
+
+---
 
 ## Key Concepts
 
-- **Declarative model** - you describe the desired state, K8s makes it happen
-- **Reconciliation loop** - continuous comparison of current state vs desired state
-- **Control Plane** - the brain: etcd, API Server, Scheduler, Controller Manager
-- **Data Plane** - the muscle: worker nodes running actual workloads
-- **Pod** - smallest deployable unit (one or more containers)
-- **ReplicaSet** - ensures N copies of a pod are always running
-- **Deployment** - manages ReplicaSets, enables rolling updates
-- **Service** - stable network endpoint in front of pods
-- **Ingress** - HTTP routing rules into the cluster
+- **Declarative model** — describe desired state; K8s reconciles
+- **Control Plane** — etcd, API Server, Scheduler, Controller Manager
+- **Data Plane** — worker nodes running actual workloads
+- **Pod** — smallest deployable unit
+- **ReplicaSet** — ensures N replicas are always running
+- **Deployment** — manages ReplicaSets, enables rolling updates
+- **Service** — stable network endpoint in front of pods
+- **Ingress** — HTTP routing into the cluster
 
 ## Resources
 
-- [NetworkChuck - Kubernetes](https://www.youtube.com/@NetworkChuck)
-- [TechWorld with Nana - Kubernetes Tutorial](https://www.youtube.com/@TechWorldwithNana)
 - [Official Kubernetes Docs](https://kubernetes.io/docs/)
 - [Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
-
-- [E2E Movie Recommendation API](./exercises/e2e-movie-recommendation-api/) - Docker image, Deployment, Service, Scaling, Self-Healing, Rolling Update, Rollback.
+- [TechWorld with Nana - Kubernetes Tutorial](https://www.youtube.com/@TechWorldwithNana)
+- [NetworkChuck - Kubernetes](https://www.youtube.com/@NetworkChuck)
