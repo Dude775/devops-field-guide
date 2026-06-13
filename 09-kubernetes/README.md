@@ -21,7 +21,7 @@ Numbered course series (modules 02–11). Structured content from the Kubernetes
 | [03 - Running Containers in Kubernetes](./archive/03-running-containers-in-kubernetes/) | Pods, kubectl basics, inspect & logs | notes |
 | [04 - Object Management & YAML Manifests](./archive/04-object-management-and-yaml-manifests/) | Declarative vs imperative, apply vs create, dry-run | notes |
 | [05 - ReplicaSets and Deployments](./archive/05-replicasets-and-deployments/) | Self-healing, rolling updates, rollout commands | notes |
-| [06 - Services Deep Dive](./archive/06-services-deep-dive/) | ClusterIP, NodePort, LoadBalancer, DNS, traffic generation, service routing labs | lab |
+| [06 - Services Deep Dive](./archive/06-services-deep-dive/) | ClusterIP, NodePort, LoadBalancer, DNS, traffic generation, service routing labs | ✓ done |
 | [07 - Resource Management](./archive/07-resource-management/) | Requests, limits, QoS classes | — |
 | [08 - Storage and Persistence](./archive/08-storage-and-persistence/) | PV, PVC, StorageClass | — |
 | [09 - Configuration Management](./archive/09-configuration-management/) | ConfigMaps, Secrets, env injection | — |
