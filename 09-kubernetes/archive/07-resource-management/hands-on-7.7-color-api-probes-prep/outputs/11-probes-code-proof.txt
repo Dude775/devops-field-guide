@@ -1,0 +1,5 @@
+const delayStartup = process.env.DELAY_STARTUP === "true";
+const failLiveness = process.env.FAIL_LIVENESS === "true";
+  process.env.FAIL_READINESS === "true" ? Math.random() < 0.5 : false;
+app.get("/ready", (req, res) => {
+app.get("/live", (req, res) => {

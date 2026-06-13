@@ -1,0 +1,66 @@
+Name:             color-api-5db48dc649-bx8bg
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sat, 13 Jun 2026 22:46:48 +0300
+Labels:           app=color-api
+                  lab=readiness-probe
+                  pod-template-hash=5db48dc649
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.232
+IPs:
+  IP:           10.244.0.232
+Controlled By:  ReplicaSet/color-api-5db48dc649
+Containers:
+  color-api:
+    Container ID:   docker://08a061bcc57b58c264db47104be37b9b38a2a1a1ac6f4620583c36f7ed1deb6c
+    Image:          idf775/color-api:1.2.1
+    Image ID:       docker-pullable://idf775/color-api@sha256:7a9a55758a928e09d5f55dbf07be3eb8291d5b66459f5ace8051190bf13007d8
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sat, 13 Jun 2026 22:46:50 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:      500m
+      memory:   512Mi
+    Readiness:  http-get http://:80/ready delay=0s timeout=1s period=5s #success=1 #failure=2
+    Startup:    http-get http://:80/up delay=0s timeout=1s period=3s #success=1 #failure=2
+    Environment:
+      DELAY_STARTUP:   false
+      FAIL_LIVENESS:   false
+      FAIL_READINESS:  true
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6p7br (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-6p7br:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age               From               Message
+  ----     ------     ----              ----               -------
+  Normal   Scheduled  49s               default-scheduler  Successfully assigned default/color-api-5db48dc649-bx8bg to minikube
+  Normal   Pulled     47s               kubelet            Container image "idf775/color-api:1.2.1" already present on machine and can be accessed by the pod
+  Normal   Created    47s               kubelet            Container created
+  Normal   Started    46s               kubelet            Container started
+  Warning  Unhealthy  4s (x9 over 42s)  kubelet            Readiness probe failed: HTTP probe failed with statuscode: 503

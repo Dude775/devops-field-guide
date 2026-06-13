@@ -1,0 +1,20 @@
+NAME                                    READY   STATUS    RESTARTS      AGE     IP             NODE       NOMINATED NODE   READINESS GATES
+color-api-86d9cd4599-2rgjv              0/1     Running   0             21s     10.244.0.227   minikube   <none>           <none>
+color-api-86d9cd4599-6jwkp              1/1     Running   0             21s     10.244.0.223   minikube   <none>           <none>
+color-api-86d9cd4599-dx4pv              1/1     Running   0             21s     10.244.0.224   minikube   <none>           <none>
+color-api-86d9cd4599-szs9p              1/1     Running   0             21s     10.244.0.222   minikube   <none>           <none>
+color-api-86d9cd4599-xd5sx              1/1     Running   0             21s     10.244.0.226   minikube   <none>           <none>
+color-api-86d9cd4599-xlggg              0/1     Running   0             21s     10.244.0.228   minikube   <none>           <none>
+color-api-deployment-7c78664cc8-57grl   1/1     Running   0             79m     10.244.0.197   minikube   <none>           <none>
+color-api-deployment-7c78664cc8-dd5p5   1/1     Running   0             79m     10.244.0.196   minikube   <none>           <none>
+color-api-deployment-7c78664cc8-rcrrz   1/1     Running   0             79m     10.244.0.195   minikube   <none>           <none>
+demo-statefulset-0                      1/1     Running   8 (13m ago)   3d7h    10.244.0.159   minikube   <none>           <none>
+demo-statefulset-1                      1/1     Running   8 (13m ago)   3d7h    10.244.0.158   minikube   <none>           <none>
+demo-statefulset-2                      1/1     Running   8 (13m ago)   3d7h    10.244.0.161   minikube   <none>           <none>
+empty-dir-demo                          1/1     Running   6 (13m ago)   3d6h    10.244.0.160   minikube   <none>           <none>
+movie-api-deployment-6f6cccf475-2f62s   1/1     Running   0             5h22m   10.244.0.172   minikube   <none>           <none>
+movie-api-deployment-6f6cccf475-dvmhs   1/1     Running   0             5h22m   10.244.0.173   minikube   <none>           <none>
+movie-api-deployment-6f6cccf475-rl7mb   1/1     Running   0             5h21m   10.244.0.175   minikube   <none>           <none>
+movie-api-deployment-6f6cccf475-rwzhq   1/1     Running   0             5h21m   10.244.0.176   minikube   <none>           <none>
+movie-api-deployment-6f6cccf475-tlvl9   1/1     Running   0             5h22m   10.244.0.174   minikube   <none>           <none>
+traffic-generator                       1/1     Running   0             21s     10.244.0.225   minikube   <none>           <none>

@@ -1,0 +1,67 @@
+Name:             color-api-pod
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sat, 13 Jun 2026 22:28:42 +0300
+Labels:           <none>
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.218
+IPs:
+  IP:  10.244.0.218
+Containers:
+  color-api:
+    Container ID:   docker://41bc6fc8c31cc2196ce205735391c57d14cd534e16ff79414ab6deab208d9c10
+    Image:          idf775/color-api:1.2.0
+    Image ID:       docker-pullable://idf775/color-api@sha256:af3b492546a2e52167c113c82b527d86bba34eef07eed5219b8cdb4f5c128cd9
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       CrashLoopBackOff
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Sat, 13 Jun 2026 22:28:57 +0300
+      Finished:     Sat, 13 Jun 2026 22:29:03 +0300
+    Ready:          False
+    Restart Count:  2
+    Limits:
+      cpu:     500m
+      memory:  512Mi
+    Requests:
+      cpu:     500m
+      memory:  512Mi
+    Startup:   http-get http://:80/live delay=0s timeout=1s period=3s #success=1 #failure=2
+    Environment:
+      DELAY_STARTUP:  true
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-svxzt (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-svxzt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                From               Message
+  ----     ------     ----               ----               -------
+  Normal   Scheduled  27s                default-scheduler  Successfully assigned default/color-api-pod to minikube
+  Normal   Pulled     12s (x3 over 26s)  kubelet            Container image "idf775/color-api:1.2.0" already present on machine and can be accessed by the pod
+  Normal   Created    12s (x3 over 26s)  kubelet            Container created
+  Normal   Started    12s (x3 over 26s)  kubelet            Container started
+  Warning  Unhealthy  7s (x6 over 23s)   kubelet            Startup probe failed: Get "http://10.244.0.218:80/live": dial tcp 10.244.0.218:80: connect: connection refused
+  Normal   Killing    7s (x3 over 20s)   kubelet            Container color-api failed startup probe, will be restarted
+  Warning  BackOff    6s (x2 over 6s)    kubelet            Back-off restarting failed container color-api in pod color-api-pod_default(fda1c2f8-ae51-4999-9714-a5a8f1d8ec8a)

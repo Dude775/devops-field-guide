@@ -1,0 +1,38 @@
+
+
+Hands-On 7.10 conclusion
+
+Created Pod:
+- color-api-pod
+- image: idf775/color-api:1.2.1
+
+Startup Probe:
+- path: /up
+- result: passed
+
+Liveness Probe:
+- path: /live
+- failureThreshold: 3
+- periodSeconds: 10
+
+Failure simulation:
+- FAIL_LIVENESS=true
+- /live returned HTTP 503
+- Kubernetes restarted the container after repeated liveness failures
+
+Observed behavior:
+- Restart Count increased to 1
+- describe showed: Liveness probe failed
+- event showed: Container failed liveness probe, will be restarted
+
+Important note:
+The course text mentioned /health, but the fixed image uses:
+- /up for Startup
+- /live for Liveness
+- /ready for Readiness
+
+Cleanup:
+- Pod deleted with kubectl delete -f color-api-pod.yaml
+
+Conclusion:
+Liveness Probe runs during the container lifetime. When it fails repeatedly, Kubernetes restarts the container.

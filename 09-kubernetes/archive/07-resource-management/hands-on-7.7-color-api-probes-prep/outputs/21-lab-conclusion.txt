@@ -1,0 +1,37 @@
+
+
+Hands-On 7.7 conclusion
+
+Prepared Color API for Kubernetes probes.
+
+Source:
+- copied color-api-code into local lab folder under app/
+
+Code changes:
+- added DELAY_STARTUP env variable
+- added FAIL_LIVENESS env variable
+- added FAIL_READINESS env variable
+- added /ready endpoint
+- added /live endpoint
+- added 60 second startup delay simulation when DELAY_STARTUP=true
+- kept / and /api backward compatible
+
+Version:
+- package.json updated to 1.2.0
+
+Docker:
+- built local image: color-api:1.2.0
+- tagged image: idf775/color-api:1.2.0
+- pushed image to Docker Hub
+- verified local endpoints:
+  - /api returned COLOR response
+  - /ready returned 200 OK
+  - /live returned 200 OK
+
+Logs:
+- Delay startup: false
+- Fail liveness: false
+- Fail readiness: false
+
+Conclusion:
+The same image can now simulate startup, liveness, and readiness behavior using environment variables.

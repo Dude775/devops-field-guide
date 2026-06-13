@@ -1,0 +1,3 @@
+39:app.get("/up", (req, res) => {
+43:app.get("/ready", (req, res) => {
+50:app.get("/live", (req, res) => {

@@ -1,0 +1,46 @@
+
+
+Hands-On 7.11 conclusion
+
+Created:
+- color-api Deployment with 6 replicas
+- color-api-svc Service
+- traffic-generator Pod
+
+Image:
+- idf775/color-api:1.2.1
+
+Probe configuration:
+- Startup Probe: /up
+- Readiness Probe: /ready
+
+Failure simulation:
+- FAIL_READINESS=true
+- readiness result is calculated at startup with about 50% chance to fail
+
+Observed behavior:
+- 6 color-api Pods were created
+- only 2 Pods became Ready
+- 4 Pods stayed Running but Not Ready
+- Restart Count stayed 0 for all Pods
+
+Service behavior:
+- Service selector was isolated with lab=readiness-probe to avoid matching older color-api Pods
+- Service endpoints included only Ready Pods:
+  - 10.244.0.231:80
+  - 10.244.0.233:80
+
+Traffic proof:
+- traffic-generator logs showed traffic only to the Ready Pod hostnames:
+  - color-api-5db48dc649-v4kzm
+  - color-api-5db48dc649-snzbv
+
+Important point:
+Readiness Probe failure does not restart containers.
+It only removes Not Ready Pods from Service traffic.
+
+Cleanup:
+- resources from this lab were deleted with kubectl delete -f .
+
+Conclusion:
+Readiness is a traffic-management mechanism, not a restart mechanism.

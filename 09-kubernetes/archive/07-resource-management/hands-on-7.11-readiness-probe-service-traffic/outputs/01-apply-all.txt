@@ -1,0 +1,3 @@
+deployment.apps/color-api created
+service/color-api-svc created
+pod/traffic-generator created

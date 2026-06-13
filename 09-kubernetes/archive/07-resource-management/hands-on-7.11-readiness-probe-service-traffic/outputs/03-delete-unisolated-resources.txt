@@ -1,0 +1,3 @@
+deployment.apps "color-api" deleted from default namespace
+service "color-api-svc" deleted from default namespace
+pod "traffic-generator" deleted from default namespace

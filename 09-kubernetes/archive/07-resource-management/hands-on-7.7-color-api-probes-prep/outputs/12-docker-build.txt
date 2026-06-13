@@ -1,0 +1,72 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 140B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine3.20
+#2 ...
+
+#3 [auth] library/node:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine3.20
+#2 DONE 1.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 52B 0.0s done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/node:22-alpine3.20@sha256:2289fb1fba0f4633b08ec47b94a89c7e20b829fc5679f9b7b298eaa2f1ed8b7e
+#5 resolve docker.io/library/node:22-alpine3.20@sha256:2289fb1fba0f4633b08ec47b94a89c7e20b829fc5679f9b7b298eaa2f1ed8b7e 0.0s done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 45.71kB 0.1s done
+#6 DONE 0.1s
+
+#7 [2/5] WORKDIR /app
+#7 CACHED
+
+#8 [3/5] COPY package*.json .
+#8 DONE 0.0s
+
+#9 [4/5] RUN npm ci
+#9 4.661 
+#9 4.661 added 104 packages, and audited 105 packages in 2s
+#9 4.661 
+#9 4.661 14 packages are looking for funding
+#9 4.661   run `npm fund` for details
+#9 4.677 
+#9 4.677 8 vulnerabilities (3 low, 1 moderate, 3 high, 1 critical)
+#9 4.677 
+#9 4.677 To address issues that do not require attention, run:
+#9 4.677   npm audit fix
+#9 4.677 
+#9 4.677 To address all issues, run:
+#9 4.677   npm audit fix --force
+#9 4.677 
+#9 4.677 Run `npm audit` for details.
+#9 4.678 npm notice
+#9 4.678 npm notice New major version of npm available! 10.9.2 -> 11.17.0
+#9 4.678 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.17.0
+#9 4.678 npm notice To update run: npm install -g npm@11.17.0
+#9 4.678 npm notice
+#9 DONE 4.9s
+
+#10 [5/5] COPY src src
+#10 DONE 0.1s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.8s done
+#11 exporting manifest sha256:cca035b5e36a6e36edb0b87966a89c726147f0aaf0fef512eccb1f6bab1b5d1a 0.0s done
+#11 exporting config sha256:cd65f6664155653cf5afd841a5e0cc925fd265afd50e15baa7d0fbce3387bccd 0.0s done
+#11 exporting attestation manifest sha256:661fe4cfc5ed8f6cb548514389f34ba2fb0ace61a931e5d0e60b2bcdda50e561 0.0s done
+#11 exporting manifest list sha256:af3b492546a2e52167c113c82b527d86bba34eef07eed5219b8cdb4f5c128cd9 0.0s done
+#11 naming to docker.io/library/color-api:1.2.0 done
+#11 unpacking to docker.io/library/color-api:1.2.0
+#11 unpacking to docker.io/library/color-api:1.2.0 0.5s done
+#11 DONE 1.4s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/d3spvf867tlq7vp77id3426bw

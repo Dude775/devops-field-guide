@@ -1,0 +1,36 @@
+
+
+Hands-On 7.8 conclusion
+
+Created Pod:
+- color-api-pod
+- image: idf775/color-api:1.2.0
+
+Startup Probe:
+- path: /live
+- port: 80
+- failureThreshold: 2
+- periodSeconds: 3
+
+Successful case:
+- DELAY_STARTUP was not enabled
+- Pod reached Running state
+- logs showed Delay startup: false
+
+Failure case:
+- DELAY_STARTUP=true
+- app blocked startup for 60 seconds
+- startupProbe checked /live before the app listened on port 80
+- probe failed with connection refused
+- container restarted
+- Pod reached CrashLoopBackOff
+
+Fixed case:
+- DELAY_STARTUP=false
+- Pod returned to Running state
+
+Important note:
+The course text mentioned /health once, but the actual probe endpoint implemented in 7.7 is /live.
+
+Conclusion:
+Startup Probe protects startup phase. If the app does not become reachable before the failure threshold, Kubernetes restarts the container.

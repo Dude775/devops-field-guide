@@ -1,0 +1,13 @@
+./color-api-pod.yaml
+./outputs/01-clean-previous-color-api-pod.txt
+./outputs/02-apply-startup-up.txt
+./outputs/03-startup-up-running.txt
+./outputs/04-startup-up-logs.txt
+./outputs/05-delete-startup-only-pod.txt
+./outputs/06-apply-liveness-fail.txt
+./outputs/07-pod-after-liveness-fail.txt
+./outputs/08-describe-liveness-fail.txt
+./outputs/09-previous-container-logs.txt
+./outputs/10-cleanup.txt
+./outputs/11-pod-after-cleanup.txt
+./outputs/12-lab-conclusion.txt

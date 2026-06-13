@@ -1,0 +1,5 @@
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/src/index.js:const express = require("express");
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/src/index.js:const app = express();
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/src/index.js:app.get("/", (req, res) => {
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/src/index.js:app.get("/api", (req, res) => {
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/src/index.js:app.listen(port, () => {

@@ -1,0 +1,13 @@
+
+> color-api@1.2.1 start
+> node src/index.js
+
+Delay startup: false
+Fail liveness: true
+Fail readiness: false
+Color API listening on port: 80
+npm error path /app
+npm error command failed
+npm error signal SIGTERM
+npm error command sh -c node src/index.js
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-06-13T19_42_23_393Z-debug-0.log

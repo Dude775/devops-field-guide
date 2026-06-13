@@ -1,0 +1,3 @@
+39:app.get("/ready", (req, res) => {
+46:app.get("/live", (req, res) => {
+60:app.listen(port, () => {

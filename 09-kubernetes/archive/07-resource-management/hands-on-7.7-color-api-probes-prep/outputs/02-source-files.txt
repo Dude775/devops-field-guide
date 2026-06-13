@@ -1,0 +1,15 @@
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/._color-api-code
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._.dockerignore
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._.gitignore
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._Dockerfile
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._package.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._package-lock.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._README.md
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._src
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/.dockerignore
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/.gitignore
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/package.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/package-lock.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/README.md
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/src/index.js

@@ -1,0 +1,29 @@
+
+
+Hands-On 7.9 conclusion
+
+Bug fixed:
+- Startup and Liveness should not depend on the same endpoint.
+
+Added endpoint:
+- /up
+
+Probe endpoint separation:
+- Startup: /up
+- Liveness: /live
+- Readiness: /ready
+
+Version:
+- package.json updated from 1.2.0 to 1.2.1
+
+Docker:
+- built local image: color-api:1.2.1
+- tagged image: idf775/color-api:1.2.1
+- pushed image to Docker Hub
+
+Push result:
+- digest: sha256:7a9a55758a928e09d5f55dbf07be3eb8291d5b66459f5ace8051190bf13007d8
+
+Conclusion:
+The application now has a dedicated startup endpoint that always returns 200 when the app is running.
+This allows Liveness failures to be tested independently from Startup behavior.

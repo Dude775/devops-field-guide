@@ -1,0 +1,8 @@
+
+> color-api@1.2.1 start
+> node src/index.js
+
+Delay startup: false
+Fail liveness: false
+Fail readiness: false
+Color API listening on port: 80

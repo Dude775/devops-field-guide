@@ -1,0 +1,15 @@
+./color-api@1.2.0
+./color-api-pod.yaml
+./node
+./outputs/01-apply-good-pod.txt
+./outputs/02-good-pod-running.txt
+./outputs/03-good-pod-logs.txt
+./outputs/04-delete-good-pod.txt
+./outputs/05-apply-broken-startup.txt
+./outputs/06-pod-after-startup-fail.txt
+./outputs/07-describe-startup-fail.txt
+./outputs/08-delete-broken-pod.txt
+./outputs/09-apply-fixed-pod.txt
+./outputs/10-fixed-pod-running.txt
+./outputs/11-fixed-pod-logs.txt
+./outputs/12-lab-conclusion.txt

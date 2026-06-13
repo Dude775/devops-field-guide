@@ -1,0 +1,2 @@
+NAME            ENDPOINTS                         AGE
+color-api-svc   10.244.0.231:80,10.244.0.233:80   56s

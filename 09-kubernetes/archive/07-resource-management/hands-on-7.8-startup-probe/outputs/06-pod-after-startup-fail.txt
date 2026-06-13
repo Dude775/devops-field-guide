@@ -1,0 +1,2 @@
+NAME            READY   STATUS             RESTARTS     AGE   IP             NODE       NOMINATED NODE   READINESS GATES
+color-api-pod   0/1     CrashLoopBackOff   2 (3s ago)   24s   10.244.0.218   minikube   <none>           <none>
