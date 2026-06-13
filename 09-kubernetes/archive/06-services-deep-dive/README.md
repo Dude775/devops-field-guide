@@ -37,7 +37,7 @@ This module covers all four Service types, DNS-based discovery, traffic generati
 | 6.3 | Hands-On 6.3 - ClusterIP Service ותקשורת יציבה | [hands-on-6.3-clusterip-service](./hands-on-6.3-clusterip-service/) | ✓ done |
 | 6.4 | Hands-On 6.4 - עבודה עם NodePort Service | [hands-on-6.4-nodeport-service](./hands-on-6.4-nodeport-service/) | ✓ done |
 | 6.5 | Hands-On 6.5 - NodePort ב-Linux מלא ב-KillerCoda Playground | [hands-on-6.5-nodeport-linux-killercoda](./hands-on-6.5-nodeport-linux-killercoda/) | ✓ done |
-| 6.6 | Hands-On 6.6 - ExternalName Service | [hands-on-6.6-externalname-service](./hands-on-6.6-externalname-service/) | planned |
+| 6.6 | Hands-On 6.6 - ExternalName Service | [hands-on-6.6-externalname-service](./hands-on-6.6-externalname-service/) | ✓ done |
 
 ---
 
