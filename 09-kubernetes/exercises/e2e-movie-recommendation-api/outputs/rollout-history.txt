@@ -1,0 +1,5 @@
+deployment.apps/movie-api-deployment 
+REVISION  CHANGE-CAUSE
+2         upgrade movie api to v2
+3         deploy movie api v1
+

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movie-api-deployment
+  labels:
+    app: movie-api
+  annotations:
+    kubernetes.io/change-cause: "upgrade movie api to v2"
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: movie-api
+  template:
+    metadata:
+      labels:
+        app: movie-api
+        version: v2
+    spec:
+      containers:
+        - name: movie-api
+          image: idf775/movie-api:v2
+          ports:
+            - containerPort: 3000
