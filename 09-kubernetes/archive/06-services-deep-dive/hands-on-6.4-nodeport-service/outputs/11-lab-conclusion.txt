@@ -1,0 +1,15 @@
+
+
+Hands-On 6.4 conclusion
+
+NodePort Service was created for the Color API.
+The Service received an internal ClusterIP and also exposed nodePort 30007.
+
+On Minikube Windows, direct NodeIP:NodePort is not used.
+Access was tested through:
+minikube service color-api-nodeport --url
+
+The app was reachable from outside the cluster through a localhost tunnel.
+Multiple API requests returned different hostnames, proving load balancing between Pods.
+
+NodePort is useful for development/testing, but not the preferred production exposure method.

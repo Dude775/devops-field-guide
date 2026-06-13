@@ -1,0 +1,2 @@
+NAME                 ENDPOINTS                                                     AGE
+color-api-nodeport   10.244.0.186:80,10.244.0.187:80,10.244.0.188:80 + 2 more...   56s

@@ -1,0 +1,8 @@
+{"color":"blue","hostname":"color-api-deployment-7dd66bdc46-jt7tc"}
+{"color":"blue","hostname":"color-api-deployment-7dd66bdc46-52zzx"}
+{"color":"blue","hostname":"color-api-deployment-7dd66bdc46-52zzx"}
+{"color":"blue","hostname":"color-api-deployment-7dd66bdc46-52zzx"}
+{"color":"blue","hostname":"color-api-deployment-7dd66bdc46-4bdhw"}
+{"color":"blue","hostname":"color-api-deployment-7dd66bdc46-4bdhw"}
+{"color":"blue","hostname":"color-api-deployment-7dd66bdc46-4bdhw"}
+{"color":"blue","hostname":"color-api-deployment-7dd66bdc46-v6lnt"}

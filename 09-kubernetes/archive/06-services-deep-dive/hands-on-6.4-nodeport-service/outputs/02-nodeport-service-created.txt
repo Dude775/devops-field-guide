@@ -1,0 +1,2 @@
+NAME                 TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE   SELECTOR
+color-api-nodeport   NodePort   10.109.240.53   <none>        80:30007/TCP   5s    app=color-api

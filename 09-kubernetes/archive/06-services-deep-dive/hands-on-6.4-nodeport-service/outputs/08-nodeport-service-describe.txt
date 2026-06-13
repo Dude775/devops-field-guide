@@ -1,0 +1,18 @@
+Name:                     color-api-nodeport
+Namespace:                default
+Labels:                   app=color-api
+Annotations:              <none>
+Selector:                 app=color-api
+Type:                     NodePort
+IP Family Policy:         SingleStack
+IP Families:              IPv4
+IP:                       10.109.240.53
+IPs:                      10.109.240.53
+Port:                     <unset>  80/TCP
+TargetPort:               80/TCP
+NodePort:                 <unset>  30007/TCP
+Endpoints:                10.244.0.186:80,10.244.0.187:80,10.244.0.188:80 + 2 more...
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Internal Traffic Policy:  Cluster
+Events:                   <none>
