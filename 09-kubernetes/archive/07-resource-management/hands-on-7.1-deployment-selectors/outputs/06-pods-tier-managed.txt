@@ -1,0 +1,13 @@
+NAME                                    READY   STATUS    RESTARTS      AGE     TIER      MANAGED
+color-api-deployment-7c78664cc8-57grl   1/1     Running   0             3m28s   backend   deployment
+color-api-deployment-7c78664cc8-dd5p5   1/1     Running   0             3m28s   backend   deployment
+color-api-deployment-7c78664cc8-rcrrz   1/1     Running   0             3m28s   backend   deployment
+demo-statefulset-0                      1/1     Running   6 (42m ago)   3d6h              
+demo-statefulset-1                      1/1     Running   6 (42m ago)   3d6h              
+demo-statefulset-2                      1/1     Running   6 (42m ago)   3d6h              
+empty-dir-demo                          1/1     Running   5 (40s ago)   3d5h              
+movie-api-deployment-6f6cccf475-2f62s   1/1     Running   0             4h6m              
+movie-api-deployment-6f6cccf475-dvmhs   1/1     Running   0             4h6m              
+movie-api-deployment-6f6cccf475-rl7mb   1/1     Running   0             4h6m              
+movie-api-deployment-6f6cccf475-rwzhq   1/1     Running   0             4h5m              
+movie-api-deployment-6f6cccf475-tlvl9   1/1     Running   0             4h6m              

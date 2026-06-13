@@ -1,0 +1,2 @@
+pod "color-backend" deleted from default namespace
+pod "color-frontend" deleted from default namespace

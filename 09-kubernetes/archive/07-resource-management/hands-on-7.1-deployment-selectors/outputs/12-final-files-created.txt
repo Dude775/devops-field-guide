@@ -1,0 +1,12 @@
+./color-deploy.yaml
+./outputs/01-cleanup-previous-lab.txt
+./outputs/02-apply-deployment.txt
+./outputs/03-deployment-wide.txt
+./outputs/04-pods-labels-wide.txt
+./outputs/05-describe-deployment.txt
+./outputs/06-pods-tier-managed.txt
+./outputs/07-color-api-pods-labels.txt
+./outputs/08-deployment-yaml.txt
+./outputs/09-files-created.txt
+./outputs/10-lab-conclusion.txt
+./outputs/11-final-proof.txt

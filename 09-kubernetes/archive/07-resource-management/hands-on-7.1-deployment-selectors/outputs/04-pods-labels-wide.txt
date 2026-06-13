@@ -1,0 +1,4 @@
+NAME                                    READY   STATUS    RESTARTS   AGE   IP             NODE       NOMINATED NODE   READINESS GATES   APP         ENVIRONMENT   TIER      MANAGED
+color-api-deployment-7c78664cc8-57grl   1/1     Running   0          11s   10.244.0.197   minikube   <none>           <none>            color-api   local         backend   deployment
+color-api-deployment-7c78664cc8-dd5p5   1/1     Running   0          11s   10.244.0.196   minikube   <none>           <none>            color-api   local         backend   deployment
+color-api-deployment-7c78664cc8-rcrrz   1/1     Running   0          11s   10.244.0.195   minikube   <none>           <none>            color-api   local         backend   deployment

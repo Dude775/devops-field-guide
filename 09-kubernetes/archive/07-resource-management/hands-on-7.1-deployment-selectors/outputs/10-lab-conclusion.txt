@@ -1,0 +1,31 @@
+
+
+Hands-On 7.1 conclusion
+
+Created Deployment:
+- color-api-deployment
+- replicas: 3
+- image: lironefitoussi/color-api:1.1.0
+
+Selector used:
+matchLabels:
+- app=color-api
+- environment=local
+- tier=backend
+
+matchExpressions:
+- key: managed
+- operator: Exists
+
+Observed behavior:
+The Deployment created 3 Pods.
+The created Pods include the labels required by the selector:
+app=color-api, environment=local, tier=backend, managed=deployment.
+
+Important point:
+matchLabels checks exact key/value labels.
+matchExpressions can add more advanced conditions.
+Here, operator Exists means the label "managed" must exist.
+
+Conclusion:
+The Deployment selector and the Pod template labels match correctly, so the Deployment can manage its Pods safely.

@@ -1,0 +1,4 @@
+NAME                                    READY   STATUS    RESTARTS   AGE     TIER      MANAGED
+color-api-deployment-7c78664cc8-57grl   1/1     Running   0          3m34s   backend   deployment
+color-api-deployment-7c78664cc8-dd5p5   1/1     Running   0          3m34s   backend   deployment
+color-api-deployment-7c78664cc8-rcrrz   1/1     Running   0          3m34s   backend   deployment

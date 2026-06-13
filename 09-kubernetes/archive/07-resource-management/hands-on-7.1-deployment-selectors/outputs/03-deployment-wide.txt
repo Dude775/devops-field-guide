@@ -1,0 +1,2 @@
+NAME                   READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS      IMAGES                           SELECTOR
+color-api-deployment   3/3     3            3           6s    color-backend   lironefitoussi/color-api:1.1.0   app=color-api,environment=local,managed,tier=backend

@@ -18,7 +18,7 @@ Labels are the glue between Kubernetes objects. Selectors let Services, Deployme
 | # | Lab | Folder | Status |
 |---|-----|--------|--------|
 | 7.0 | Hands-On 7.0 - Labels and Selectors | [hands-on-7.0-labels-selectors](./hands-on-7.0-labels-selectors/) | ✓ done |
-| 7.1 | Hands-On 7.1 - Resource Requests and Limits | — | pending |
+| 7.1 | Hands-On 7.1 - Deployment Selectors | [hands-on-7.1-deployment-selectors](./hands-on-7.1-deployment-selectors/) | ✓ done |
 | 7.2 | Hands-On 7.2 - LimitRange and Namespace Defaults | — | pending |
 | 7.3 | Hands-On 7.3 - QoS Classes | — | pending |
 
