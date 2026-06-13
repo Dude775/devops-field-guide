@@ -1,0 +1,4 @@
+<h1 style="color:blue;">Hello from Color API</h1>
+    <h2>Host hostname: fcc58120531a</h2>
+color=blue hostname=fcc58120531a
+{"color":"blue","hostname":"fcc58120531a"}
