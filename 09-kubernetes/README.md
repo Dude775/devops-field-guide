@@ -15,18 +15,18 @@ Kubernetes is the industry-standard container orchestrator. Where Docker runs co
 
 Numbered course series (modules 02–11). Structured content from the Kubernetes learning path.
 
-| Series | Topic |
-|--------|-------|
-| [02 - Installing Tools](./archive/02-installing-tools/) | kubectl, minikube, cluster setup |
-| [03 - Running Containers in Kubernetes](./archive/03-running-containers-in-kubernetes/) | Pods, kubectl basics, inspect & logs |
-| [04 - Object Management & YAML Manifests](./archive/04-object-management-and-yaml-manifests/) | Declarative vs imperative, apply vs create, dry-run |
-| [05 - ReplicaSets and Deployments](./archive/05-replicasets-and-deployments/) | Self-healing, rolling updates, rollout commands |
-| [06 - Services Deep Dive](./archive/06-services-deep-dive/) | ClusterIP, NodePort, LoadBalancer, DNS |
-| [07 - Resource Management](./archive/07-resource-management/) | Requests, limits, QoS classes |
-| [08 - Storage and Persistence](./archive/08-storage-and-persistence/) | PV, PVC, StorageClass |
-| [09 - Configuration Management](./archive/09-configuration-management/) | ConfigMaps, Secrets, env injection |
-| [10 - Project: Deploying a MongoDB Database](./archive/10-project-deploying-a-mongodb-database/) | End-to-end stateful workload |
-| [11 - Security Fundamentals](./archive/11-security-fundamentals/) | RBAC, ServiceAccounts, TLS |
+| Series | Topic | Status |
+|--------|-------|--------|
+| [02 - Installing Tools](./archive/02-installing-tools/) | kubectl, minikube, cluster setup | — |
+| [03 - Running Containers in Kubernetes](./archive/03-running-containers-in-kubernetes/) | Pods, kubectl basics, inspect & logs | notes |
+| [04 - Object Management & YAML Manifests](./archive/04-object-management-and-yaml-manifests/) | Declarative vs imperative, apply vs create, dry-run | notes |
+| [05 - ReplicaSets and Deployments](./archive/05-replicasets-and-deployments/) | Self-healing, rolling updates, rollout commands | notes |
+| [06 - Services Deep Dive](./archive/06-services-deep-dive/) | ClusterIP, NodePort, LoadBalancer, DNS — [Hands-On 6.0: Color API](./archive/06-services-deep-dive/hands-on-6.0-color-api-update/) | lab |
+| [07 - Resource Management](./archive/07-resource-management/) | Requests, limits, QoS classes | — |
+| [08 - Storage and Persistence](./archive/08-storage-and-persistence/) | PV, PVC, StorageClass | — |
+| [09 - Configuration Management](./archive/09-configuration-management/) | ConfigMaps, Secrets, env injection | — |
+| [10 - Project: Deploying a MongoDB Database](./archive/10-project-deploying-a-mongodb-database/) | End-to-end stateful workload | — |
+| [11 - Security Fundamentals](./archive/11-security-fundamentals/) | RBAC, ServiceAccounts, TLS | lab |
 
 ---
 
