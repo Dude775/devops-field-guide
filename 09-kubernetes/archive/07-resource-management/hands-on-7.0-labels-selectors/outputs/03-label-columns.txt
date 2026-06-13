@@ -1,0 +1,12 @@
+NAME                                    READY   STATUS    RESTARTS      AGE     APP         TIER
+color-backend                           1/1     Running   0             47s     color-api   backend
+color-frontend                          1/1     Running   0             46s     color-api   frontend
+demo-statefulset-0                      1/1     Running   6 (32m ago)   3d6h    busybox     
+demo-statefulset-1                      1/1     Running   6 (32m ago)   3d6h    busybox     
+demo-statefulset-2                      1/1     Running   6 (32m ago)   3d6h    busybox     
+empty-dir-demo                          1/1     Running   4 (53m ago)   3d5h                
+movie-api-deployment-6f6cccf475-2f62s   1/1     Running   0             3h55m   movie-api   
+movie-api-deployment-6f6cccf475-dvmhs   1/1     Running   0             3h55m   movie-api   
+movie-api-deployment-6f6cccf475-rl7mb   1/1     Running   0             3h55m   movie-api   
+movie-api-deployment-6f6cccf475-rwzhq   1/1     Running   0             3h55m   movie-api   
+movie-api-deployment-6f6cccf475-tlvl9   1/1     Running   0             3h55m   movie-api   

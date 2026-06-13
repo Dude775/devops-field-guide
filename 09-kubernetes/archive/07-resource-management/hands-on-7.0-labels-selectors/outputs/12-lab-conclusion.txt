@@ -1,0 +1,20 @@
+
+
+Hands-On 7.0 conclusion
+
+Created two Pods:
+- color-backend with app=color-api, environment=local, tier=backend
+- color-frontend with app=color-api, environment=local, tier=frontend
+
+Tested:
+- label columns with kubectl get pods -L
+- equality selector: app=color-api
+- equality selector: tier=frontend
+- AND selector using one -l flag: app=color-api,tier=frontend
+- set-based selector: tier in (frontend)
+- set-based selector: tier notin (frontend)
+
+Important observation:
+Using multiple -l flags did not behave like AND in this environment.
+The reliable AND syntax is:
+kubectl get pods -l 'app=color-api,tier=frontend'

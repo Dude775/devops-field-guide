@@ -1,0 +1,3 @@
+NAME             READY   STATUS    RESTARTS   AGE     IP             NODE       NOMINATED NODE   READINESS GATES   APP         TIER
+color-backend    1/1     Running   0          2m35s   10.244.0.193   minikube   <none>           <none>            color-api   backend
+color-frontend   1/1     Running   0          2m34s   10.244.0.194   minikube   <none>           <none>            color-api   frontend

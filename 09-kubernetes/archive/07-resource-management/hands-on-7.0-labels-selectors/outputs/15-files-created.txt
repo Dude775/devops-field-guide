@@ -1,0 +1,16 @@
+./color-api.yaml
+./images/README.md
+./outputs/01-apply.txt
+./outputs/02-pods-wide.txt
+./outputs/03-label-columns.txt
+./outputs/04-selector-app-color-api.txt
+./outputs/05-selector-tier-frontend.txt
+./outputs/06-selector-and-single-flag.txt
+./outputs/07-selector-and-multiple-flags.txt
+./outputs/08-selector-set-in.txt
+./outputs/09-selector-set-notin.txt
+./outputs/10-selector-multiple-flags-reversed.txt
+./outputs/11-correct-and-show-labels.txt
+./outputs/12-lab-conclusion.txt
+./outputs/13-final-lab-state.txt
+./outputs/14-final-and-proof.txt
