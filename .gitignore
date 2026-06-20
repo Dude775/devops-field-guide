@@ -12,3 +12,9 @@ dist/
 10-helm/helm-small-project-lab/01-source/
 10-helm/helm-small-project-lab/*.code-workspace
 10-helm/helm-small-project-lab/00-preflight-inventory.sh
+06-aws/1-Udemy-stefan/
+11-aws-advanced/ECS ECR EKS Presentations/
+11-aws-advanced/**/Results/
+*.mp4
+*.pem
+11-aws-advanced/mern-eks-app/
