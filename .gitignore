@@ -7,3 +7,4 @@ dist/
 .env
 .env.*
 !.env.example
+10-helm/workspace-audit/
