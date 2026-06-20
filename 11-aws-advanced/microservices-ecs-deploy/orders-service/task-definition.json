@@ -8,7 +8,7 @@
   "containerDefinitions": [
     {
       "name": "orders",
-      "image": "450963613786.dkr.ecr.us-east-1.amazonaws.com/orders-service:latest",
+      "image": "450963613786.dkr.ecr.us-east-1.amazonaws.com/orders-service:86a7541348b3fe69473267561852b11a817605f3",
       "essential": true,
       "portMappings": [
         {
@@ -18,7 +18,7 @@
         }
       ],
       "environment": [
-        { "name": "INVENTORY_URL", "value": "http://inventory.microsvc.local:8080" }
+        { "name": "INVENTORY_URL", "value": "http://inventory:8080" }
       ],
       "logConfiguration": {
         "logDriver": "awslogs",
