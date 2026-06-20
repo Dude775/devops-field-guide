@@ -8,3 +8,7 @@ dist/
 .env.*
 !.env.example
 10-helm/workspace-audit/
+10-helm/helm-small-project-lab/00-inventory/
+10-helm/helm-small-project-lab/01-source/
+10-helm/helm-small-project-lab/*.code-workspace
+10-helm/helm-small-project-lab/00-preflight-inventory.sh
