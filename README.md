@@ -24,7 +24,7 @@ This repository operates on three levels:
 | 07 | [Docker](07-docker/) | Containers, images, Compose | Done |
 | 08 | [CI/CD](08-ci-cd/) | Pipelines, automation, deployment strategies | Upcoming |
 | 09 | [Kubernetes](09-kubernetes/) | Orchestration, pods, services | In Progress |
-| 10 | [Helm](10-helm/) | Package management for Kubernetes | Upcoming |
+| 10 | [Helm](10-helm/) | Package management for Kubernetes | In Progress |
 | 11 | [AWS Advanced](11-aws-advanced/) | ECS, ECR, EKS | Upcoming |
 | 12 | [Terraform](12-terraform/) | Infrastructure as Code | Upcoming |
 | 13 | [Jenkins](13-jenkins/) | Build automation, pipeline orchestration | Upcoming |

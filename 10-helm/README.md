@@ -1,7 +1,7 @@
-# Module 11: Helm - Kubernetes Package Management
+# Module 10: Helm - Kubernetes Package Management
 
-> **Status**: Upcoming
-> **Prerequisites**: [Module 10 - Kubernetes](../10-kubernetes/)
+> **Status**: In Progress
+> **Prerequisites**: [Module 09 - Kubernetes](../09-kubernetes/)
 
 ## Overview
 
@@ -16,3 +16,11 @@ Helm is the package manager for Kubernetes. This module covers charts, values fi
 - Release management and rollbacks
 
 Content will be added as the course progresses.
+
+---
+
+## Labs
+
+| Lab | Description | Status |
+|-----|-------------|--------|
+| [helm-small-project-lab](./helm-small-project-lab/) | Docker → Kubernetes → Helm end-to-end Movie API lab, including Bitnami MongoDB dependency | Done |
