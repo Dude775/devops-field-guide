@@ -4,11 +4,11 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
-  "executionRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::450963613786:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "orders",
-      "image": "<ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/orders-service:latest",
+      "image": "450963613786.dkr.ecr.us-east-1.amazonaws.com/orders-service:latest",
       "essential": true,
       "portMappings": [
         {
@@ -24,7 +24,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "/ecs/orders-service",
-          "awslogs-region": "<REGION>",
+          "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
       }
