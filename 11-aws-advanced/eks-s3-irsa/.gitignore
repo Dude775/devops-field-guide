@@ -1,0 +1,19 @@
+# AWS
+*.pem
+*.key
+aws-credentials
+.aws/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local secrets / scratch
+secrets/
+scratch/
+*.local.*
