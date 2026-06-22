@@ -18,3 +18,8 @@ dist/
 *.mp4
 *.pem
 11-aws-advanced/mern-eks-app/
+
+# secrets
+secret.txt
+*.secret
+*-credentials.txt
