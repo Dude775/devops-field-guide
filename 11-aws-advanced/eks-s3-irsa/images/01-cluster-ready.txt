@@ -1,0 +1,2 @@
+NAME                            STATUS   ROLES    AGE    VERSION
+ip-192-168-9-146.ec2.internal   Ready    <none>   2m4s   v1.34.9-eks-93b80c6
