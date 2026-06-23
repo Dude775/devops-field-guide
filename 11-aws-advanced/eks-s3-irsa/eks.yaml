@@ -11,6 +11,6 @@ availabilityZones:
 
 managedNodeGroups:
   - name: on-demand
-    instanceType: t2.small
+    instanceType: t3.micro
     desiredCapacity: 1
     volumeSize: 20
