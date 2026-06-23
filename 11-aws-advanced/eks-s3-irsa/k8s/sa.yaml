@@ -4,4 +4,4 @@ metadata:
   name: app
   namespace: default
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::450963613786:role/eks-s3-irsa-role
+    eks.amazonaws.com/role-arn: arn:aws:iam::450963613786:role/eksctl-cluster-addon-iamserviceaccount-defaul-Role1-bzr1mWeovj5m

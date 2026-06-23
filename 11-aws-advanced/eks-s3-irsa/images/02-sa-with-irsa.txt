@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::450963613786:role/eksctl-cluster-addon-iamserviceaccount-defaul-Role1-bzr1mWeovj5m
+  creationTimestamp: "2026-06-23T23:07:21Z"
+  labels:
+    app.kubernetes.io/managed-by: eksctl
+  name: app
+  namespace: default
+  resourceVersion: "2015"
+  uid: b53e72b1-3c16-48c8-874d-3ceff23fdefc
