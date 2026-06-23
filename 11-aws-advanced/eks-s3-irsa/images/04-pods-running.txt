@@ -1,0 +1,2 @@
+NAME                               READY   STATUS    RESTARTS   AGE
+nginx-deployment-f99b956b6-bj5kf   1/1     Running   0          46m
