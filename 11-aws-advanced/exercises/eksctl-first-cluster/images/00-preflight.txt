@@ -1,0 +1,18 @@
+=== aws sts get-caller-identity ===
+{
+    "UserId": "AIDAWR74GVBNNNOSPMHJY",
+    "Account": "450963613786",
+    "Arn": "arn:aws:iam::450963613786:user/Drubin-1"
+}
+
+=== eksctl version ===
+0.227.0
+
+=== kubectl version --client ===
+Client Version: v1.34.1
+Kustomize Version: v5.7.1
+
+=== aws eks list-clusters --region eu-central-1 ===
+{
+    "clusters": []
+}
