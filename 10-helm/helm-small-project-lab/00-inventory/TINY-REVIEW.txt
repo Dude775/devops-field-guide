@@ -1,0 +1,102 @@
+]633;E;{   echo "===== SUMMARY ====="\x3b   cat 00-inventory/SUMMARY.txt\x3b    echo ""\x3b   echo "===== DOCKER CONTAINERS ONLY NAMES ====="\x3b   docker ps -a --format "table {{.Names}}\\t{{.Image}}\\t{{.Status}}\\t{{.Ports}}"\x3b    echo ""\x3b   echo "===== DOCKER IMAGES ONLY ====="\x3b   docker images --format "table {{.Repository}}\\t{{.Tag}}\\t{{.Size}}" | sed -n '1,40p'\x3b    echo ""\x3b   echo "===== K8S CURRENT CONTEXT ====="\x3b   kubectl config current-context 2>&1\x3b    echo ""\x3b   echo "===== K8S NODES ====="\x3b   kubectl get nodes -o wide 2>&1\x3b    echo ""\x3b   echo "===== HELM RELEASES ====="\x3b   helm list -A 2>&1\x3b    echo ""\x3b   echo "===== REPO ROOT FILES ====="\x3b   find 01-source/helm-small-project -maxdepth 2 -type f | sort | sed -n '1,120p'\x3b    echo ""\x3b   echo "===== CHARTS FOUND COUNT ====="\x3b   grep -Ei '/Chart.yaml$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b    echo ""\x3b   echo "===== DOCKERFILES FOUND COUNT ====="\x3b   grep -Ei '/Dockerfile$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b    echo ""\x3b   echo "===== COMPOSE FILES FOUND COUNT ====="\x3b   grep -Ei '/(docker-compose.yml|docker-compose.yaml|compose.yml|compose.yaml)$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b  } > 00-inventory/TINY-REVIEW.txt;c5d3d6b3-b1c9-49d3-8aea-02801b20a920]633;C===== SUMMARY =====
+Preflight Inventory - helm-small-project-lab
+Generated: 2026-06-20 16:20:36
+
+Lab root: /e/Genspark/devops-field-guide/10-helm/helm-small-project-lab
+Repo: https://github.com/LironeFitoussi/helm-small-project.git
+
+
+Results folder:
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/00-inventory
+
+Counts:
+Docker containers: 8
+Docker images: 13
+Project marker files: 605
+
+Important files:
+00-inventory/SUMMARY.txt
+00-inventory/tools-versions.txt
+00-inventory/docker/containers.txt
+00-inventory/docker/images.txt
+00-inventory/kubernetes/current-context.txt
+00-inventory/kubernetes/nodes.txt
+00-inventory/helm/helm-releases-all-namespaces.txt
+00-inventory/filesystem/project-markers.txt
+00-inventory/repo/repo-tree.txt
+
+===== DOCKER CONTAINERS ONLY NAMES =====
+NAMES               IMAGE                                                          STATUS                     PORTS
+gallant_feynman     lironefitoussi/aws-sol-2                                       Exited (0) 2 days ago      
+app                 450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest   Exited (137) 2 days ago    
+hungry_chatterjee   lironefitoussi/aws-sol-1:latest                                Exited (0) 3 days ago      
+movie-api           dude775/movie-api:1.0                                          Exited (255) 3 days ago    0.0.0.0:3000->3000/tcp
+mongo               mongo:7                                                        Exited (255) 3 days ago    27017/tcp
+minikube            gcr.io/k8s-minikube/kicbase:v0.0.50                            Exited (255) 4 hours ago   127.0.0.1:32768->22/tcp, 127.0.0.1:32769->2376/tcp, 127.0.0.1:32770->5000/tcp, 127.0.0.1:32771->8443/tcp, 127.0.0.1:32772->32443/tcp
+shopflow-backend    iran-3-backend                                                 Exited (137) 6 days ago    
+shopflow-postgres   postgres:17                                                    Exited (0) 6 days ago      
+
+===== DOCKER IMAGES ONLY =====
+REPOSITORY                                              TAG       SIZE
+orders-service                                          latest    208MB
+inventory-service                                       latest    204MB
+lironefitoussi/aws-sol-2                                latest    74.2MB
+450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo   latest    181MB
+ecr-demo                                                latest    181MB
+lironefitoussi/aws-sol-1                                latest    74.2MB
+dude775/movie-api                                       1.0       260MB
+idf775/movie-api                                        1.0       260MB
+mongo                                                   7         1.19GB
+iran-3-backend                                          latest    463MB
+postgres                                                17        645MB
+mcp/playwright                                          <none>    1.43GB
+gcr.io/k8s-minikube/kicbase                             v0.0.50   1.94GB
+gcr.io/k8s-minikube/kicbase                             <none>    1.94GB
+mcp/obsidian                                            <none>    215MB
+
+===== K8S CURRENT CONTEXT =====
+minikube
+
+===== K8S NODES =====
+E0620 16:26:43.076133   12092 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:26:43.100214   12092 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:26:43.100724   12092 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:26:43.101892   12092 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:26:43.101892   12092 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+===== HELM RELEASES =====
+Error: kubernetes cluster unreachable: Get "https://127.0.0.1:59885/version": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+===== REPO ROOT FILES =====
+01-source/helm-small-project/.git/config
+01-source/helm-small-project/.git/description
+01-source/helm-small-project/.git/FETCH_HEAD
+01-source/helm-small-project/.git/HEAD
+01-source/helm-small-project/.git/index
+01-source/helm-small-project/.git/ORIG_HEAD
+01-source/helm-small-project/.git/packed-refs
+01-source/helm-small-project/.gitignore
+01-source/helm-small-project/docs/step-01-run-app.md
+01-source/helm-small-project/docs/step-02-docker.md
+01-source/helm-small-project/docs/step-03-k8s-manual.md
+01-source/helm-small-project/docs/step-04.5-rebuild-logging.md
+01-source/helm-small-project/docs/step-04-k8s-mongodb.md
+01-source/helm-small-project/docs/step-05-helm-basic.md
+01-source/helm-small-project/docs/step-06-helm-mongodb-dependency.md
+01-source/helm-small-project/movie-api.zip
+01-source/helm-small-project/movie-api/requirements.txt
+01-source/helm-small-project/movie-api-v1.zip
+01-source/helm-small-project/movie-api-v1/requirements.txt
+01-source/helm-small-project/movie-api-v2.zip
+01-source/helm-small-project/movie-api-v2/requirements.txt
+01-source/helm-small-project/README.md
+
+===== CHARTS FOUND COUNT =====
+38
+
+===== DOCKERFILES FOUND COUNT =====
+78
+
+===== COMPOSE FILES FOUND COUNT =====
+14

@@ -1,0 +1,16 @@
+
+============================================================
+helm repo list
+============================================================
+
+NAME                	URL                                               
+prometheus-community	https://prometheus-community.github.io/helm-charts
+bitnami             	https://charts.bitnami.com/bitnami                
+
+============================================================
+helm repo list
+============================================================
+
+NAME                	URL                                               
+prometheus-community	https://prometheus-community.github.io/helm-charts
+bitnami             	https://charts.bitnami.com/bitnami                

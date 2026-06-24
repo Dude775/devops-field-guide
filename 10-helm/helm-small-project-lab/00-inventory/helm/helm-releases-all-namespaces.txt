@@ -1,0 +1,12 @@
+
+============================================================
+helm list -A
+============================================================
+
+Error: kubernetes cluster unreachable: Get "https://127.0.0.1:59885/version": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+helm list -A
+============================================================
+
+Error: kubernetes cluster unreachable: Get "https://127.0.0.1:59885/version": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.

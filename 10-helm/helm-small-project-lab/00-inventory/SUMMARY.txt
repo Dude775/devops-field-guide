@@ -1,0 +1,25 @@
+Preflight Inventory - helm-small-project-lab
+Generated: 2026-06-20 16:20:36
+
+Lab root: /e/Genspark/devops-field-guide/10-helm/helm-small-project-lab
+Repo: https://github.com/LironeFitoussi/helm-small-project.git
+
+
+Results folder:
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/00-inventory
+
+Counts:
+Docker containers: 8
+Docker images: 13
+Project marker files: 605
+
+Important files:
+00-inventory/SUMMARY.txt
+00-inventory/tools-versions.txt
+00-inventory/docker/containers.txt
+00-inventory/docker/images.txt
+00-inventory/kubernetes/current-context.txt
+00-inventory/kubernetes/nodes.txt
+00-inventory/helm/helm-releases-all-namespaces.txt
+00-inventory/filesystem/project-markers.txt
+00-inventory/repo/repo-tree.txt

@@ -1,0 +1,42 @@
+
+============================================================
+docker images
+============================================================
+
+IMAGE                                                                                                 ID             DISK USAGE   CONTENT SIZE   EXTRA
+450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest                                          15cc573a44f1        181MB         44.9MB   U    
+dude775/movie-api:1.0                                                                                 0ee2d7eee745        260MB           62MB   U    
+ecr-demo:latest                                                                                       15cc573a44f1        181MB         44.9MB   U    
+gcr.io/k8s-minikube/kicbase:v0.0.50                                                                   b97074569ae9       1.94GB          545MB        
+gcr.io/k8s-minikube/kicbase@sha256:eb4fec00e8ad70adf8e6436f195cc429825ffb85f95afcdb5d8d9deb576f3e93   eb4fec00e8ad       1.94GB          545MB   U    
+idf775/movie-api:1.0                                                                                  0ee2d7eee745        260MB           62MB   U    
+inventory-service:latest                                                                              e035bddc3e1e        204MB         49.6MB        
+iran-3-backend:latest                                                                                 3abd593a13d1        463MB         79.3MB   U    
+lironefitoussi/aws-sol-1:latest                                                                       84d6e950bf2d       74.2MB         21.1MB   U    
+lironefitoussi/aws-sol-2:latest                                                                       8139c7fd1996       74.2MB         21.1MB   U    
+mcp/obsidian@sha256:0eba4c05742ad35faeb91eca40b792454d440d86449c9f1b3cb6c387a510651b                  0eba4c05742a        215MB         54.2MB        
+mcp/playwright@sha256:43e3be2da74d869cf08487149bdc40c33a2e51eeb13f9f6dc8ac9f1ad7a817ae                43e3be2da74d       1.43GB          405MB        
+mongo:7                                                                                               8ecb514b00bd       1.19GB          297MB   U    
+orders-service:latest                                                                                 b72d0aac4479        208MB         50.6MB        
+postgres:17                                                                                           0027bef26712        645MB          167MB   U    
+
+============================================================
+docker images
+============================================================
+
+IMAGE                                                                                                 ID             DISK USAGE   CONTENT SIZE   EXTRA
+450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest                                          15cc573a44f1        181MB         44.9MB   U    
+dude775/movie-api:1.0                                                                                 0ee2d7eee745        260MB           62MB   U    
+ecr-demo:latest                                                                                       15cc573a44f1        181MB         44.9MB   U    
+gcr.io/k8s-minikube/kicbase:v0.0.50                                                                   b97074569ae9       1.94GB          545MB        
+gcr.io/k8s-minikube/kicbase@sha256:eb4fec00e8ad70adf8e6436f195cc429825ffb85f95afcdb5d8d9deb576f3e93   eb4fec00e8ad       1.94GB          545MB   U    
+idf775/movie-api:1.0                                                                                  0ee2d7eee745        260MB           62MB   U    
+inventory-service:latest                                                                              e035bddc3e1e        204MB         49.6MB        
+iran-3-backend:latest                                                                                 3abd593a13d1        463MB         79.3MB   U    
+lironefitoussi/aws-sol-1:latest                                                                       84d6e950bf2d       74.2MB         21.1MB   U    
+lironefitoussi/aws-sol-2:latest                                                                       8139c7fd1996       74.2MB         21.1MB   U    
+mcp/obsidian@sha256:0eba4c05742ad35faeb91eca40b792454d440d86449c9f1b3cb6c387a510651b                  0eba4c05742a        215MB         54.2MB        
+mcp/playwright@sha256:43e3be2da74d869cf08487149bdc40c33a2e51eeb13f9f6dc8ac9f1ad7a817ae                43e3be2da74d       1.43GB          405MB        
+mongo:7                                                                                               8ecb514b00bd       1.19GB          297MB   U    
+orders-service:latest                                                                                 b72d0aac4479        208MB         50.6MB        
+postgres:17                                                                                           0027bef26712        645MB          167MB   U    

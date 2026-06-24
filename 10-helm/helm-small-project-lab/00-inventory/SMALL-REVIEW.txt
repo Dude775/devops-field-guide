@@ -1,0 +1,524 @@
+]633;E;{   echo "==================== SUMMARY ===================="\x3b   cat 00-inventory/SUMMARY.txt\x3b    echo ""\x3b   echo "==================== TOOLS - ONLY PROBLEMS / VERSIONS ===================="\x3b   grep -Ei "git version|Docker version|Client:|Server:|kubectl|helm|Python|Visual Studio Code|not found|command not found|error|failed|cannot|unable" 00-inventory/tools-versions.txt | sed -n '1,120p'\x3b    echo ""\x3b   echo "==================== DOCKER CONTAINERS ===================="\x3b   sed -n '1,40p' 00-inventory/docker/containers.txt\x3b    echo ""\x3b   echo "==================== DOCKER IMAGES ===================="\x3b   sed -n '1,40p' 00-inventory/docker/images.txt\x3b    echo ""\x3b   echo "==================== DOCKER VOLUMES ===================="\x3b   sed -n '1,40p' 00-inventory/docker/volumes.txt\x3b    echo ""\x3b   echo "==================== DOCKER NETWORKS ===================="\x3b   sed -n '1,40p' 00-inventory/docker/networks.txt\x3b    echo ""\x3b   echo "==================== K8S CURRENT CONTEXT ===================="\x3b   cat 00-inventory/kubernetes/current-context.txt\x3b    echo ""\x3b   echo "==================== K8S CONTEXTS ===================="\x3b   cat 00-inventory/kubernetes/contexts.txt\x3b    echo ""\x3b   echo "==================== K8S NODES ===================="\x3b   cat 00-inventory/kubernetes/nodes.txt\x3b    echo ""\x3b   echo "==================== K8S NAMESPACES ===================="\x3b   cat 00-inventory/kubernetes/namespaces.txt\x3b    echo ""\x3b   echo "==================== HELM RELEASES ===================="\x3b   cat 00-inventory/helm/helm-releases-all-namespaces.txt\x3b    echo ""\x3b   echo "==================== HELM REPOS ===================="\x3b   cat 00-inventory/helm/helm-repos.txt\x3b    echo ""\x3b   echo "==================== REPO CLONE STATUS ===================="\x3b   cat 00-inventory/repo/repo-clone-update.txt\x3b    echo ""\x3b   echo "==================== REPO TREE FIRST 100 ===================="\x3b   sed -n '1,100p' 00-inventory/repo/repo-tree.txt\x3b    echo ""\x3b   echo "==================== MARKER COUNTS ===================="\x3b   echo -n "Dockerfile: "\x3b   grep -Ei '/Dockerfile$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b    echo -n "docker-compose / compose: "\x3b   grep -Ei '/(docker-compose.yml|docker-compose.yaml|compose.yml|compose.yaml)$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b    echo -n "Chart.yaml: "\x3b   grep -Ei '/Chart.yaml$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b    echo -n "values.yaml: "\x3b   grep -Ei '/values.yaml$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b    echo -n "K8s deployment/service/configmap/secret/statefulset: "\x3b   grep -Ei '/(deployment.yaml|service.yaml|configmap.yaml|secret.yaml|statefulset.yaml)$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b    echo -n "requirements.txt: "\x3b   grep -Ei '/requirements.txt$' 00-inventory/filesystem/project-markers.txt | wc -l\x3b    echo ""\x3b   echo "==================== CHART FILES FIRST 60 ===================="\x3b   grep -Ei '/Chart.yaml$' 00-inventory/filesystem/project-markers.txt | sed -n '1,60p'\x3b    echo ""\x3b   echo "==================== DOCKERFILES FIRST 60 ===================="\x3b   grep -Ei '/Dockerfile$' 00-inventory/filesystem/project-markers.txt | sed -n '1,60p'\x3b    echo ""\x3b   echo "==================== COMPOSE FILES FIRST 60 ===================="\x3b   grep -Ei '/(docker-compose.yml|docker-compose.yaml|compose.yml|compose.yaml)$' 00-inventory/filesystem/project-markers.txt | sed -n '1,60p'\x3b  } > 00-inventory/SMALL-REVIEW.txt;c5d3d6b3-b1c9-49d3-8aea-02801b20a920]633;C==================== SUMMARY ====================
+Preflight Inventory - helm-small-project-lab
+Generated: 2026-06-20 16:20:36
+
+Lab root: /e/Genspark/devops-field-guide/10-helm/helm-small-project-lab
+Repo: https://github.com/LironeFitoussi/helm-small-project.git
+
+
+Results folder:
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/00-inventory
+
+Counts:
+Docker containers: 8
+Docker images: 13
+Project marker files: 605
+
+Important files:
+00-inventory/SUMMARY.txt
+00-inventory/tools-versions.txt
+00-inventory/docker/containers.txt
+00-inventory/docker/images.txt
+00-inventory/kubernetes/current-context.txt
+00-inventory/kubernetes/nodes.txt
+00-inventory/helm/helm-releases-all-namespaces.txt
+00-inventory/filesystem/project-markers.txt
+00-inventory/repo/repo-tree.txt
+
+==================== TOOLS - ONLY PROBLEMS / VERSIONS ====================
+git version 2.54.0.windows.1
+docker version
+Client:
+Server: Docker Desktop 4.78.0 (229452)
+kubectl version --client
+helm version
+python --version
+Python 3.7.4
+
+==================== DOCKER CONTAINERS ====================
+
+============================================================
+docker ps -a
+============================================================
+
+CONTAINER ID   IMAGE                                                          COMMAND                  CREATED       STATUS                     PORTS                                                                                                                                  NAMES
+fa52015c2e46   lironefitoussi/aws-sol-2                                       "/docker-entrypoint.…"   2 days ago    Exited (0) 2 days ago                                                                                                                                             gallant_feynman
+351d6c86f9c4   450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest   "docker-entrypoint.s…"   3 days ago    Exited (137) 2 days ago                                                                                                                                           app
+dafafc6a873d   lironefitoussi/aws-sol-1:latest                                "/docker-entrypoint.…"   3 days ago    Exited (0) 3 days ago                                                                                                                                             hungry_chatterjee
+a202ce691269   dude775/movie-api:1.0                                          "/bin/sh -c 'uvicorn…"   5 days ago    Exited (255) 3 days ago    0.0.0.0:3000->3000/tcp                                                                                                                 movie-api
+0ef49875e237   mongo:7                                                        "docker-entrypoint.s…"   5 days ago    Exited (255) 3 days ago    27017/tcp                                                                                                                              mongo
+1685e044e9b0   gcr.io/k8s-minikube/kicbase:v0.0.50                            "/usr/local/bin/entr…"   6 days ago    Exited (255) 4 hours ago   127.0.0.1:32768->22/tcp, 127.0.0.1:32769->2376/tcp, 127.0.0.1:32770->5000/tcp, 127.0.0.1:32771->8443/tcp, 127.0.0.1:32772->32443/tcp   minikube
+1fb4114cf4e9   iran-3-backend                                                 "/nodejs/bin/node di…"   12 days ago   Exited (137) 6 days ago                                                                                                                                           shopflow-backend
+213b5760fc04   postgres:17                                                    "docker-entrypoint.s…"   12 days ago   Exited (0) 6 days ago                                                                                                                                             shopflow-postgres
+
+============================================================
+docker ps -a
+============================================================
+
+CONTAINER ID   IMAGE                                                          COMMAND                  CREATED       STATUS                     PORTS                                                                                                                                  NAMES
+fa52015c2e46   lironefitoussi/aws-sol-2                                       "/docker-entrypoint.…"   2 days ago    Exited (0) 2 days ago                                                                                                                                             gallant_feynman
+351d6c86f9c4   450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest   "docker-entrypoint.s…"   3 days ago    Exited (137) 2 days ago                                                                                                                                           app
+dafafc6a873d   lironefitoussi/aws-sol-1:latest                                "/docker-entrypoint.…"   3 days ago    Exited (0) 3 days ago                                                                                                                                             hungry_chatterjee
+a202ce691269   dude775/movie-api:1.0                                          "/bin/sh -c 'uvicorn…"   5 days ago    Exited (255) 3 days ago    0.0.0.0:3000->3000/tcp                                                                                                                 movie-api
+0ef49875e237   mongo:7                                                        "docker-entrypoint.s…"   5 days ago    Exited (255) 3 days ago    27017/tcp                                                                                                                              mongo
+1685e044e9b0   gcr.io/k8s-minikube/kicbase:v0.0.50                            "/usr/local/bin/entr…"   6 days ago    Exited (255) 4 hours ago   127.0.0.1:32768->22/tcp, 127.0.0.1:32769->2376/tcp, 127.0.0.1:32770->5000/tcp, 127.0.0.1:32771->8443/tcp, 127.0.0.1:32772->32443/tcp   minikube
+1fb4114cf4e9   iran-3-backend                                                 "/nodejs/bin/node di…"   12 days ago   Exited (137) 6 days ago                                                                                                                                           shopflow-backend
+213b5760fc04   postgres:17                                                    "docker-entrypoint.s…"   12 days ago   Exited (0) 6 days ago                                                                                                                                             shopflow-postgres
+
+==================== DOCKER IMAGES ====================
+
+============================================================
+docker images
+============================================================
+
+IMAGE                                                                                                 ID             DISK USAGE   CONTENT SIZE   EXTRA
+450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest                                          15cc573a44f1        181MB         44.9MB   U    
+dude775/movie-api:1.0                                                                                 0ee2d7eee745        260MB           62MB   U    
+ecr-demo:latest                                                                                       15cc573a44f1        181MB         44.9MB   U    
+gcr.io/k8s-minikube/kicbase:v0.0.50                                                                   b97074569ae9       1.94GB          545MB        
+gcr.io/k8s-minikube/kicbase@sha256:eb4fec00e8ad70adf8e6436f195cc429825ffb85f95afcdb5d8d9deb576f3e93   eb4fec00e8ad       1.94GB          545MB   U    
+idf775/movie-api:1.0                                                                                  0ee2d7eee745        260MB           62MB   U    
+inventory-service:latest                                                                              e035bddc3e1e        204MB         49.6MB        
+iran-3-backend:latest                                                                                 3abd593a13d1        463MB         79.3MB   U    
+lironefitoussi/aws-sol-1:latest                                                                       84d6e950bf2d       74.2MB         21.1MB   U    
+lironefitoussi/aws-sol-2:latest                                                                       8139c7fd1996       74.2MB         21.1MB   U    
+mcp/obsidian@sha256:0eba4c05742ad35faeb91eca40b792454d440d86449c9f1b3cb6c387a510651b                  0eba4c05742a        215MB         54.2MB        
+mcp/playwright@sha256:43e3be2da74d869cf08487149bdc40c33a2e51eeb13f9f6dc8ac9f1ad7a817ae                43e3be2da74d       1.43GB          405MB        
+mongo:7                                                                                               8ecb514b00bd       1.19GB          297MB   U    
+orders-service:latest                                                                                 b72d0aac4479        208MB         50.6MB        
+postgres:17                                                                                           0027bef26712        645MB          167MB   U    
+
+============================================================
+docker images
+============================================================
+
+IMAGE                                                                                                 ID             DISK USAGE   CONTENT SIZE   EXTRA
+450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest                                          15cc573a44f1        181MB         44.9MB   U    
+dude775/movie-api:1.0                                                                                 0ee2d7eee745        260MB           62MB   U    
+ecr-demo:latest                                                                                       15cc573a44f1        181MB         44.9MB   U    
+gcr.io/k8s-minikube/kicbase:v0.0.50                                                                   b97074569ae9       1.94GB          545MB        
+gcr.io/k8s-minikube/kicbase@sha256:eb4fec00e8ad70adf8e6436f195cc429825ffb85f95afcdb5d8d9deb576f3e93   eb4fec00e8ad       1.94GB          545MB   U    
+idf775/movie-api:1.0                                                                                  0ee2d7eee745        260MB           62MB   U    
+inventory-service:latest                                                                              e035bddc3e1e        204MB         49.6MB        
+iran-3-backend:latest                                                                                 3abd593a13d1        463MB         79.3MB   U    
+lironefitoussi/aws-sol-1:latest                                                                       84d6e950bf2d       74.2MB         21.1MB   U    
+lironefitoussi/aws-sol-2:latest                                                                       8139c7fd1996       74.2MB         21.1MB   U    
+mcp/obsidian@sha256:0eba4c05742ad35faeb91eca40b792454d440d86449c9f1b3cb6c387a510651b                  0eba4c05742a        215MB         54.2MB        
+mcp/playwright@sha256:43e3be2da74d869cf08487149bdc40c33a2e51eeb13f9f6dc8ac9f1ad7a817ae                43e3be2da74d       1.43GB          405MB        
+mongo:7                                                                                               8ecb514b00bd       1.19GB          297MB   U    
+
+==================== DOCKER VOLUMES ====================
+
+============================================================
+docker volume ls
+============================================================
+
+DRIVER    VOLUME NAME
+local     1a23099bf55acd2b39ffec59a5c761f1caacf213ce099eb49746b644269ed5aa
+local     6ffa7bbac665624165285802942445689fd9d60ae6c98795ff6763ad4496a945
+local     a5e7cf3a58b7628d48efc92b7e06e33b5602bdb40fc26a0e8a2d146110eaf8a2
+local     ca759815c0bb7daf470fa53ef8d45288efae9bea6881bf4efdab8ba770bf32e6
+local     iran-3_postgres-data
+local     minikube
+
+============================================================
+docker volume ls
+============================================================
+
+DRIVER    VOLUME NAME
+local     1a23099bf55acd2b39ffec59a5c761f1caacf213ce099eb49746b644269ed5aa
+local     6ffa7bbac665624165285802942445689fd9d60ae6c98795ff6763ad4496a945
+local     a5e7cf3a58b7628d48efc92b7e06e33b5602bdb40fc26a0e8a2d146110eaf8a2
+local     ca759815c0bb7daf470fa53ef8d45288efae9bea6881bf4efdab8ba770bf32e6
+local     iran-3_postgres-data
+local     minikube
+
+==================== DOCKER NETWORKS ====================
+
+============================================================
+docker network ls
+============================================================
+
+NETWORK ID     NAME                                DRIVER    SCOPE
+f1252a93bbb1   bridge                              bridge    local
+47bc311ff378   host                                host      local
+9c00c448f239   iran-3_backend-net                  bridge    local
+caf6f51f30bc   live-lesson-compose_default         bridge    local
+c62f10e928c5   microservices-docker_app            bridge    local
+871b10826db6   microservices-docker_edge-net       bridge    local
+f733cdc36125   microservices-docker_products-net   bridge    local
+994f8ab691f9   microservices-docker_public-net     bridge    local
+8e9c96d71539   microservices-docker_users-net      bridge    local
+d805320dc4b3   minikube                            bridge    local
+647e87848a14   movie-net                           bridge    local
+b2b97998fd25   my-network                          bridge    local
+054d0b90bffe   none                                null      local
+f75c49a20123   personalknowledgeblog_internal      bridge    local
+ed52993d21ad   postgres-network                    bridge    local
+a571da0eff17   smartbasket_default                 bridge    local
+
+============================================================
+docker network ls
+============================================================
+
+NETWORK ID     NAME                                DRIVER    SCOPE
+f1252a93bbb1   bridge                              bridge    local
+47bc311ff378   host                                host      local
+9c00c448f239   iran-3_backend-net                  bridge    local
+caf6f51f30bc   live-lesson-compose_default         bridge    local
+c62f10e928c5   microservices-docker_app            bridge    local
+871b10826db6   microservices-docker_edge-net       bridge    local
+f733cdc36125   microservices-docker_products-net   bridge    local
+994f8ab691f9   microservices-docker_public-net     bridge    local
+8e9c96d71539   microservices-docker_users-net      bridge    local
+d805320dc4b3   minikube                            bridge    local
+647e87848a14   movie-net                           bridge    local
+b2b97998fd25   my-network                          bridge    local
+
+==================== K8S CURRENT CONTEXT ====================
+
+============================================================
+kubectl config current-context
+============================================================
+
+minikube
+
+============================================================
+kubectl config current-context
+============================================================
+
+minikube
+
+==================== K8S CONTEXTS ====================
+
+============================================================
+kubectl config get-contexts
+============================================================
+
+CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
+*         minikube   minikube   minikube   default
+
+============================================================
+kubectl config get-contexts
+============================================================
+
+CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
+*         minikube   minikube   minikube   default
+
+==================== K8S NODES ====================
+
+============================================================
+kubectl get nodes -o wide
+============================================================
+
+E0620 16:20:22.870295    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.893949    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.895130    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.896245    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.897297    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+kubectl get nodes -o wide
+============================================================
+
+E0620 16:20:40.610112    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.635027    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.636767    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.637323    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.638396    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+==================== K8S NAMESPACES ====================
+
+============================================================
+kubectl get ns
+============================================================
+
+E0620 16:20:22.971019   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.995941   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.996474   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.998015   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.998660   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+kubectl get ns
+============================================================
+
+E0620 16:20:40.710669   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.736444   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.737467   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.737984   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.739023   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+==================== HELM RELEASES ====================
+
+============================================================
+helm list -A
+============================================================
+
+Error: kubernetes cluster unreachable: Get "https://127.0.0.1:59885/version": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+helm list -A
+============================================================
+
+Error: kubernetes cluster unreachable: Get "https://127.0.0.1:59885/version": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+==================== HELM REPOS ====================
+
+============================================================
+helm repo list
+============================================================
+
+NAME                	URL                                               
+prometheus-community	https://prometheus-community.github.io/helm-charts
+bitnami             	https://charts.bitnami.com/bitnami                
+
+============================================================
+helm repo list
+============================================================
+
+NAME                	URL                                               
+prometheus-community	https://prometheus-community.github.io/helm-charts
+bitnami             	https://charts.bitnami.com/bitnami                
+
+==================== REPO CLONE STATUS ====================
+Generated: 2026-06-20 16:20:36
+
+============================================================
+git status
+============================================================
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+============================================================
+git pull
+============================================================
+
+Already up to date.
+
+==================== REPO TREE FIRST 100 ====================
+.
+./.git
+./.git/config
+./.git/description
+./.git/FETCH_HEAD
+./.git/gk
+./.git/gk/config
+./.git/HEAD
+./.git/hooks
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/push-to-checkout.sample
+./.git/hooks/sendemail-validate.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info
+./.git/info/exclude
+./.git/logs
+./.git/logs/HEAD
+./.git/logs/refs
+./.git/logs/refs/heads
+./.git/logs/refs/heads/master
+./.git/logs/refs/remotes
+./.git/logs/refs/remotes/origin
+./.git/logs/refs/remotes/origin/HEAD
+./.git/objects
+./.git/objects/info
+./.git/objects/pack
+./.git/objects/pack/pack-9b3e3aab4ba09319601a0425143108e6ebebacb1.idx
+./.git/objects/pack/pack-9b3e3aab4ba09319601a0425143108e6ebebacb1.pack
+./.git/objects/pack/pack-9b3e3aab4ba09319601a0425143108e6ebebacb1.rev
+./.git/ORIG_HEAD
+./.git/packed-refs
+./.git/refs
+./.git/refs/heads
+./.git/refs/heads/master
+./.git/refs/remotes
+./.git/refs/remotes/origin
+./.git/refs/remotes/origin/HEAD
+./.git/refs/tags
+./.gitignore
+./docs
+./docs/step-01-run-app.md
+./docs/step-02-docker.md
+./docs/step-03-k8s-manual.md
+./docs/step-04-k8s-mongodb.md
+./docs/step-04.5-rebuild-logging.md
+./docs/step-05-helm-basic.md
+./docs/step-06-helm-mongodb-dependency.md
+./movie-api
+./movie-api/app
+./movie-api/app/db.py
+./movie-api/app/main.py
+./movie-api/app/models.py
+./movie-api/app/routes
+./movie-api/app/routes/movies.py
+./movie-api/app/routes/__init__.py
+./movie-api/app/__init__.py
+./movie-api/requirements.txt
+./movie-api-v1
+./movie-api-v1/app
+./movie-api-v1/app/db.py
+./movie-api-v1/app/main.py
+./movie-api-v1/app/models.py
+./movie-api-v1/app/routes
+./movie-api-v1/app/routes/movies.py
+./movie-api-v1/app/routes/__init__.py
+./movie-api-v1/app/__init__.py
+./movie-api-v1/requirements.txt
+./movie-api-v1.zip
+./movie-api-v2
+./movie-api-v2/app
+./movie-api-v2/app/db.py
+./movie-api-v2/app/main.py
+./movie-api-v2/app/models.py
+./movie-api-v2/app/routes
+./movie-api-v2/app/routes/movies.py
+./movie-api-v2/app/routes/__init__.py
+./movie-api-v2/app/__init__.py
+./movie-api-v2/requirements.txt
+./movie-api-v2.zip
+./movie-api.zip
+./README.md
+
+==================== MARKER COUNTS ====================
+Dockerfile: 78
+docker-compose / compose: 14
+Chart.yaml: 38
+values.yaml: 40
+K8s deployment/service/configmap/secret/statefulset: 79
+requirements.txt: 18
+
+==================== CHART FILES FIRST 60 ====================
+/e/Genspark/DevOps-Materials/Helm/4/4.0/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.1/intro-go-templating/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/backend-app/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/backend-app/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.2/intro-go-templating/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.3/intro-go-templating/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.4/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.5/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.6/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.7/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.8/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.9/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.1/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.10/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.11/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.3/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.4/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.5/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.6/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.7/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.8/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.9/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.1/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.2/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/charts/demo-subchart/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/charts/demo-subchart/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/charts/demo-subchart/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/charts/demo-subchart/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.7/config-store/Chart.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating/Chart.yaml
+
+==================== DOCKERFILES FIRST 60 ====================
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab5.1-nginx-docker/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab5.2-copy-index/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab6.1-lifecycle/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab6.2-dockerize-node/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7-diving-into-images/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.11-multistage-typescript/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.2-build-context/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.3-dockerignore/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.4-env-vars/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.5-env-override/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.6-env-files/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.8-multistage/app/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.9-multistage-build/app/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/scratch/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/src/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.1-traffic-generator-image/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.7-color-api-probes-prep/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.9-startup-endpoint-bugfix/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/rolling-lab/kubernetes-e2e-lab-part-1/e2e-movie-recommendation-api/base/Dockerfile
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/ecr/class-lab-1.1-full-ecr-workflow/ecr-demo/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/mern-eks-app/backend/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/inventory-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/orders-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/inventory-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/orders-service/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_bm/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_nv/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/5 - Intro to Docker Iamges/Dockerfile-NGINX/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/Build Context/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/Build Context 2/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/containerize-express-app-bundle/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/multistage-build/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/multistage-builds-bundle/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/9/containerized-react-app/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/frontend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notebooks-backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notes-backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless1/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless2/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless3-ts/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/lab7.15-final-optimization/Dockerfile
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_2_final_lab/Dockerfile
+/e/Genspark/DevOps-Materials/Helm/7/7.1/config-store/Dockerfile
+/e/Genspark/DevOps-Materials/Helm/7/7.2/config-store/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 6/color-api/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 7/color-api/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 8/color-api/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 9/color-api/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/3 - Running Containers in Kubernetes/4Hands-On - Color API - Implement v1.0.0/color-api-only/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/3 - Running Containers in Kubernetes/5Hands-On - From Dockerfiles to Pods/color-api-only/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/1Hands-On - Color API - Implement v1.1.0 - Add hostname information/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/2Hands-On - Traffic Generator - Implement v1.0.0/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/colors-api-base/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/7 - Resource Management/11Hands-On - Liveness Probes in Details/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/7 - Resource Management/8Hands-On - Color API - Implement v1.2.0 - Add health endpoints/Dockerfile
+
+==================== COMPOSE FILES FIRST 60 ====================
+/e/Genspark/devops-field-guide/07-docker/early-labs/live-lesson-compose/docker-compose.yml
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/docker-compose.yml
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/docker-compose.yml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-docker/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notebooks-backend/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notes-backend/compose.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.1/config-store/compose.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.2/config-store/compose.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-app/docker-compose.yml
+/e/Genspark/DevOps-Materials/Monitoring/2 - Setting Up the Observability Stack [CC4]/loki-setup/compose/compose.yaml
+/e/Genspark/DevOps-Materials/Monitoring/2 - Setting Up the Observability Stack [CC4]/prometheus-setup/compose/compose.yaml
+/e/Genspark/microservices-docker/docker-compose.yml

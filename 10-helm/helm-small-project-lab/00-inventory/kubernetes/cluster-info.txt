@@ -1,0 +1,26 @@
+
+============================================================
+kubectl cluster-info
+============================================================
+
+E0620 16:20:22.771614   27984 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.796154   27984 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.796684   27984 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.797752   27984 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.798345   27984 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+kubectl cluster-info
+============================================================
+
+E0620 16:20:40.514213   14068 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.537766   14068 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.538866   14068 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.539404   14068 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.540477   14068 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.

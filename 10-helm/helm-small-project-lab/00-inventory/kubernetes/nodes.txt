@@ -1,0 +1,22 @@
+
+============================================================
+kubectl get nodes -o wide
+============================================================
+
+E0620 16:20:22.870295    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.893949    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.895130    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.896245    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.897297    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+kubectl get nodes -o wide
+============================================================
+
+E0620 16:20:40.610112    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.635027    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.636767    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.637323    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.638396    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.

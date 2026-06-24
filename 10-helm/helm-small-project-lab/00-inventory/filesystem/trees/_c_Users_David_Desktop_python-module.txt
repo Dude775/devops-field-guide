@@ -1,0 +1,433 @@
+/c/Users/David/Desktop/python-module
+/c/Users/David/Desktop/python-module/- D_R- run.sh
+/c/Users/David/Desktop/python-module/.gitignore
+/c/Users/David/Desktop/python-module/.vscode
+/c/Users/David/Desktop/python-module/01-first-git-repo-in-class
+/c/Users/David/Desktop/python-module/01-first-git-repo-in-class/index.html
+/c/Users/David/Desktop/python-module/01-first-git-repo-in-class/README.md
+/c/Users/David/Desktop/python-module/57b7a67c86964d21bfc89778206c51231778705078437.pdf
+/c/Users/David/Desktop/python-module/advanced-git-lab
+/c/Users/David/Desktop/python-module/advanced-git-lab/calculator-app
+/c/Users/David/Desktop/python-module/advanced-git-lab/calculator-app/main.py
+/c/Users/David/Desktop/python-module/advanced-git-lab/calculator-app/utils.py
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots/lab1.10.jpg
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots/lab1.6-git-log-history.jpg
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots/lab1.6-git-log-patch_part1.jpg
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots/lab1.6-git-log-patch_part2.jpg
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots/lab1.6-git-log-patch_part3.jpg
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots/lab1.7.jpg
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots/lab1.8 git log --oneline --all --graph.jpg
+/c/Users/David/Desktop/python-module/advanced-git-lab/screenshots/lab1.9.jpg
+/c/Users/David/Desktop/python-module/alexdv-collab
+/c/Users/David/Desktop/python-module/alexdv-collab/app.py
+/c/Users/David/Desktop/python-module/alexdv-collab/data.txt
+/c/Users/David/Desktop/python-module/alexdv-collab/David & Alex lab 1.0.jpg
+/c/Users/David/Desktop/python-module/alexdv-collab/David & Alex_Daniel lab 1.1.jpg
+/c/Users/David/Desktop/python-module/alexdv-collab/file.py
+/c/Users/David/Desktop/python-module/alexdv-collab/utils.py
+/c/Users/David/Desktop/python-module/ATM1_29_3_26.jpg
+/c/Users/David/Desktop/python-module/ATM_29_3_26.jpg
+/c/Users/David/Desktop/python-module/basic
+/c/Users/David/Desktop/python-module/basic/.python-version
+/c/Users/David/Desktop/python-module/basic/answers_lab_1.5_user_input.py
+/c/Users/David/Desktop/python-module/basic/booleans
+/c/Users/David/Desktop/python-module/basic/booleans/booleans_exercises.py
+/c/Users/David/Desktop/python-module/basic/booleans/conditionals_exercises.py
+/c/Users/David/Desktop/python-module/basic/booleans/functions_scope_exercises.py
+/c/Users/David/Desktop/python-module/basic/booleans/guerd_clauses_exercises.py
+/c/Users/David/Desktop/python-module/basic/booleans/Hands-on Lab 3.0.jpg
+/c/Users/David/Desktop/python-module/basic/booleans/Lab 3_1 - Conditional Logic .jpg
+/c/Users/David/Desktop/python-module/basic/booleans/membership_exercises.py
+/c/Users/David/Desktop/python-module/basic/booleans/nested_conditions_exercises.py
+/c/Users/David/Desktop/python-module/basic/comments_exercises.py
+/c/Users/David/Desktop/python-module/basic/input_tasks
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_add.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_basic.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_calc.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_commented.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_float.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_greeting.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_int.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_label.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_multi_print.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_ops.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_prompt.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_remainder.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_string.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_total.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/input_two.py
+/c/Users/David/Desktop/python-module/basic/input_tasks/Using What You’ve Learned.jpg
+/c/Users/David/Desktop/python-module/basic/Lab 1.1.txt
+/c/Users/David/Desktop/python-module/basic/Lab 2.3 - Sets Practice Exercises.jpg
+/c/Users/David/Desktop/python-module/basic/lists
+/c/Users/David/Desktop/python-module/basic/lists/advanced_sets_exercises.py
+/c/Users/David/Desktop/python-module/basic/lists/Hands-On Lab 2.0.jpg
+/c/Users/David/Desktop/python-module/basic/lists/Hands-On Lab 2.1 .jpg
+/c/Users/David/Desktop/python-module/basic/lists/Hands-On Lab 2.4.jpg
+/c/Users/David/Desktop/python-module/basic/lists/Hands-On Lab 2.5.jpg
+/c/Users/David/Desktop/python-module/basic/lists/Hands-On Lab 2.6.jpg
+/c/Users/David/Desktop/python-module/basic/lists/lists_basics.py
+/c/Users/David/Desktop/python-module/basic/lists/lists_exercises.py
+/c/Users/David/Desktop/python-module/basic/lists/list_mutation_exercises.py
+/c/Users/David/Desktop/python-module/basic/lists/sets_devops_exercises.py
+/c/Users/David/Desktop/python-module/basic/lists/sets_exercises.py
+/c/Users/David/Desktop/python-module/basic/lists/sets_logic_exercises.py
+/c/Users/David/Desktop/python-module/basic/literals
+/c/Users/David/Desktop/python-module/basic/literals/bools_basic.py
+/c/Users/David/Desktop/python-module/basic/literals/bools_comparison.py
+/c/Users/David/Desktop/python-module/basic/literals/bools_convert.py
+/c/Users/David/Desktop/python-module/basic/literals/floats_basic.py
+/c/Users/David/Desktop/python-module/basic/literals/floats_mixed.py
+/c/Users/David/Desktop/python-module/basic/literals/floats_scientific.py
+/c/Users/David/Desktop/python-module/basic/literals/hex_basic.py
+/c/Users/David/Desktop/python-module/basic/literals/hex_color.py
+/c/Users/David/Desktop/python-module/basic/literals/hex_convert.py
+/c/Users/David/Desktop/python-module/basic/literals/ints_arithmetic.py
+/c/Users/David/Desktop/python-module/basic/literals/ints_basic.py
+/c/Users/David/Desktop/python-module/basic/literals/ints_large.py
+/c/Users/David/Desktop/python-module/basic/literals/octal_basic.py
+/c/Users/David/Desktop/python-module/basic/literals/octal_convert.py
+/c/Users/David/Desktop/python-module/basic/literals/octal_decimal.py
+/c/Users/David/Desktop/python-module/basic/literals/strings_escapes.py
+/c/Users/David/Desktop/python-module/basic/literals/strings_multiline.py
+/c/Users/David/Desktop/python-module/basic/literals/strings_quotes.py
+/c/Users/David/Desktop/python-module/basic/loops
+/c/Users/David/Desktop/python-module/basic/loops/atm_lab.py
+/c/Users/David/Desktop/python-module/basic/loops/dictionaries_lab_4_4.py
+/c/Users/David/Desktop/python-module/basic/loops/enumerate_zip_lab_4_2.py
+/c/Users/David/Desktop/python-module/basic/loops/For_Loop_4_5.py
+/c/Users/David/Desktop/python-module/basic/loops/while_lab_4_0.py
+/c/Users/David/Desktop/python-module/basic/modules
+/c/Users/David/Desktop/python-module/basic/modules/app.py
+/c/Users/David/Desktop/python-module/basic/modules/calculator.py
+/c/Users/David/Desktop/python-module/basic/modules/dates.py
+/c/Users/David/Desktop/python-module/basic/modules/human.py
+/c/Users/David/Desktop/python-module/basic/modules/lab_5_2.py
+/c/Users/David/Desktop/python-module/basic/modules/lab_5_3.py
+/c/Users/David/Desktop/python-module/basic/modules/main_calc.py
+/c/Users/David/Desktop/python-module/basic/modules/math_module.py
+/c/Users/David/Desktop/python-module/basic/modules/sys_modules.py
+/c/Users/David/Desktop/python-module/basic/numbers_exercises.py
+/c/Users/David/Desktop/python-module/basic/oop
+/c/Users/David/Desktop/python-module/basic/operators
+/c/Users/David/Desktop/python-module/basic/operators/basic_operators.jpg
+/c/Users/David/Desktop/python-module/basic/operators/ops_add_sub.py
+/c/Users/David/Desktop/python-module/basic/operators/ops_div.py
+/c/Users/David/Desktop/python-module/basic/operators/ops_div_more.py
+/c/Users/David/Desktop/python-module/basic/operators/ops_modulo.py
+/c/Users/David/Desktop/python-module/basic/operators/ops_modulo_use.py
+/c/Users/David/Desktop/python-module/basic/operators/ops_mul.py
+/c/Users/David/Desktop/python-module/basic/operators/ops_plus_minus_mul.py
+/c/Users/David/Desktop/python-module/basic/operators/order_left_right.py
+/c/Users/David/Desktop/python-module/basic/operators/order_mixed.py
+/c/Users/David/Desktop/python-module/basic/operators/order_parens.py
+/c/Users/David/Desktop/python-module/basic/operators/order_parens2.py
+/c/Users/David/Desktop/python-module/basic/print_basics
+/c/Users/David/Desktop/python-module/basic/print_basics/print_end.py
+/c/Users/David/Desktop/python-module/basic/print_basics/print_sep.py
+/c/Users/David/Desktop/python-module/basic/print_basics/print_sep_end.py
+/c/Users/David/Desktop/python-module/basic/print_basics/status_line.py
+/c/Users/David/Desktop/python-module/basic/print_basics/welcome.py
+/c/Users/David/Desktop/python-module/basic/shortcuts
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_decrement.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_div.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_floordiv.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_increment.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_minus.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_mixed.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_mod.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_mul.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_plus.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/shortcut_string.py
+/c/Users/David/Desktop/python-module/basic/shortcuts/Tasks 06 - Shortcut Assignment Operators.jpg
+/c/Users/David/Desktop/python-module/basic/strings_exercises.py
+/c/Users/David/Desktop/python-module/basic/type_casting
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_chain.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_float_ops.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_float_to_int.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_float_to_str.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_int_to_float.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_label_number.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_str_print.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_str_to_bool.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_to_bool.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_to_float.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_to_int.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_to_str.py
+/c/Users/David/Desktop/python-module/basic/type_casting/cast_two_ints.py
+/c/Users/David/Desktop/python-module/basic/type_casting/Tasks 07 - Type Casting.jpg
+/c/Users/David/Desktop/python-module/basic/variables.py
+/c/Users/David/Desktop/python-module/basic/variables_exercises.py
+/c/Users/David/Desktop/python-module/branches-lab
+/c/Users/David/Desktop/python-module/branches-lab/README.md
+/c/Users/David/Desktop/python-module/git-lab
+/c/Users/David/Desktop/python-module/git-lab/project1
+/c/Users/David/Desktop/python-module/git-lab/project1/file.txt
+/c/Users/David/Desktop/python-module/git-lab/project2
+/c/Users/David/Desktop/python-module/git-lab/project2/notes.txt
+/c/Users/David/Desktop/python-module/git-lab/project3
+/c/Users/David/Desktop/python-module/git-lab/project3/app.py
+/c/Users/David/Desktop/python-module/git-lab/project4
+/c/Users/David/Desktop/python-module/git-lab/project4/script.py
+/c/Users/David/Desktop/python-module/git-log-lab
+/c/Users/David/Desktop/python-module/git-log-lab/python-app
+/c/Users/David/Desktop/python-module/git-log-lab/python-app/app.py
+/c/Users/David/Desktop/python-module/gitignore-lab
+/c/Users/David/Desktop/python-module/gitignore-lab/.gitignore
+/c/Users/David/Desktop/python-module/gitignore-lab/app.py
+/c/Users/David/Desktop/python-module/gitignore-lab/debug.log
+/c/Users/David/Desktop/python-module/gitignore-lab/temp.txt
+/c/Users/David/Desktop/python-module/introduction
+/c/Users/David/Desktop/python-module/LAB_5_2.jpg
+/c/Users/David/Desktop/python-module/Networking
+/c/Users/David/Desktop/python-module/Networking/labs
+/c/Users/David/Desktop/python-module/Networking/labs/MongoDB - install - Trancript.txt
+/c/Users/David/Desktop/python-module/Networking/labs/PART-1
+/c/Users/David/Desktop/python-module/Networking/labs/PART-1/A.jpg
+/c/Users/David/Desktop/python-module/Networking/labs/PART-1/B.jpg
+/c/Users/David/Desktop/python-module/Networking/מצגות
+/c/Users/David/Desktop/python-module/Networking/מצגות/lesson 5- Physical Layer מצגת לשיעור.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/Number systems - review quiz PDF.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/Protocols and Models - מצגת שלי לשיעור.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/Terms and Definitions- מונחים והגדרות.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/1 - understanding DNS.docx
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/1_Understading DNS.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/2_DNS Records.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/2_DNS Records.txt
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/3_Linux and Networking.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/3_Linux and Networking.txt
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/4_Network interfaces (ip addr, ip link).pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/4_Network interfaces (ip addr, ip link).txt
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות DNS + Linux Networking‏/Undeestanding DNS -1.txt
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות יום שני
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות יום שני/IPv4 Addressing - מצגת שלי לשיעור.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות יום שני/lesson 6- Data-Link Layer מצגת לשיעור.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות יום שני/lesson 7- Ethernet Switching IITC Theme.pdf
+/c/Users/David/Desktop/python-module/Networking/מצגות/מצגות יום שני/lesson 9- Network Layer מצגת לשיעור.pdf
+/c/Users/David/Desktop/python-module/Networking/סיכומים
+/c/Users/David/Desktop/python-module/Networking/סיכומים/שיעור 1 - מבוא לתקשורת מהרגע שלחצת שלח ועד שזה הגיע לצד השני.docx
+/c/Users/David/Desktop/python-module/Networking/סיכומים/שיעור 1 - מבוא לתקשורת מהרגע שלחצת שלח ועד שזה הגיע לצד השני.pdf
+/c/Users/David/Desktop/python-module/Networking/סיכומים/שיעור 2 - Data Link Network Layer and Routing.docx
+/c/Users/David/Desktop/python-module/Networking/סיכומים/שיעור 2 - Data Link Network Layer and Routing.pdf
+/c/Users/David/Desktop/python-module/Networking/תרגילים
+/c/Users/David/Desktop/python-module/Networking/תרגילים/Problem 1.xlsx
+/c/Users/David/Desktop/python-module/Networking/תרגילים/טבלת סיכום.pdf
+/c/Users/David/Desktop/python-module/Networking/תרגילים/צילום מסך 2026-05-04 191004.jpg
+/c/Users/David/Desktop/python-module/Networking/תרגילים/שאלות Subnetting.pdf
+/c/Users/David/Desktop/python-module/Networking/תרגילים/שאלות נוספות - Subnetting 0 אחרון.pdf
+/c/Users/David/Desktop/python-module/Networking/תרגילים/‏‏גליון עבודה של Microsoft Excel חדש (2).xlsx
+/c/Users/David/Desktop/python-module/Networking/תרגילים/‏‏גליון עבודה של Microsoft Excel חדש.xlsx
+/c/Users/David/Desktop/python-module/oop
+/c/Users/David/Desktop/python-module/oop/ATM
+/c/Users/David/Desktop/python-module/oop/ATM/.gitignore
+/c/Users/David/Desktop/python-module/oop/ATM/main.py
+/c/Users/David/Desktop/python-module/oop/ATM/models.py
+/c/Users/David/Desktop/python-module/oop/ATM/README.md
+/c/Users/David/Desktop/python-module/oop/ATM/storage.py
+/c/Users/David/Desktop/python-module/oop/ATM/ui.py
+/c/Users/David/Desktop/python-module/oop/lab_1_0_animals.py
+/c/Users/David/Desktop/python-module/oop/lab_6_1.py
+/c/Users/David/Desktop/python-module/oop/models_backup.py
+/c/Users/David/Desktop/python-module/oop/כל מטלות
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 1.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 2.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 3.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 4.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 5.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 6.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 7.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 8.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/חלק 9.txt
+/c/Users/David/Desktop/python-module/oop/כל מטלות/‏‏‏‏מסמך טקסט חדש - עותק (9).txt
+/c/Users/David/Desktop/python-module/python-collab-turns
+/c/Users/David/Desktop/python-module/python-module-folder_tree.txt
+/c/Users/David/Desktop/python-module/python-module-new-main
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/.gitignore
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/conditions
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/conditions/bools.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/conditions/ifs.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/conditions/in_keyword.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/conditions/isinstance.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/conditions/more_comp.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/dictionaries
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/dictionaries/basics.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lab_ad_kan
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lab_ad_kan/join.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lab_ad_kan/main.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lab_ad_kan/split.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lists
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lists/lists_basics.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lists/sets.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lists/tempCodeRunnerFile.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/lists/tuples.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/loops
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/loops/enumerate.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/loops/for_loops.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/loops/while_loops.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/loops/zip.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/new-app
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/new-app/jokes.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python-introduction
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python-introduction/strings.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python-introduction/user_input.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python-introduction/variables.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python-introduction/variables_exercises.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python_lab
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python_lab/atm_lab_new.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python_lab/main.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python_lab/mathc_case.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/python_lab/tempCodeRunnerFile.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/test_project
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/test_project/main.py
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/varaibels
+/c/Users/David/Desktop/python-module/python-module-new-main/python-module-new-main/varaibels/variables.py
+/c/Users/David/Desktop/python-module/real-branch-lab
+/c/Users/David/Desktop/python-module/real-branch-lab/calculator
+/c/Users/David/Desktop/python-module/real-branch-lab/calculator/main.py
+/c/Users/David/Desktop/python-module/real-branch-lab/calculator/main.py~
+/c/Users/David/Desktop/python-module/real-branch-lab/calculator/operations.py
+/c/Users/David/Desktop/python-module/script + history - David_Rubin.jpg
+/c/Users/David/Desktop/python-module/todo-collab-lab
+/c/Users/David/Desktop/python-module/todo-collab-lab/danielyacov.py
+/c/Users/David/Desktop/python-module/todo-collab-lab/main.py
+/c/Users/David/Desktop/python-module/todo-collab-lab/tasks.txt
+/c/Users/David/Desktop/python-module/todo-collab-lab/todo.py
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/DevOps-Syllabus.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/FORM3010_0.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/WhatsApp Image 2026-02-23 at 12.43.41.jpeg
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/WhatsApp Image 2026-02-23 at 12.43.51.jpeg
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/~$לום תז - דוד רובין.docx
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/אין באפשרותי למסור מידע זה - אין קשר עם אבי.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/בינארית_בלי_מחשבון_ושיטת_STAR_למבחן_המיון.m4a
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/דוד רובין - אישור ניהול חשבון.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/הכשרה מקצועית - דוד רובין - 205489636.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/הקלטה 2026-02-16 110316.mp4
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מסמכים מעזרא
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מסמכים מעזרא/scan_03-02-2026-125653.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מסמכים מעזרא/הפניה לקורס.docx
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מסמכים מעזרא/קוס Devops - 110798 - דוד רובין.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/03-08-2026 סיכום שיעור.docx
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/הקלטות
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/הקלטות/Screenshot 2026-02-26 224700.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות GITHUB
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות GITHUB/5.1 Introduction to Git and Github.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות GITHUB/5.2 Working with Git.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות GITHUB/5.3 Working with Github.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/1. VMs Intro.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/1. חילוץ תוכן מצגת - VMs Intro.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/10. Package Managment.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/10. חילוץ תוכן מצגת - Package Managment.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/11. Bash Scripting Fundamentals.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/11. חולוץ תתוכן מצגת - Bash Scripting Fundamentals.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/12. Processes & systemd.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/12. חילוץ תוכן מצגת - Processes & systemd.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/13. Bash Scripting Intermediate.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/13. חילוץ תוכן מצגת  -  Bash Scripting Intermediate.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/2. History & distributions.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/2. חילוץ תוכן מצגת - History & Distributions.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/3. Linux & CLI Foundations.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/3. חילוץ תוכן מצגת - Linux & CLI Foundations.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/4. Soft and Hard Links.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/4. חילוץ תוכן מצגת - Soft and Hard Links.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/5. Files, Text & Streams (Pipes).pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/5. חילוץ תוכן מצגת - Files Text & Streams.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/6. Permissions.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/6. חילוץ תוכן מצגת - Users Groups and Permissions.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/7. Users and Groups.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/7. חילוץ תוכן מצגת - Users and Groups.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/8. chown and chmod.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/8. חילוץ תוכן מצגת - chown and chmod.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/9. ACL.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות לינוקס/9. חילוץ תוכן מצגת - ACL.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות למבוא - DEVOPS
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות למבוא - DEVOPS/0. Let's think about an App....pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות למבוא - DEVOPS/1. Client-Server Model (HL).pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות למבוא - DEVOPS/2. The Team.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות למבוא - DEVOPS/3. SDLC.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות למבוא - DEVOPS/4. Clients, Data and Operational Responsability.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות למבוא - DEVOPS/5. Production Environments - Creating an App is not that easy....pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות למבוא - DEVOPS/6. HARDWARE and SERVERS.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות פייתון
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות פייתון/1 - Intro to Programing.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/מצגות פייתון/2 - Setting Up and Running Python.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/03-08-2026 סיכום שיעור.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/1. חילוץ תוכן מצגת - VMs Intro.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/10. חילוץ תוכן מצגת - Package Managment.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/11. חולוץ תתוכן מצגת - Bash Scripting Fundamentals.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/12. חילוץ תוכן מצגת - Processes & systemd.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/13. חילוץ תוכן מצגת  -  Bash Scripting Intermediate.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/2. חילוץ תוכן מצגת - History & Distributions.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/3. חילוץ תוכן מצגת - Linux & CLI Foundations.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/4. חילוץ תוכן מצגת - Soft and Hard Links.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/5. חילוץ תוכן מצגת - Files Text & Streams.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/6. חילוץ תוכן מצגת - Users Groups and Permissions.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/7. חילוץ תוכן מצגת - Users and Groups.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/8. חילוץ תוכן מצגת - chown and chmod.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/חילוץ תוכן ממצגות/9. חילוץ תוכן מצגת - ACL.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/סיכום שיעור בוקר עד 13DevOps - Processes & systemd.docx
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/סיכום שיעור בוקר עד 13DevOps - Processes & systemd.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/שבוע ראשון של הקורס - תמלילים_סיכומים
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/שבוע ראשון של הקורס - תמלילים_סיכומים/DEVOPS  שאלות - תשובות.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/שבוע ראשון של הקורס - תמלילים_סיכומים/devops-lecture-part0.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/שבוע ראשון של הקורס - תמלילים_סיכומים/סיכום לימודי - הרצאת DevOps.docx
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/שבוע ראשון של הקורס - תמלילים_סיכומים/סיכום לימודי - הרצאת DevOps.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/שבוע ראשון של הקורס - תמלילים_סיכומים/‏‏devops-lecture-part1.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/שבוע ראשון של הקורס - תמלילים_סיכומים/‏‏devops-lecture-part2.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/סיכומים וחומרי למידה/שבוע ראשון של הקורס - תמלילים_סיכומים/‏‏devops-lecture-part3.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/תמונות מהמבחן האחרון
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/תמונות מהמבחן האחרון/הורדה (1).png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/תמונות מהמבחן האחרון/הורדה (2).png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/תמונות מהמבחן האחרון/הורדה.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/תמונות מהמבחן האחרון/שאלות פתוחות.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/‪Advanced Python With Flask API Module‬‏ - מצגות
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/‪Advanced Python With Flask API Module‬‏ - מצגות/1 - Understanding Web Development.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/‪Advanced Python With Flask API Module‬‏ - מצגות/2 - Intro to API's with Python.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/‪Advanced Python With Flask API Module‬‏ - מצגות/3 - Error Handling and Decorators.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/‪Advanced Python With Flask API Module‬‏ - מצגות/4 - Flask Basics.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/מצגות/‪Advanced Python With Flask API Module‬‏ - מצגות/מצגת 1.txt
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212131.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212159.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212212.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212230.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212242.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212254.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212304.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212323.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212335.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212350.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212401.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212411.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212424.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212434.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212447.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212514.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212527.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212538.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212552.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212605.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212617.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212628.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212642.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212653.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212712.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סדרות ומספרים/צילום מסך 2026-02-10 212726.png
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/סילבוס-קורס-מפתחי-DevOps-לוחמים-להייטק.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/פיתוח DEVOPS מכללת IITC  חוזה התקשרות פברואר 2026 - דוד רובין -.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/פיתוח DEVOPS מכללת IITC  חוזה התקשרות פברואר 2026.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/צילום תז - דוד רובין.docx
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/צילום תז - דוד רובין.jpg
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/צילום תז - דוד רובין.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/קורס מפתחי DEVOPS.url
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/קישור למבחן דרך המייל.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/תביעה - משרד הביטחון.pdf
+/c/Users/David/Desktop/python-module/קורס DEVOPS - משרד הביטחון/תז אחורי.jpeg
+/c/Users/David/Desktop/python-module/‏‏Text Document חדש.txt

@@ -1,0 +1,44 @@
+
+============================================================
+docker network ls
+============================================================
+
+NETWORK ID     NAME                                DRIVER    SCOPE
+f1252a93bbb1   bridge                              bridge    local
+47bc311ff378   host                                host      local
+9c00c448f239   iran-3_backend-net                  bridge    local
+caf6f51f30bc   live-lesson-compose_default         bridge    local
+c62f10e928c5   microservices-docker_app            bridge    local
+871b10826db6   microservices-docker_edge-net       bridge    local
+f733cdc36125   microservices-docker_products-net   bridge    local
+994f8ab691f9   microservices-docker_public-net     bridge    local
+8e9c96d71539   microservices-docker_users-net      bridge    local
+d805320dc4b3   minikube                            bridge    local
+647e87848a14   movie-net                           bridge    local
+b2b97998fd25   my-network                          bridge    local
+054d0b90bffe   none                                null      local
+f75c49a20123   personalknowledgeblog_internal      bridge    local
+ed52993d21ad   postgres-network                    bridge    local
+a571da0eff17   smartbasket_default                 bridge    local
+
+============================================================
+docker network ls
+============================================================
+
+NETWORK ID     NAME                                DRIVER    SCOPE
+f1252a93bbb1   bridge                              bridge    local
+47bc311ff378   host                                host      local
+9c00c448f239   iran-3_backend-net                  bridge    local
+caf6f51f30bc   live-lesson-compose_default         bridge    local
+c62f10e928c5   microservices-docker_app            bridge    local
+871b10826db6   microservices-docker_edge-net       bridge    local
+f733cdc36125   microservices-docker_products-net   bridge    local
+994f8ab691f9   microservices-docker_public-net     bridge    local
+8e9c96d71539   microservices-docker_users-net      bridge    local
+d805320dc4b3   minikube                            bridge    local
+647e87848a14   movie-net                           bridge    local
+b2b97998fd25   my-network                          bridge    local
+054d0b90bffe   none                                null      local
+f75c49a20123   personalknowledgeblog_internal      bridge    local
+ed52993d21ad   postgres-network                    bridge    local
+a571da0eff17   smartbasket_default                 bridge    local

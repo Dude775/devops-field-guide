@@ -1,0 +1,606 @@
+Generated: 2026-06-20 16:20:36
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/configmap.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/deployment.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/secret.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/service.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/Dockerfile
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/README.md
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api-v1/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api-v2/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/README.md
+/e/Genspark/devops-field-guide/10-helm/README.md
+/e/Genspark/devops-field-guide/00-intro/foundations/README.md
+/e/Genspark/devops-field-guide/00-intro/README.md
+/e/Genspark/devops-field-guide/01-linux/README.md
+/e/Genspark/devops-field-guide/02-python-basics/README.md
+/e/Genspark/devops-field-guide/03-git/README.md
+/e/Genspark/devops-field-guide/04-advanced-python/README.md
+/e/Genspark/devops-field-guide/05-networking/README.md
+/e/Genspark/devops-field-guide/06-aws/exercises/2026-05-10-databite-full-aws-deployment-lab/README.md
+/e/Genspark/devops-field-guide/06-aws/README.md
+/e/Genspark/devops-field-guide/07-docker/early-labs/live-lesson-compose/docker-compose.yml
+/e/Genspark/devops-field-guide/07-docker/labs/lab5.1-nginx-docker/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab5.2-copy-index/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab6.1-lifecycle/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab6.1-lifecycle/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab6.2-dockerize-node/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab6.2-dockerize-node/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7-diving-into-images/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7-diving-into-images/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.10-typescript/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.11-multistage-typescript/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.11-multistage-typescript/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.12-base-image-comparison/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.12-base-image-comparison/README.md
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.13-instruction-order/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.14-prod-deps/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.2-build-context/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.3-dockerignore/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.4-env-vars/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.4-env-vars/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.5-env-override/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.5-env-override/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.6-env-files/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.6-env-files/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.8-multistage/app/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.8-multistage/app/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.8-multistage/app/README.md
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.9-multistage-build/app/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.9-multistage-build/app/package.json
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.9-multistage-build/app/README.md
+/e/Genspark/devops-field-guide/07-docker/README.md
+/e/Genspark/devops-field-guide/07-docker/scratch/Dockerfile
+/e/Genspark/devops-field-guide/08-ci-cd/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update/app/package.json
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/package.json
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/src/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.1-traffic-generator-image/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.1-traffic-generator-image/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.1-traffic-generator-image/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.2-pods-direct-communication-before-service/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.2-pods-direct-communication-before-service/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.3-clusterip-service/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.3-clusterip-service/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.4-nodeport-service/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.4-nodeport-service/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.5-nodeport-linux-killercoda/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.5-nodeport-linux-killercoda/outputs/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.5-nodeport-linux-killercoda/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.6-externalname-service/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.6-externalname-service/outputs/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.6-externalname-service/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.0-labels-selectors/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.0-labels-selectors/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.1-deployment-selectors/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.10-liveness-probe/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.11-readiness-probe-service-traffic/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.2-namespaces/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.3-service-dns-namespaces/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.4-resource-quotas/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.5-resourcequota-pods-requests-limits/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.6-resourcequota-rolling-scaling/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.7-color-api-probes-prep/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.7-color-api-probes-prep/app/package.json
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.7-color-api-probes-prep/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.8-startup-probe/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.9-startup-endpoint-bugfix/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.9-startup-endpoint-bugfix/app/package.json
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.9-startup-endpoint-bugfix/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/08-storage-and-persistence/hands-on-8.1-reclaim-policy/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/08-storage-and-persistence/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/rolling-lab/kubernetes-e2e-lab-part-1/e2e-movie-recommendation-api/base/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/rolling-lab/kubernetes-e2e-lab-part-1/e2e-movie-recommendation-api/base/package.json
+/e/Genspark/devops-field-guide/09-kubernetes/rolling-lab/kubernetes-e2e-lab-part-1/e2e-movie-recommendation-api/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/rolling-lab/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/_inbox-review/resources/images/series-05/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/_inbox-review/resources/images/series-05-deployments/README.md
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/configmap.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/deployment.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/secret.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/service.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/Dockerfile
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/README.md
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api-v1/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api-v2/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/README.md
+/e/Genspark/devops-field-guide/10-helm/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/ecr/class-lab-1.1-full-ecr-workflow/ecr-demo/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/ecr/class-lab-1.1-full-ecr-workflow/ecr-demo/package.json
+/e/Genspark/devops-field-guide/11-aws-advanced/mern-eks-app/backend/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/mern-eks-app/backend/package.json
+/e/Genspark/devops-field-guide/11-aws-advanced/mern-eks-app/frontend/package.json
+/e/Genspark/devops-field-guide/11-aws-advanced/mern-eks-app/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/docker-compose.yml
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/inventory-service/.pytest_cache/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/inventory-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/inventory-service/requirements.txt
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/orders-service/.pytest_cache/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/orders-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/orders-service/requirements.txt
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/docker-compose.yml
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/inventory-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/orders-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/README.md
+/e/Genspark/devops-field-guide/12-terraform/README.md
+/e/Genspark/devops-field-guide/13-jenkins/README.md
+/e/Genspark/devops-field-guide/14-ansible/README.md
+/e/Genspark/devops-field-guide/14-observability/README.md
+/e/Genspark/devops-field-guide/15-argocd/README.md
+/e/Genspark/devops-field-guide/cheatsheets/README.md
+/e/Genspark/devops-field-guide/projects/README.md
+/e/Genspark/devops-field-guide/projects/rolling-project/README.md
+/e/Genspark/devops-field-guide/README.md
+/e/Genspark/DevOps-Materials/archive/aws/README.md
+/e/Genspark/DevOps-Materials/archive/Docker/docker_lab_basics/README.md
+/e/Genspark/DevOps-Materials/archive/Docker/README.md
+/e/Genspark/DevOps-Materials/archive/Github/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab1_navigation_basics/projects/workspace/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab1_navigation_basics/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab2_file_management/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab3_reading_files/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab4_search_basics/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/projects/project_alpha/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/projects/project_beta/package.json
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/projects/project_beta/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/projects/project_gamma/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Networking/linux_networking_lab1_adapter/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Networking/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab10_default_permissions/projects/default_app/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab10_default_permissions/projects/secure_files/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab10_default_permissions/projects/shared_team/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab10_default_permissions/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab11_debug_mindset/broken_scenarios/scenario6_mixed_issues/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab11_debug_mindset/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab12_permissions_lab/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab13_acl_groups/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab6_permission_encounter/projects/personal_project/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab6_permission_encounter/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab7_why_script_doesnt_run/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab8_ownership_and_groups/projects/web_app/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab8_ownership_and_groups/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab9_sudo_mindset/projects/system_service/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab9_sudo_mindset/projects/user_app/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab9_sudo_mindset/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_pipes_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_pipes_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_heredoc_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_heredoc_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_input_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_input_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_output_append_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_output_append_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_output_overwrite_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_output_overwrite_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_journalctl_logs_first/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_processes_vs_service/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_process_hunt/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_systemd_services/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_troubleshooting_flow/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/real-world-scenarios/linux_scenario_shared_server/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_basics/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_case/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_conditionals/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_debugging/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_exit_codes/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_functions/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_guessing_game/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_input/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_leap_year/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_loops/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_mini_devops_tool/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_ops_helper/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_variables/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Users and Groups/linux_users_groups_management/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Users and Groups/README.md
+/e/Genspark/DevOps-Materials/archive/Python/README.md
+/e/Genspark/DevOps-Materials/archive/README.md
+/e/Genspark/DevOps-Materials/archive/Terraform/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_bm/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_bm/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_bm/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_nv/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_nv/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_nv/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/12/key-value-app/backend/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/5 - Intro to Docker Iamges/Dockerfile-NGINX/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/5 - Intro to Docker Iamges/node-app/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/5 - Intro to Docker Iamges/simple_express_app/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/Build Context/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/Build Context 2/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/containerize-express-app-bundle/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/containerize-express-app-bundle/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/multistage-build/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/multistage-build/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/multistage-builds-bundle/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/multistage-builds-bundle/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/Optimizing Images/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/9/containerized-react-app/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/9/containerized-react-app/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/9/containerized-react-app/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose/backend/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/backend/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/frontend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/frontend/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-docker/backend/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-docker/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-docker/frontend/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-docker/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notebooks-backend/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notebooks-backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notebooks-backend/package.json
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notes-backend/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notes-backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notes-backend/package.json
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless1/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless1/package.json
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless1/README.md
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless2/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless2/package.json
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless2/README.md
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless3-ts/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless3-ts/package.json
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless3-ts/README.md
+/e/Genspark/DevOps-Materials/Docker/lab7.15-final-optimization/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/lab7.15-final-optimization/package.json
+/e/Genspark/DevOps-Materials/Docker/lab7.15-final-optimization/README.md
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_1_final_lab/package.json
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_1_final_lab/README.md
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_2_final_lab/Dockerfile
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_2_final_lab/package.json
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_2_final_lab/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-1/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-1/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-2/.github/workflows/deployment.yaml
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-2/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-2/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-3/.github/workflows/deployment.yaml
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-3/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-3/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.3/express-app/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.3/express-app/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-artifacts/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-artifacts/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-caching/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-caching/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-outputs/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-outputs/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.5/db-express-app-env-only/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.5/db-express-app-env-only/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.5/db-express-app-secrets/package.json
+/e/Genspark/DevOps-Materials/Github Actions/ss8.5/db-express-app-secrets/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/01-Introduction/installing-and-configuring/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/01-Introduction/what-is-git/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/02-Basic-Workflow/commit/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/02-Basic-Workflow/gitignore/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/02-Basic-Workflow/init-and-first-commit/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/02-Basic-Workflow/status-and-add/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/03-Inspecting-History/diff/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/03-Inspecting-History/log/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/04-Branching/branch-management/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/04-Branching/creating-and-switching/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/04-Branching/merge/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/04-Branching/merge-conflicts/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/05-Undoing-Changes/reflog/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/05-Undoing-Changes/reset/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/05-Undoing-Changes/revert/README.md
+/e/Genspark/DevOps-Materials/Helm/4/4.0/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.0/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.0/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.0/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.1/intro-go-templating/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.1/intro-go-templating/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/backend-app/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/backend-app/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/backend-app/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/backend-app/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/backend-app/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.10/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/backend-app/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/backend-app/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/backend-app/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/backend-app/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/backend-app/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.11/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.2/intro-go-templating/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.2/intro-go-templating/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.3/intro-go-templating/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.3/intro-go-templating/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.4/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.4/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.4/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.4/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.5/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.5/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.5/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.5/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.6/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.6/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.6/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.6/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.7/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.7/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.7/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.7/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.8/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.8/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.8/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.8/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.9/creating-charts/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.9/creating-charts/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.9/creating-charts/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/4/4.9/creating-charts/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.1/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.1/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.10/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.10/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.10/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.10/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.11/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.11/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.11/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.11/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/nginx/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/nginx/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/nginx/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/nginx/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.2/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.3/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.3/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.3/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.3/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.4/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.4/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.4/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.4/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.5/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.5/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.5/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.5/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.6/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.6/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.6/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.6/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.7/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.7/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.7/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.7/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.8/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.8/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.8/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.8/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.9/templating-deep-dive/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.9/templating-deep-dive/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.9/templating-deep-dive/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/5/5.9/templating-deep-dive/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.1/config-store/compose.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.1/config-store/Dockerfile
+/e/Genspark/DevOps-Materials/Helm/7/7.1/config-store/package.json
+/e/Genspark/DevOps-Materials/Helm/7/7.1/config-store/README.md
+/e/Genspark/DevOps-Materials/Helm/7/7.1/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.1/subcharts/config-store/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.1/subcharts/config-store/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.1/subcharts/config-store/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.1/subcharts/config-store/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.2/config-store/compose.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.2/config-store/Dockerfile
+/e/Genspark/DevOps-Materials/Helm/7/7.2/config-store/package.json
+/e/Genspark/DevOps-Materials/Helm/7/7.2/config-store/README.md
+/e/Genspark/DevOps-Materials/Helm/7/7.2/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.2/subcharts/config-store/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.2/subcharts/config-store/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.2/subcharts/config-store/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.2/subcharts/config-store/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/charts/demo-subchart/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/charts/demo-subchart/templates/configmap.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/charts/demo-subchart/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.3/subcharts/config-store/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/charts/demo-subchart/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/charts/demo-subchart/templates/configmap.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/charts/demo-subchart/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.4/subcharts/config-store/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/charts/demo-subchart/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/charts/demo-subchart/templates/configmap.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/charts/demo-subchart/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.5/subcharts/config-store/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/charts/demo-subchart/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/charts/demo-subchart/templates/configmap.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/charts/demo-subchart/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.6/config-store/values.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.7/config-store/Chart.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.7/config-store/templates/deployment.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.7/config-store/templates/ingress.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.7/config-store/templates/service.yaml
+/e/Genspark/DevOps-Materials/Helm/7/7.7/config-store/values.yaml
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 6/color-api/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 6/color-api/package.json
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 6/color-api/README.md
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 7/color-api/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 7/color-api/package.json
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 7/color-api/README.md
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 8/color-api/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 8/color-api/package.json
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 8/color-api/README.md
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 9/color-api/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 9/color-api/package.json
+/e/Genspark/DevOps-Materials/K8s/10 - Project - Deploying a MongoDB Database/STEP 9/color-api/README.md
+/e/Genspark/DevOps-Materials/K8s/3 - Running Containers in Kubernetes/4Hands-On - Color API - Implement v1.0.0/color-api-only/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/3 - Running Containers in Kubernetes/4Hands-On - Color API - Implement v1.0.0/color-api-only/package.json
+/e/Genspark/DevOps-Materials/K8s/3 - Running Containers in Kubernetes/4Hands-On - Color API - Implement v1.0.0/color-api-only/README.md
+/e/Genspark/DevOps-Materials/K8s/3 - Running Containers in Kubernetes/5Hands-On - From Dockerfiles to Pods/color-api-only/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/3 - Running Containers in Kubernetes/5Hands-On - From Dockerfiles to Pods/color-api-only/package.json
+/e/Genspark/DevOps-Materials/K8s/3 - Running Containers in Kubernetes/5Hands-On - From Dockerfiles to Pods/color-api-only/README.md
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/1Hands-On - Color API - Implement v1.1.0 - Add hostname information/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/1Hands-On - Color API - Implement v1.1.0 - Add hostname information/package.json
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/1Hands-On - Color API - Implement v1.1.0 - Add hostname information/README.md
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/2Hands-On - Traffic Generator - Implement v1.0.0/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/colors-api-base/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/colors-api-base/package.json
+/e/Genspark/DevOps-Materials/K8s/6 - Services Deep Dive/colors-api-base/README.md
+/e/Genspark/DevOps-Materials/K8s/7 - Resource Management/11Hands-On - Liveness Probes in Details/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/7 - Resource Management/11Hands-On - Liveness Probes in Details/package.json
+/e/Genspark/DevOps-Materials/K8s/7 - Resource Management/11Hands-On - Liveness Probes in Details/README.md
+/e/Genspark/DevOps-Materials/K8s/7 - Resource Management/8Hands-On - Color API - Implement v1.2.0 - Add health endpoints/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/7 - Resource Management/8Hands-On - Color API - Implement v1.2.0 - Add health endpoints/package.json
+/e/Genspark/DevOps-Materials/K8s/7 - Resource Management/8Hands-On - Color API - Implement v1.2.0 - Add health endpoints/README.md
+/e/Genspark/DevOps-Materials/K8s/8 - Storage and Persistence/9Hands-On - Headless Services/service.yaml
+/e/Genspark/DevOps-Materials/K8s/9 - Configuration Management/1Hands-On - Color API - Implement v1.3.0 - Receive color information externally/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/9 - Configuration Management/1Hands-On - Color API - Implement v1.3.0 - Receive color information externally/package.json
+/e/Genspark/DevOps-Materials/K8s/9 - Configuration Management/1Hands-On - Color API - Implement v1.3.0 - Receive color information externally/README.md
+/e/Genspark/DevOps-Materials/K8s/icons/README.md
+/e/Genspark/DevOps-Materials/K8s/icons/tools/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/mern-eks-app/backend/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/mern-eks-app/backend/package.json
+/e/Genspark/DevOps-Materials/K8s/mern-eks-app/docker-compose.yml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-app/frontend/Dockerfile
+/e/Genspark/DevOps-Materials/K8s/mern-eks-app/frontend/package.json
+/e/Genspark/DevOps-Materials/K8s/mern-eks-app/package.json
+/e/Genspark/DevOps-Materials/K8s/mern-eks-app/README.md
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/aws-load-balancer-controller/values.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/backend/deployment.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/backend/service.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/external-dns/values.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/frontend/deployment.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/frontend/service.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/ingress.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/mongo/deployment.yaml
+/e/Genspark/DevOps-Materials/K8s/mern-eks-infra/k8s/mongo/service.yaml
+/e/Genspark/DevOps-Materials/Monitoring/2 - Setting Up the Observability Stack [CC4]/loki-setup/compose/compose.yaml
+/e/Genspark/DevOps-Materials/Monitoring/2 - Setting Up the Observability Stack [CC4]/prometheus-setup/compose/compose.yaml
+/e/Genspark/DevOps-Materials/Networking/Curl Lab/README.md
+/e/Genspark/DevOps-Materials/Networking/Curl Lab/requirements.txt
+/e/Genspark/DevOps-Materials/Networking/Ports Lab/blue-app/requirements.txt
+/e/Genspark/DevOps-Materials/Networking/Ports Lab/README.md
+/e/Genspark/DevOps-Materials/Networking/Ports Lab/red-app/requirements.txt
+/e/Genspark/DevOps-Materials/Python/24_functions_vs_methods/README.md
+/e/Genspark/DevOps-Materials/Python/archive/apis/requirements.txt
+/e/Genspark/DevOps-Materials/Python/archive/new_version/2 - Setting Up and Running Python/requirements.txt
+/e/Genspark/DevOps-Materials/Python/archive/new_version/2 - Setting Up and Running Python/virtual-envs/requirements.txt
+/e/Genspark/DevOps-Materials/Python/archive/new_version/requirements.txt
+/e/Genspark/DevOps-Materials/Python + Flask/Day-1-API-Foundations/1-What-Is-API/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-1-API-Foundations/2-HTTP-Protocol/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-1-API-Foundations/3-Working-With-Requests/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-1-API-Foundations/4-Error-Handling/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-1-API-Foundations/5-Decorators/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-1-API-Foundations/6-Mini-API-Client-Layer/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-1-API-Foundations/7-Evening-Assignment/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-1-API-Foundations/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-2-Flask-Basics/1-Recap-Client-Server/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-2-Flask-Basics/2-Flask-Intro/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-2-Flask-Basics/3-Request-Handling/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-2-Flask-Basics/4-Task-Manager-v1/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-2-Flask-Basics/5-Decorators-Response/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-2-Flask-Basics/6-REST-API-In-Memory/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-2-Flask-Basics/7-Evening-Assignment/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-2-Flask-Basics/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-3-Stabilize-Architect/1-Opening/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-3-Stabilize-Architect/2-Stabilize-API/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-3-Stabilize-Architect/3-Error-Handling/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-3-Stabilize-Architect/4-DB-Prep/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-3-Stabilize-Architect/5-Evening-Assignment/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-3-Stabilize-Architect/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-4-MongoDB-Atlas/1-Why-Cloud-DB/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-4-MongoDB-Atlas/2-Atlas-Setup/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-4-MongoDB-Atlas/3-PyMongo-Connect/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-4-MongoDB-Atlas/4-Connection-Problems/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-4-MongoDB-Atlas/5-Mongo-CRUD/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-4-MongoDB-Atlas/6-Project-Refactor/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-4-MongoDB-Atlas/7-Evening-Assignment/README.md
+/e/Genspark/DevOps-Materials/Python + Flask/Day-4-MongoDB-Atlas/README.md
+/e/Genspark/DevOps-Materials/requirements.txt
+/e/Genspark/DevOps-Materials/Terraform/4 - Resources/4.1/README.md
+/e/Genspark/DevOps-Materials/Terraform/4 - Resources/4.2/README.md
+/e/Genspark/DevOps-Materials/Terraform/4 - Resources/4.3/README.md
+/e/Genspark/DevOps-Materials/Terraform/4 - Resources/4.4/README.md
+/e/Genspark/DevOps-Materials/Terraform/4 - Resources/4.5/README.md
+/e/Genspark/DevOps-Materials/Terraform/4 - Resources/4.6/README.md
+/e/Genspark/DevOps-Materials/Terraform/4 - Resources/4.7/README.md
+/e/Genspark/DevOps-Materials/Terraform/4 - Resources/4.8/README.md
+/e/Genspark/microservices-docker/docker-compose.yml
+/e/Genspark/microservices-docker/frontend/Dockerfile
+/e/Genspark/microservices-docker/lab/README.md
+/e/Genspark/microservices-docker/README.md
+/e/Genspark/microservices-docker/services/products-service/Dockerfile
+/e/Genspark/microservices-docker/services/products-service/package.json
+/e/Genspark/microservices-docker/services/users-service/Dockerfile
+/e/Genspark/microservices-docker/services/users-service/package.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/package.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/README.md
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/package.json
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/README.md
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/src/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/src/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/src/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.1-traffic-generator-image/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/images/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/images/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/images/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/images/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating/Chart.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating/values.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.5-statefulset-storage/statefulset.yaml
+/c/Users/David/Desktop/python-module/01-first-git-repo-in-class/README.md
+/c/Users/David/Desktop/python-module/branches-lab/README.md
+/c/Users/David/Desktop/python-module/oop/ATM/README.md

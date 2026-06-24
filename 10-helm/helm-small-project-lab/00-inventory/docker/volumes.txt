@@ -1,0 +1,24 @@
+
+============================================================
+docker volume ls
+============================================================
+
+DRIVER    VOLUME NAME
+local     1a23099bf55acd2b39ffec59a5c761f1caacf213ce099eb49746b644269ed5aa
+local     6ffa7bbac665624165285802942445689fd9d60ae6c98795ff6763ad4496a945
+local     a5e7cf3a58b7628d48efc92b7e06e33b5602bdb40fc26a0e8a2d146110eaf8a2
+local     ca759815c0bb7daf470fa53ef8d45288efae9bea6881bf4efdab8ba770bf32e6
+local     iran-3_postgres-data
+local     minikube
+
+============================================================
+docker volume ls
+============================================================
+
+DRIVER    VOLUME NAME
+local     1a23099bf55acd2b39ffec59a5c761f1caacf213ce099eb49746b644269ed5aa
+local     6ffa7bbac665624165285802942445689fd9d60ae6c98795ff6763ad4496a945
+local     a5e7cf3a58b7628d48efc92b7e06e33b5602bdb40fc26a0e8a2d146110eaf8a2
+local     ca759815c0bb7daf470fa53ef8d45288efae9bea6881bf4efdab8ba770bf32e6
+local     iran-3_postgres-data
+local     minikube

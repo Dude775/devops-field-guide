@@ -1,0 +1,25 @@
+Generated: 2026-06-20 16:20:36
+
+PATH: /e/Genspark/devops-field-guide/10-helm
+STATUS: EXISTS
+
+PATH: /e/Genspark/devops-field-guide
+STATUS: EXISTS
+
+PATH: /e/Genspark/DevOps-Materials
+STATUS: EXISTS
+
+PATH: /e/Genspark/microservices-docker
+STATUS: EXISTS
+
+PATH: /c/Users/David/Desktop/Labs
+STATUS: EXISTS
+
+PATH: /c/Users/David/Desktop/Kubeinertis
+STATUS: EXISTS
+
+PATH: /c/Users/David/Desktop/softlink_lab
+STATUS: EXISTS
+
+PATH: /c/Users/David/Desktop/python-module
+STATUS: EXISTS

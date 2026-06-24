@@ -1,0 +1,20 @@
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+194cb55 docs: clarify usage of extraEnv in Helm chart templates and installation recovery options
+e70650a fgdhfgh
+3e8f62b Update documentation for Opaque Secret configuration
+275a0a6 docs: update instructions to reference local k8s folder for manifest files
+1dee679 docs: enhance step-by-step instructions for templating Helm chart manifests
+9cecf2b docs: refine Helm chart label conventions and clarify MongoDB service requirements
+04d8137 docs: enhance Helm template section with detailed function definitions and usage examples
+ffa59a9 docs: enhance values.yaml and values-prod.yaml with additional configuration options for MongoDB and environment overrides
+946a2cc Merge branch 'master' of https://github.com/LironeFitoussi/helm-small-project
+ee8456e docs: Enhance Kubernetes manual with MongoDB connection details and service access options
+c41dd5c Merge pull request #2 from LironeFitoussi/docs/refine-setup-steps
+7e6be8d docs: refine setup instructions for Kubernetes steps
+4b9244d Merge pull request #1 from LironeFitoussi/docs/instruction-style-steps
+b21ad98 docs: convert steps 02-06 to instruction-and-hint style
+12f8634 chore: Update .gitignore and enhance MongoDB dependency documentation
+414bef1 feat: Add initial implementation of Movie API with MongoDB integration

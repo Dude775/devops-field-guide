@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "name": "LAB_ROOT",
+      "path": "."
+    },
+    {
+      "name": "SOURCE_REPO",
+      "path": "01-source/helm-small-project"
+    },
+    {
+      "name": "INVENTORY",
+      "path": "00-inventory"
+    }
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "files.exclude": {
+      "**/.git": true,
+      "**/__pycache__": true,
+      "**/.venv": true,
+      "**/venv": true,
+      "**/node_modules": true
+    }
+  }
+}

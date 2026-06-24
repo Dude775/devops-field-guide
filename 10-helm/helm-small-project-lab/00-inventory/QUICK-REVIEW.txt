@@ -1,0 +1,702 @@
+]633;E;{   echo "==================== SUMMARY ===================="\x3b   cat 00-inventory/SUMMARY.txt\x3b    echo ""\x3b   echo "==================== TOOLS ===================="\x3b   cat 00-inventory/tools-versions.txt\x3b    echo ""\x3b   echo "==================== DOCKER CONTAINERS ===================="\x3b   cat 00-inventory/docker/containers.txt\x3b    echo ""\x3b   echo "==================== DOCKER IMAGES ===================="\x3b   cat 00-inventory/docker/images.txt\x3b    echo ""\x3b   echo "==================== DOCKER VOLUMES ===================="\x3b   cat 00-inventory/docker/volumes.txt\x3b    echo ""\x3b   echo "==================== DOCKER NETWORKS ===================="\x3b   cat 00-inventory/docker/networks.txt\x3b    echo ""\x3b   echo "==================== K8S CURRENT CONTEXT ===================="\x3b   cat 00-inventory/kubernetes/current-context.txt\x3b    echo ""\x3b   echo "==================== K8S CONTEXTS ===================="\x3b   cat 00-inventory/kubernetes/contexts.txt\x3b    echo ""\x3b   echo "==================== K8S NODES ===================="\x3b   cat 00-inventory/kubernetes/nodes.txt\x3b    echo ""\x3b   echo "==================== K8S NAMESPACES ===================="\x3b   cat 00-inventory/kubernetes/namespaces.txt\x3b    echo ""\x3b   echo "==================== HELM RELEASES ===================="\x3b   cat 00-inventory/helm/helm-releases-all-namespaces.txt\x3b    echo ""\x3b   echo "==================== HELM REPOS ===================="\x3b   cat 00-inventory/helm/helm-repos.txt\x3b    echo ""\x3b   echo "==================== REPO TREE FIRST 200 LINES ===================="\x3b   sed -n '1,200p' 00-inventory/repo/repo-tree.txt\x3b    echo ""\x3b   echo "==================== IMPORTANT PROJECT MARKERS FIRST 250 ===================="\x3b   grep -Ei 'helm-small-project|Chart.yaml|values.yaml|Dockerfile|docker-compose|compose.yaml|compose.yml|deployment.yaml|service.yaml|statefulset.yaml|configmap.yaml|secret.yaml|requirements.txt|README.md' 00-inventory/filesystem/project-markers.txt | sed -n '1,250p'\x3b  } > 00-inventory/QUICK-REVIEW.txt;815e35aa-7787-4f71-aaf0-1c1b8202430e]633;C==================== SUMMARY ====================
+Preflight Inventory - helm-small-project-lab
+Generated: 2026-06-20 16:20:36
+
+Lab root: /e/Genspark/devops-field-guide/10-helm/helm-small-project-lab
+Repo: https://github.com/LironeFitoussi/helm-small-project.git
+
+
+Results folder:
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/00-inventory
+
+Counts:
+Docker containers: 8
+Docker images: 13
+Project marker files: 605
+
+Important files:
+00-inventory/SUMMARY.txt
+00-inventory/tools-versions.txt
+00-inventory/docker/containers.txt
+00-inventory/docker/images.txt
+00-inventory/kubernetes/current-context.txt
+00-inventory/kubernetes/nodes.txt
+00-inventory/helm/helm-releases-all-namespaces.txt
+00-inventory/filesystem/project-markers.txt
+00-inventory/repo/repo-tree.txt
+
+==================== TOOLS ====================
+Generated: 2026-06-20 16:20:36
+
+============================================================
+git --version
+============================================================
+
+git version 2.54.0.windows.1
+
+============================================================
+docker version
+============================================================
+
+Client:
+ Version:           29.5.3
+ API version:       1.54
+ Go version:        go1.26.4
+ Git commit:        d1c06ef
+ Built:             Wed Jun  3 18:03:06 2026
+ OS/Arch:           windows/amd64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.78.0 (229452)
+ Engine:
+  Version:          29.5.3
+  API version:      1.54 (minimum version 1.40)
+  Go version:       go1.26.4
+  Git commit:       285b471
+  Built:            Wed Jun  3 17:59:56 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.2.4
+  GitCommit:        193637f7ee8ae5f5aa5248f49e7baa3e6164966e
+ runc:
+  Version:          1.3.5
+  GitCommit:        v1.3.5-0-g488fc13e
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+============================================================
+docker compose version
+============================================================
+
+Docker Compose version v5.1.4
+
+============================================================
+kubectl version --client
+============================================================
+
+Client Version: v1.34.1
+Kustomize Version: v5.7.1
+
+============================================================
+helm version
+============================================================
+
+version.BuildInfo{Version:"v4.2.1", GitCommit:"d591a19b953bd9cfdf7d9ddd83c2f4ffdaeafb29", GitTreeState:"clean", GoVersion:"go1.26.4", KubeClientVersion:"v1.36"}
+
+============================================================
+python --version
+============================================================
+
+Python 3.7.4
+
+============================================================
+code --version
+============================================================
+
+1.125.1
+fcf604774b9f2674b473065736ee75077e256353
+x64
+
+==================== DOCKER CONTAINERS ====================
+
+============================================================
+docker ps -a
+============================================================
+
+CONTAINER ID   IMAGE                                                          COMMAND                  CREATED       STATUS                     PORTS                                                                                                                                  NAMES
+fa52015c2e46   lironefitoussi/aws-sol-2                                       "/docker-entrypoint.…"   2 days ago    Exited (0) 2 days ago                                                                                                                                             gallant_feynman
+351d6c86f9c4   450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest   "docker-entrypoint.s…"   3 days ago    Exited (137) 2 days ago                                                                                                                                           app
+dafafc6a873d   lironefitoussi/aws-sol-1:latest                                "/docker-entrypoint.…"   3 days ago    Exited (0) 3 days ago                                                                                                                                             hungry_chatterjee
+a202ce691269   dude775/movie-api:1.0                                          "/bin/sh -c 'uvicorn…"   5 days ago    Exited (255) 3 days ago    0.0.0.0:3000->3000/tcp                                                                                                                 movie-api
+0ef49875e237   mongo:7                                                        "docker-entrypoint.s…"   5 days ago    Exited (255) 3 days ago    27017/tcp                                                                                                                              mongo
+1685e044e9b0   gcr.io/k8s-minikube/kicbase:v0.0.50                            "/usr/local/bin/entr…"   6 days ago    Exited (255) 4 hours ago   127.0.0.1:32768->22/tcp, 127.0.0.1:32769->2376/tcp, 127.0.0.1:32770->5000/tcp, 127.0.0.1:32771->8443/tcp, 127.0.0.1:32772->32443/tcp   minikube
+1fb4114cf4e9   iran-3-backend                                                 "/nodejs/bin/node di…"   12 days ago   Exited (137) 6 days ago                                                                                                                                           shopflow-backend
+213b5760fc04   postgres:17                                                    "docker-entrypoint.s…"   12 days ago   Exited (0) 6 days ago                                                                                                                                             shopflow-postgres
+
+============================================================
+docker ps -a
+============================================================
+
+CONTAINER ID   IMAGE                                                          COMMAND                  CREATED       STATUS                     PORTS                                                                                                                                  NAMES
+fa52015c2e46   lironefitoussi/aws-sol-2                                       "/docker-entrypoint.…"   2 days ago    Exited (0) 2 days ago                                                                                                                                             gallant_feynman
+351d6c86f9c4   450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest   "docker-entrypoint.s…"   3 days ago    Exited (137) 2 days ago                                                                                                                                           app
+dafafc6a873d   lironefitoussi/aws-sol-1:latest                                "/docker-entrypoint.…"   3 days ago    Exited (0) 3 days ago                                                                                                                                             hungry_chatterjee
+a202ce691269   dude775/movie-api:1.0                                          "/bin/sh -c 'uvicorn…"   5 days ago    Exited (255) 3 days ago    0.0.0.0:3000->3000/tcp                                                                                                                 movie-api
+0ef49875e237   mongo:7                                                        "docker-entrypoint.s…"   5 days ago    Exited (255) 3 days ago    27017/tcp                                                                                                                              mongo
+1685e044e9b0   gcr.io/k8s-minikube/kicbase:v0.0.50                            "/usr/local/bin/entr…"   6 days ago    Exited (255) 4 hours ago   127.0.0.1:32768->22/tcp, 127.0.0.1:32769->2376/tcp, 127.0.0.1:32770->5000/tcp, 127.0.0.1:32771->8443/tcp, 127.0.0.1:32772->32443/tcp   minikube
+1fb4114cf4e9   iran-3-backend                                                 "/nodejs/bin/node di…"   12 days ago   Exited (137) 6 days ago                                                                                                                                           shopflow-backend
+213b5760fc04   postgres:17                                                    "docker-entrypoint.s…"   12 days ago   Exited (0) 6 days ago                                                                                                                                             shopflow-postgres
+
+==================== DOCKER IMAGES ====================
+
+============================================================
+docker images
+============================================================
+
+IMAGE                                                                                                 ID             DISK USAGE   CONTENT SIZE   EXTRA
+450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest                                          15cc573a44f1        181MB         44.9MB   U    
+dude775/movie-api:1.0                                                                                 0ee2d7eee745        260MB           62MB   U    
+ecr-demo:latest                                                                                       15cc573a44f1        181MB         44.9MB   U    
+gcr.io/k8s-minikube/kicbase:v0.0.50                                                                   b97074569ae9       1.94GB          545MB        
+gcr.io/k8s-minikube/kicbase@sha256:eb4fec00e8ad70adf8e6436f195cc429825ffb85f95afcdb5d8d9deb576f3e93   eb4fec00e8ad       1.94GB          545MB   U    
+idf775/movie-api:1.0                                                                                  0ee2d7eee745        260MB           62MB   U    
+inventory-service:latest                                                                              e035bddc3e1e        204MB         49.6MB        
+iran-3-backend:latest                                                                                 3abd593a13d1        463MB         79.3MB   U    
+lironefitoussi/aws-sol-1:latest                                                                       84d6e950bf2d       74.2MB         21.1MB   U    
+lironefitoussi/aws-sol-2:latest                                                                       8139c7fd1996       74.2MB         21.1MB   U    
+mcp/obsidian@sha256:0eba4c05742ad35faeb91eca40b792454d440d86449c9f1b3cb6c387a510651b                  0eba4c05742a        215MB         54.2MB        
+mcp/playwright@sha256:43e3be2da74d869cf08487149bdc40c33a2e51eeb13f9f6dc8ac9f1ad7a817ae                43e3be2da74d       1.43GB          405MB        
+mongo:7                                                                                               8ecb514b00bd       1.19GB          297MB   U    
+orders-service:latest                                                                                 b72d0aac4479        208MB         50.6MB        
+postgres:17                                                                                           0027bef26712        645MB          167MB   U    
+
+============================================================
+docker images
+============================================================
+
+IMAGE                                                                                                 ID             DISK USAGE   CONTENT SIZE   EXTRA
+450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest                                          15cc573a44f1        181MB         44.9MB   U    
+dude775/movie-api:1.0                                                                                 0ee2d7eee745        260MB           62MB   U    
+ecr-demo:latest                                                                                       15cc573a44f1        181MB         44.9MB   U    
+gcr.io/k8s-minikube/kicbase:v0.0.50                                                                   b97074569ae9       1.94GB          545MB        
+gcr.io/k8s-minikube/kicbase@sha256:eb4fec00e8ad70adf8e6436f195cc429825ffb85f95afcdb5d8d9deb576f3e93   eb4fec00e8ad       1.94GB          545MB   U    
+idf775/movie-api:1.0                                                                                  0ee2d7eee745        260MB           62MB   U    
+inventory-service:latest                                                                              e035bddc3e1e        204MB         49.6MB        
+iran-3-backend:latest                                                                                 3abd593a13d1        463MB         79.3MB   U    
+lironefitoussi/aws-sol-1:latest                                                                       84d6e950bf2d       74.2MB         21.1MB   U    
+lironefitoussi/aws-sol-2:latest                                                                       8139c7fd1996       74.2MB         21.1MB   U    
+mcp/obsidian@sha256:0eba4c05742ad35faeb91eca40b792454d440d86449c9f1b3cb6c387a510651b                  0eba4c05742a        215MB         54.2MB        
+mcp/playwright@sha256:43e3be2da74d869cf08487149bdc40c33a2e51eeb13f9f6dc8ac9f1ad7a817ae                43e3be2da74d       1.43GB          405MB        
+mongo:7                                                                                               8ecb514b00bd       1.19GB          297MB   U    
+orders-service:latest                                                                                 b72d0aac4479        208MB         50.6MB        
+postgres:17                                                                                           0027bef26712        645MB          167MB   U    
+
+==================== DOCKER VOLUMES ====================
+
+============================================================
+docker volume ls
+============================================================
+
+DRIVER    VOLUME NAME
+local     1a23099bf55acd2b39ffec59a5c761f1caacf213ce099eb49746b644269ed5aa
+local     6ffa7bbac665624165285802942445689fd9d60ae6c98795ff6763ad4496a945
+local     a5e7cf3a58b7628d48efc92b7e06e33b5602bdb40fc26a0e8a2d146110eaf8a2
+local     ca759815c0bb7daf470fa53ef8d45288efae9bea6881bf4efdab8ba770bf32e6
+local     iran-3_postgres-data
+local     minikube
+
+============================================================
+docker volume ls
+============================================================
+
+DRIVER    VOLUME NAME
+local     1a23099bf55acd2b39ffec59a5c761f1caacf213ce099eb49746b644269ed5aa
+local     6ffa7bbac665624165285802942445689fd9d60ae6c98795ff6763ad4496a945
+local     a5e7cf3a58b7628d48efc92b7e06e33b5602bdb40fc26a0e8a2d146110eaf8a2
+local     ca759815c0bb7daf470fa53ef8d45288efae9bea6881bf4efdab8ba770bf32e6
+local     iran-3_postgres-data
+local     minikube
+
+==================== DOCKER NETWORKS ====================
+
+============================================================
+docker network ls
+============================================================
+
+NETWORK ID     NAME                                DRIVER    SCOPE
+f1252a93bbb1   bridge                              bridge    local
+47bc311ff378   host                                host      local
+9c00c448f239   iran-3_backend-net                  bridge    local
+caf6f51f30bc   live-lesson-compose_default         bridge    local
+c62f10e928c5   microservices-docker_app            bridge    local
+871b10826db6   microservices-docker_edge-net       bridge    local
+f733cdc36125   microservices-docker_products-net   bridge    local
+994f8ab691f9   microservices-docker_public-net     bridge    local
+8e9c96d71539   microservices-docker_users-net      bridge    local
+d805320dc4b3   minikube                            bridge    local
+647e87848a14   movie-net                           bridge    local
+b2b97998fd25   my-network                          bridge    local
+054d0b90bffe   none                                null      local
+f75c49a20123   personalknowledgeblog_internal      bridge    local
+ed52993d21ad   postgres-network                    bridge    local
+a571da0eff17   smartbasket_default                 bridge    local
+
+============================================================
+docker network ls
+============================================================
+
+NETWORK ID     NAME                                DRIVER    SCOPE
+f1252a93bbb1   bridge                              bridge    local
+47bc311ff378   host                                host      local
+9c00c448f239   iran-3_backend-net                  bridge    local
+caf6f51f30bc   live-lesson-compose_default         bridge    local
+c62f10e928c5   microservices-docker_app            bridge    local
+871b10826db6   microservices-docker_edge-net       bridge    local
+f733cdc36125   microservices-docker_products-net   bridge    local
+994f8ab691f9   microservices-docker_public-net     bridge    local
+8e9c96d71539   microservices-docker_users-net      bridge    local
+d805320dc4b3   minikube                            bridge    local
+647e87848a14   movie-net                           bridge    local
+b2b97998fd25   my-network                          bridge    local
+054d0b90bffe   none                                null      local
+f75c49a20123   personalknowledgeblog_internal      bridge    local
+ed52993d21ad   postgres-network                    bridge    local
+a571da0eff17   smartbasket_default                 bridge    local
+
+==================== K8S CURRENT CONTEXT ====================
+
+============================================================
+kubectl config current-context
+============================================================
+
+minikube
+
+============================================================
+kubectl config current-context
+============================================================
+
+minikube
+
+==================== K8S CONTEXTS ====================
+
+============================================================
+kubectl config get-contexts
+============================================================
+
+CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
+*         minikube   minikube   minikube   default
+
+============================================================
+kubectl config get-contexts
+============================================================
+
+CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
+*         minikube   minikube   minikube   default
+
+==================== K8S NODES ====================
+
+============================================================
+kubectl get nodes -o wide
+============================================================
+
+E0620 16:20:22.870295    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.893949    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.895130    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.896245    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.897297    5356 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+kubectl get nodes -o wide
+============================================================
+
+E0620 16:20:40.610112    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.635027    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.636767    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.637323    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.638396    2944 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+==================== K8S NAMESPACES ====================
+
+============================================================
+kubectl get ns
+============================================================
+
+E0620 16:20:22.971019   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.995941   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.996474   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.998015   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:22.998660   13872 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+kubectl get ns
+============================================================
+
+E0620 16:20:40.710669   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.736444   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.737467   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.737984   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+E0620 16:20:40.739023   14772 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"https://127.0.0.1:59885/api?timeout=32s\": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it."
+Unable to connect to the server: dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+==================== HELM RELEASES ====================
+
+============================================================
+helm list -A
+============================================================
+
+Error: kubernetes cluster unreachable: Get "https://127.0.0.1:59885/version": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+============================================================
+helm list -A
+============================================================
+
+Error: kubernetes cluster unreachable: Get "https://127.0.0.1:59885/version": dial tcp 127.0.0.1:59885: connectex: No connection could be made because the target machine actively refused it.
+
+==================== HELM REPOS ====================
+
+============================================================
+helm repo list
+============================================================
+
+NAME                	URL                                               
+prometheus-community	https://prometheus-community.github.io/helm-charts
+bitnami             	https://charts.bitnami.com/bitnami                
+
+============================================================
+helm repo list
+============================================================
+
+NAME                	URL                                               
+prometheus-community	https://prometheus-community.github.io/helm-charts
+bitnami             	https://charts.bitnami.com/bitnami                
+
+==================== REPO TREE FIRST 200 LINES ====================
+.
+./.git
+./.git/config
+./.git/description
+./.git/FETCH_HEAD
+./.git/gk
+./.git/gk/config
+./.git/HEAD
+./.git/hooks
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/push-to-checkout.sample
+./.git/hooks/sendemail-validate.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info
+./.git/info/exclude
+./.git/logs
+./.git/logs/HEAD
+./.git/logs/refs
+./.git/logs/refs/heads
+./.git/logs/refs/heads/master
+./.git/logs/refs/remotes
+./.git/logs/refs/remotes/origin
+./.git/logs/refs/remotes/origin/HEAD
+./.git/objects
+./.git/objects/info
+./.git/objects/pack
+./.git/objects/pack/pack-9b3e3aab4ba09319601a0425143108e6ebebacb1.idx
+./.git/objects/pack/pack-9b3e3aab4ba09319601a0425143108e6ebebacb1.pack
+./.git/objects/pack/pack-9b3e3aab4ba09319601a0425143108e6ebebacb1.rev
+./.git/ORIG_HEAD
+./.git/packed-refs
+./.git/refs
+./.git/refs/heads
+./.git/refs/heads/master
+./.git/refs/remotes
+./.git/refs/remotes/origin
+./.git/refs/remotes/origin/HEAD
+./.git/refs/tags
+./.gitignore
+./docs
+./docs/step-01-run-app.md
+./docs/step-02-docker.md
+./docs/step-03-k8s-manual.md
+./docs/step-04-k8s-mongodb.md
+./docs/step-04.5-rebuild-logging.md
+./docs/step-05-helm-basic.md
+./docs/step-06-helm-mongodb-dependency.md
+./movie-api
+./movie-api/app
+./movie-api/app/db.py
+./movie-api/app/main.py
+./movie-api/app/models.py
+./movie-api/app/routes
+./movie-api/app/routes/movies.py
+./movie-api/app/routes/__init__.py
+./movie-api/app/__init__.py
+./movie-api/requirements.txt
+./movie-api-v1
+./movie-api-v1/app
+./movie-api-v1/app/db.py
+./movie-api-v1/app/main.py
+./movie-api-v1/app/models.py
+./movie-api-v1/app/routes
+./movie-api-v1/app/routes/movies.py
+./movie-api-v1/app/routes/__init__.py
+./movie-api-v1/app/__init__.py
+./movie-api-v1/requirements.txt
+./movie-api-v1.zip
+./movie-api-v2
+./movie-api-v2/app
+./movie-api-v2/app/db.py
+./movie-api-v2/app/main.py
+./movie-api-v2/app/models.py
+./movie-api-v2/app/routes
+./movie-api-v2/app/routes/movies.py
+./movie-api-v2/app/routes/__init__.py
+./movie-api-v2/app/__init__.py
+./movie-api-v2/requirements.txt
+./movie-api-v2.zip
+./movie-api.zip
+./README.md
+
+==================== IMPORTANT PROJECT MARKERS FIRST 250 ====================
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/configmap.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/deployment.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/secret.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/service.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/Dockerfile
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/README.md
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api-v1/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api-v2/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/README.md
+/e/Genspark/devops-field-guide/10-helm/README.md
+/e/Genspark/devops-field-guide/00-intro/foundations/README.md
+/e/Genspark/devops-field-guide/00-intro/README.md
+/e/Genspark/devops-field-guide/01-linux/README.md
+/e/Genspark/devops-field-guide/02-python-basics/README.md
+/e/Genspark/devops-field-guide/03-git/README.md
+/e/Genspark/devops-field-guide/04-advanced-python/README.md
+/e/Genspark/devops-field-guide/05-networking/README.md
+/e/Genspark/devops-field-guide/06-aws/exercises/2026-05-10-databite-full-aws-deployment-lab/README.md
+/e/Genspark/devops-field-guide/06-aws/README.md
+/e/Genspark/devops-field-guide/07-docker/early-labs/live-lesson-compose/docker-compose.yml
+/e/Genspark/devops-field-guide/07-docker/labs/lab5.1-nginx-docker/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab5.2-copy-index/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab6.1-lifecycle/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab6.2-dockerize-node/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7-diving-into-images/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.11-multistage-typescript/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.12-base-image-comparison/README.md
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.2-build-context/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.3-dockerignore/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.4-env-vars/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.5-env-override/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.6-env-files/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.8-multistage/app/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.8-multistage/app/README.md
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.9-multistage-build/app/Dockerfile
+/e/Genspark/devops-field-guide/07-docker/labs/lab7.9-multistage-build/app/README.md
+/e/Genspark/devops-field-guide/07-docker/README.md
+/e/Genspark/devops-field-guide/07-docker/scratch/Dockerfile
+/e/Genspark/devops-field-guide/08-ci-cd/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/app/src/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.0-color-api-update-devs-only/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.1-traffic-generator-image/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.1-traffic-generator-image/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.1-traffic-generator-image/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.2-pods-direct-communication-before-service/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.2-pods-direct-communication-before-service/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.3-clusterip-service/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.3-clusterip-service/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.4-nodeport-service/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.4-nodeport-service/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.5-nodeport-linux-killercoda/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.5-nodeport-linux-killercoda/outputs/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.5-nodeport-linux-killercoda/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.6-externalname-service/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.6-externalname-service/outputs/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/hands-on-6.6-externalname-service/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/06-services-deep-dive/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.0-labels-selectors/images/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.0-labels-selectors/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.1-deployment-selectors/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.10-liveness-probe/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.11-readiness-probe-service-traffic/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.2-namespaces/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.3-service-dns-namespaces/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.4-resource-quotas/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.5-resourcequota-pods-requests-limits/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.6-resourcequota-rolling-scaling/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.7-color-api-probes-prep/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.7-color-api-probes-prep/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.8-startup-probe/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.9-startup-endpoint-bugfix/app/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/hands-on-7.9-startup-endpoint-bugfix/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/07-resource-management/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/08-storage-and-persistence/hands-on-8.1-reclaim-policy/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/08-storage-and-persistence/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/archive/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/rolling-lab/kubernetes-e2e-lab-part-1/e2e-movie-recommendation-api/base/Dockerfile
+/e/Genspark/devops-field-guide/09-kubernetes/rolling-lab/kubernetes-e2e-lab-part-1/e2e-movie-recommendation-api/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/rolling-lab/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/_inbox-review/resources/images/series-05/README.md
+/e/Genspark/devops-field-guide/09-kubernetes/_inbox-review/resources/images/series-05-deployments/README.md
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/configmap.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/deployment.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/secret.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/k8s/service.yaml
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/Dockerfile
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/movie-api/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/05-go-template-deep-dive/master-lab/helm-small-project/README.md
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api-v1/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/movie-api-v2/requirements.txt
+/e/Genspark/devops-field-guide/10-helm/helm-small-project-lab/01-source/helm-small-project/README.md
+/e/Genspark/devops-field-guide/10-helm/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/ecr/class-lab-1.1-full-ecr-workflow/ecr-demo/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/mern-eks-app/backend/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/mern-eks-app/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/docker-compose.yml
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/inventory-service/.pytest_cache/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/inventory-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/inventory-service/requirements.txt
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/orders-service/.pytest_cache/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/orders-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/orders-service/requirements.txt
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/README.md
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/docker-compose.yml
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/inventory-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/microservices-ecs-deploy/solution/orders-service/Dockerfile
+/e/Genspark/devops-field-guide/11-aws-advanced/README.md
+/e/Genspark/devops-field-guide/12-terraform/README.md
+/e/Genspark/devops-field-guide/13-jenkins/README.md
+/e/Genspark/devops-field-guide/14-ansible/README.md
+/e/Genspark/devops-field-guide/14-observability/README.md
+/e/Genspark/devops-field-guide/15-argocd/README.md
+/e/Genspark/devops-field-guide/cheatsheets/README.md
+/e/Genspark/devops-field-guide/projects/README.md
+/e/Genspark/devops-field-guide/projects/rolling-project/README.md
+/e/Genspark/devops-field-guide/README.md
+/e/Genspark/DevOps-Materials/archive/aws/README.md
+/e/Genspark/DevOps-Materials/archive/Docker/docker_lab_basics/README.md
+/e/Genspark/DevOps-Materials/archive/Docker/README.md
+/e/Genspark/DevOps-Materials/archive/Github/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab1_navigation_basics/projects/workspace/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab1_navigation_basics/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab2_file_management/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab3_reading_files/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab4_search_basics/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/projects/project_alpha/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/projects/project_beta/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/projects/project_gamma/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/linux_lab5_scavenger_hunt/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Files and Folders navigation/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Networking/linux_networking_lab1_adapter/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Networking/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab10_default_permissions/projects/default_app/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab10_default_permissions/projects/secure_files/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab10_default_permissions/projects/shared_team/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab10_default_permissions/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab11_debug_mindset/broken_scenarios/scenario6_mixed_issues/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab11_debug_mindset/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab12_permissions_lab/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab13_acl_groups/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab6_permission_encounter/projects/personal_project/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab6_permission_encounter/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab7_why_script_doesnt_run/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab8_ownership_and_groups/projects/web_app/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab8_ownership_and_groups/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab9_sudo_mindset/projects/system_service/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab9_sudo_mindset/projects/user_app/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Permissions/linux_lab9_sudo_mindset/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_pipes_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_pipes_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_heredoc_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_heredoc_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_input_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_input_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_output_append_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_output_append_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_output_overwrite_1/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/linux_lab_redir_output_overwrite_2/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Pipes and Redirection/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_journalctl_logs_first/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_processes_vs_service/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_process_hunt/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_systemd_services/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/linux_lab_troubleshooting_flow/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Processes/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/real-world-scenarios/linux_scenario_shared_server/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_basics/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_case/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_conditionals/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_debugging/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_exit_codes/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_functions/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_guessing_game/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_input/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_leap_year/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_loops/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_mini_devops_tool/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_ops_helper/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/linux_lab_script_variables/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Shell Scripting/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Users and Groups/linux_users_groups_management/README.md
+/e/Genspark/DevOps-Materials/archive/Linux/Users and Groups/README.md
+/e/Genspark/DevOps-Materials/archive/Python/README.md
+/e/Genspark/DevOps-Materials/archive/README.md
+/e/Genspark/DevOps-Materials/archive/Terraform/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_bm/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_bm/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_nv/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/10/bundle_react-app_nv/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/5 - Intro to Docker Iamges/Dockerfile-NGINX/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/Build Context/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/Build Context 2/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/containerize-express-app-bundle/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/multistage-build/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/7 - diving into images/multistage-builds-bundle/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/9/containerized-react-app/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/9/containerized-react-app/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/frontend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-base/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-docker/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Compose 2/app-docker/README.md
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notebooks-backend/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notebooks-backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notes-backend/compose.yaml
+/e/Genspark/DevOps-Materials/Docker/archive/Docker Final Project/notes-backend/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless1/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless1/README.md
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless2/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless2/README.md
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless3-ts/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/distorless/distorless3-ts/README.md
+/e/Genspark/DevOps-Materials/Docker/lab7.15-final-optimization/Dockerfile
+/e/Genspark/DevOps-Materials/Docker/lab7.15-final-optimization/README.md
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_1_final_lab/README.md
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_2_final_lab/Dockerfile
+/e/Genspark/DevOps-Materials/Github Actions/archive/day_2_final_lab/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-1/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-2/.github/workflows/deployment.yaml
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-2/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-3/.github/workflows/deployment.yaml
+/e/Genspark/DevOps-Materials/Github Actions/ss8.2/example-react-app-step-3/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.3/express-app/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-artifacts/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-caching/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.4/modern-react-app-outputs/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.5/db-express-app-env-only/README.md
+/e/Genspark/DevOps-Materials/Github Actions/ss8.5/db-express-app-secrets/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/01-Introduction/installing-and-configuring/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/01-Introduction/what-is-git/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/02-Basic-Workflow/commit/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/02-Basic-Workflow/gitignore/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/02-Basic-Workflow/init-and-first-commit/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/02-Basic-Workflow/status-and-add/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/03-Inspecting-History/diff/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/03-Inspecting-History/log/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/04-Branching/branch-management/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/04-Branching/creating-and-switching/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/04-Branching/merge/README.md
+/e/Genspark/DevOps-Materials/Git_and_GitHub/Git/04-Branching/merge-conflicts/README.md

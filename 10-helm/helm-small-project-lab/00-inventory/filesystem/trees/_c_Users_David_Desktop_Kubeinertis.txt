@@ -1,0 +1,647 @@
+/c/Users/David/Desktop/Kubeinertis
+/c/Users/David/Desktop/Kubeinertis/.gitignore
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/01-kubeconfig-view.txt
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/02-current-context.txt
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/03-contexts.txt
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/04-clusterroles.txt
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/05-clusterrole-admin.yaml
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/06-clusterrole-cluster-admin.yaml
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/07-cluster-admin-bindings.txt
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/08-cluster-admin-binding.yaml
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/09-minikube-client-cert.txt
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/10-cert-subject-summary.txt
+/c/Users/David/Desktop/Kubeinertis/11-security-fundamentals/lab-11.1-rbac-users-contexts-x509/screenshots
+/c/Users/David/Desktop/Kubeinertis/9 - Configuration Management
+/c/Users/David/Desktop/Kubeinertis/color-api-code
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/.dockerignore
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/.gitignore
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/package-lock.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/package.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/README.md
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/src
+/c/Users/David/Desktop/Kubeinertis/color-api-code/color-api-code/src/index.js
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/._color-api-code
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._.dockerignore
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._.gitignore
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._Dockerfile
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._package-lock.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._package.json
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._README.md
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/._src
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/src
+/c/Users/David/Desktop/Kubeinertis/color-api-code/__MACOSX/color-api-code/src/._index.js
+/c/Users/David/Desktop/Kubeinertis/color-api-code.zip
+/c/Users/David/Desktop/Kubeinertis/color-api-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/color-api.yaml
+/c/Users/David/Desktop/Kubeinertis/color-deploy.yaml
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/.dockerignore
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/.gitignore
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/Dockerfile.color-api
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/package-lock.json
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/package.json
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/README.md
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/src
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/src/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/src/index.js
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/traffic-gen.sh
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0/traffic-generator.yaml
+/c/Users/David/Desktop/Kubeinertis/color_api_1_1_0.zip
+/c/Users/David/Desktop/Kubeinertis/day03
+/c/Users/David/Desktop/Kubeinertis/day03/10 - Project - Deploying a MongoDB Database
+/c/Users/David/Desktop/Kubeinertis/day03/11 - Security Fundamentals
+/c/Users/David/Desktop/Kubeinertis/day03/2 - Installing Tools
+/c/Users/David/Desktop/Kubeinertis/day03/3 - Running Containers in Kubernetes
+/c/Users/David/Desktop/Kubeinertis/day03/4 - Object Management and YAML Manifests
+/c/Users/David/Desktop/Kubeinertis/day03/5 - ReplicaSets and Deployments
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/.dockerignore
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/.gitignore
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/Dockerfile.color-api
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/Dockerfile.traffic-generator.bak
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/package-lock.json
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/src
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/src/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/src/index.js
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/traffic-gen.sh
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/app/traffic-generator.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/k8s
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/.dockerignore
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/.gitignore
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/Dockerfile.color-api
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/package-lock.json
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/src
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/src/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/src/index.js
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/traffic-gen.sh
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/app/traffic-generator.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/outputs/container-running.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/outputs/curl-checks.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/outputs/docker-hub-tag-1.1.0.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.0-color-api-update-devs-only/outputs/docker-image.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.1-traffic-generator-image
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.1-traffic-generator-image/.gitignore
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.1-traffic-generator-image/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.1-traffic-generator-image/traffic-gen.sh
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/images/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/01-color-api-pods-before-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/02-traffic-generator-before-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/03-target-pod-before-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/04-traffic-generator-success-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/05-color-api-pods-after-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/06-traffic-generator-errors-after-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/07-traffic-generator-fixed-target.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/08-current-color-api-pods.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/09-traffic-generator-current-state.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/10-traffic-generator-after-target-delete-live.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/11-traffic-generator-events.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/12-fixed-pod-ip-proof.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/13-deployment-still-healthy.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/14-replicaset-status.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/outputs/15-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.2-pods-direct-communication-before-service/traffic-generator.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/color-api-clusterip.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/01-clusterip-service-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/02-color-api-pods-before-service-test.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/03-cluster-ip-used.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/04-clusterip-load-balancing-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/05-victim-pod-selected.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/06-pods-after-one-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/07-traffic-after-pod-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/08-service-endpoints-after-pod-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/09-endpoints-before-deployment-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/10-no-color-api-pods-after-deployment-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/11-service-still-exists-without-pods.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/12-empty-endpoints-after-deployment-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/13-pods-after-deployment-restore.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/14-endpoints-after-deployment-restore.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/15-service-dns-load-balancing-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/16-coredns-pods.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/17-service-ip-before-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/18-service-ip-after-recreate.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/19-service-ip-changed-proof.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/20-dns-after-service-recreate.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/outputs/21-service-final-describe.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.3-clusterip-service-stable-communication/traffic-generator.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/color-api-nodeport.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/images/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/os-release.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/01-color-api-pods.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/02-nodeport-service-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/03-deployment-status.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/04-node-info.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/05-nodeport-tunnel.log
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/05-nodeport-tunnel.pid
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/05-nodeport-url.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/06-browser-html-response.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/07-nodeport-json-load-balancing.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/08-nodeport-service-describe.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/09-nodeport-endpoints.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/10-nodeport-final-load-balancing.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/outputs/11-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/color-api-nodeport.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/outputs/01-pods-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/outputs/02-services-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/color-api-nodeport.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/outputs/01-pods-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/outputs/02-services-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/services
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.4-nodeport-service/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/services/hands-on-6.5-nodeport-linux-killercoda/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/color-api-clusterip.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/color-api-nodeport.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/google-externalname.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/images
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/images/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/01-lab-files.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/04-externalname-describe.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/05-curl-externalname-html.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/06-curl-externalname-headers.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/07-externalname-service-wide.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/08-externalname-no-endpoints.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/09-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/10-final-file-list.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/11-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/12-pods-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/13-services-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/outputs/14-deploy-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/6 - Services Deep Dive/hands-on-6.6-externalname-service/traffic-generator.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/color-api.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/images
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/images/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/01-apply.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/02-pods-wide.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/03-label-columns.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/04-selector-app-color-api.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/05-selector-tier-frontend.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/06-selector-and-single-flag.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/07-selector-and-multiple-flags.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/08-selector-set-in.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/09-selector-set-notin.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/10-selector-multiple-flags-reversed.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/11-correct-and-show-labels.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/12-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/13-final-lab-state.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/14-final-and-proof.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.0-labels-selectors/outputs/15-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/color-deploy.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/01-cleanup-previous-lab.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/02-apply-deployment.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/03-deployment-wide.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/04-pods-labels-wide.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/05-describe-deployment.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/06-pods-tier-managed.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/07-color-api-pods-labels.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/08-deployment-yaml.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/09-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/10-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/11-final-proof.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.1-deployment-selectors/outputs/12-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/color-api-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/01-clean-previous-color-api-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/02-apply-startup-up.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/03-startup-up-running.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/04-startup-up-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/05-delete-startup-only-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/06-apply-liveness-fail.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/07-pod-after-liveness-fail.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/08-describe-liveness-fail.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/09-previous-container-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/10-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/11-pod-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/12-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.10-liveness-probe/outputs/13-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/color-api-svc.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/01-apply-all.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/02-pods-after-readiness.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/03-delete-unisolated-resources.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/04-apply-isolated-resources.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/05-isolated-readiness-pods.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/06-service-endpoints-isolated.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/07-pods-wide-endpoint-match.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/08-describe-not-ready-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/09-traffic-generator-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/10-service-endpoints.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/11-readiness-no-restart-proof.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/12-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/13-deployment-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/14-traffic-generator-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/15-service-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/16-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/outputs/17-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.11-readiness-probe-service-traffic/traffic-generator.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/color-api.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/dev-ns.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/01-apply-namespace.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/02-namespaces.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/03-pods-default-before-dev-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/04-pods-kube-system.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/05-apply-all.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/06-pods-dev.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/07-pods-default-after-dev-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/08-describe-without-namespace-fails.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/09-current-context.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/10-set-context-dev.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/11-pods-after-context-dev.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/12-describe-after-context-dev.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/13-config-view-current-context.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/14-pods-all-namespaces-before-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/15-set-context-default.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/16-delete-namespace.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/20-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.2-namespaces/outputs/21-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/color-api-service.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/color-api.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/dev-ns.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/01-apply-namespace.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/02-apply-resources.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/03-pods-default.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/04-dev-resources.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/05-traffic-generator-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/06-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/07-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/08-pods-default-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/09-dev-namespace-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/outputs/10-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.3-service-dns-namespaces/traffic-generator.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/dev-ns.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/dev-quota.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/01-apply-all.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/02-namespaces.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/03-resourcequotas-all.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/04-describe-dev-quota.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/05-describe-prod-quota.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/06-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/07-final-resourcequotas-all.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/08-final-namespaces.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/outputs/09-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/prod-ns.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.4-resource-quotas/prod-quota.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/api-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/01-check-dev-quota.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/02-apply-api-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/03-pods-dev-after-api.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/04-describe-api-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/05-quota-after-api-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/06-apply-heavy-forbidden.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/07-pods-dev-after-heavy-attempt.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/08-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/09-pods-dev-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/10-quota-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/11-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.5-resourcequota-pods-requests-limits/outputs/12-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/color-api-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/dev-ns.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/dev-quota.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/01-apply-initial.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/02-pods-initial.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/03-quota-initial.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/04-pods-before-update.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/05-image-updated.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/06-apply-rolling-update.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/07-pods-after-update-attempt.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/08-rollout-status-timeout.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/09-replicasets-after-update.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/10-describe-replicasets.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/11-describe-deployment-stuck.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/12-quota-during-stuck-rollout.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/13-quota-error-proof.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/14-apply-expanded-quota.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/15-quota-expanded.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/16-rollout-restart.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/17-rollout-status-after-quota-fix.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/18-pods-after-rollout-fix.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/19-quota-after-rollout-fix.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/20-scale-to-10.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/22-scale-quota-error-proof.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/23-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/24-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/25-dev-namespace-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/26-pods-after-cleanup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.6-resourcequota-rolling-scaling/outputs/27-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/.dockerignore
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/.gitignore
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/package-lock.json
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/src
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/app/src/index.js
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/01-source-path.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/02-source-files.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/03-node-docker-files.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/04-js-entrypoint-hints.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/05-copied-app-files.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/06-index-before.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/07-package-json-before.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/08-dockerfile-before.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/09-index-after.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/10-package-json-after.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/11-probes-code-proof.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/12-docker-build.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/13-docker-run.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/14-endpoints-test.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/15-container-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/16-docker-push.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/17-remove-test-container.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/18-local-images.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/19-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/20-remote-image-verified.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/21-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.7-color-api-probes-prep/outputs/22-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/color-api-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/color-api@1.2.0
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/node
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/01-apply-good-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/02-good-pod-running.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/03-good-pod-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/04-delete-good-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/05-apply-broken-startup.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/06-pod-after-startup-fail.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/07-describe-startup-fail.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/08-delete-broken-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/09-apply-fixed-pod.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/10-fixed-pod-running.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/11-fixed-pod-logs.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/12-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.8-startup-probe/outputs/13-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/.dockerignore
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/.gitignore
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/package-lock.json
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/README.md
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/src
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/app/src/index.js
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/01-index-before-up-endpoint.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/02-package-before-bugfix.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/03-current-probe-endpoints.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/04-probe-endpoints-after-bugfix.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/05-package-after-bugfix.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/06-docker-build-121.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/07-docker-run-121.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/08-endpoints-test-121.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/09-container-logs-121.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/10-docker-push-121.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/11-remote-image-verified-121.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/12-remove-test-container.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/13-local-images.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/14-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/7 - Resource Management/hands-on-7.9-startup-endpoint-bugfix/outputs/15-final-files-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.0-emptydir
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.0-emptydir/empty-dir-example.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.1-pv-pvc-local-volume
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.2-local-volume-pod
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.3-reclaim-policy
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.4-dynamic-provisioning
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.5-statefulsets-apps
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.6-volumeclaimtemplates
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.7-statefulset-cleanup
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.8-static-to-dynamic-migration
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/8.9-headless-service-dns
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/empty-dir-example.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/empty-dir-sidecar.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/00-existing-pods-check.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/00-series8-folder-check.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/01-existing-emptydir-pod-check.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/02-emptydir-pod-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/03-emptydir-pod-describe.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/04-emptydir-write-file.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/05-after-container-restart.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/06-file-after-container-restart.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/07-file-after-pod-recreate.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/08-sidecar-containers.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/09-writer-created-file.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/10-reader-readonly-test.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/11-cleanup-check.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.0-emptydir/outputs/12-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/local-volume-example.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/00-existing-pv-check.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/00-existing-pvc-check.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/01-existing-local-volume-resources.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/02-apply-pv-pvc-2gi.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/03-pv-created-1gi.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/04-pvc-pending-2gi.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/05-pvc-pending-describe.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/06-apply-after-changing-pvc-to-1gi.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/07-delete-pending-pvc.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/08-apply-pv-pvc-1gi.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/09-pv-bound.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-pv-pvc-local-volume/outputs/10-pvc-bound.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/01-storageclass-standard-before.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/02-pvc-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/03-pv-after-pvc-created.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/04-created-pv-name.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/05-pv-before-reclaim-patch.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/06-pv-after-reclaim-patch.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/07-pv-after-pvc-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/08-storageclass-standard-after.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/09-pvc-after-delete.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/10-pv-final-retained.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/outputs/11-lab-conclusion.txt
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.1-reclaim-policy/pvc-standard.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.2-local-volume-pod
+/c/Users/David/Desktop/Kubeinertis/day03/8 - Storage and Persistence/hands-on-8.2-local-volume-pod/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/9 - Configuration Management
+/c/Users/David/Desktop/Kubeinertis/day03/9 - Configuration Management/9.0-colorapi-configmaps-ready
+/c/Users/David/Desktop/Kubeinertis/day03/9 - Configuration Management/Hands-On 9.0
+/c/Users/David/Desktop/Kubeinertis/day03/deployments
+/c/Users/David/Desktop/Kubeinertis/day03/deployments/nginx-deploy.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base/.dockerignore
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base/app.js
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base/app.v1.js
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base/Dockerfile
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base/package-lock.json
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base/package.json
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/base.zip
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/images
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/k8s
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/k8s/movie-deployment.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/k8s/movie-service.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/notes.md
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/outputs/docker-images.txt
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/outputs/final-file-list.txt
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/outputs/final-k8s-resources.txt
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/outputs/final-notes.txt
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/outputs/rollout-history.txt
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/__MACOSX
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/__MACOSX/._base
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/__MACOSX/base
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/__MACOSX/base/._app.js
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/__MACOSX/base/._package-lock.json
+/c/Users/David/Desktop/Kubeinertis/day03/e2e-lab-1/__MACOSX/base/._package.json
+/c/Users/David/Desktop/Kubeinertis/day03/Helm
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating/.helmignore
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating/Chart.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating/templates
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating/templates/sandbox.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/Helm/intro-go-templating/values.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/images
+/c/Users/David/Desktop/Kubeinertis/day03/images/02-inspect-communication-logs
+/c/Users/David/Desktop/Kubeinertis/day03/images/Rollback.png
+/c/Users/David/Desktop/Kubeinertis/day03/images/צילום מסך 2026-06-07 211701.png
+/c/Users/David/Desktop/Kubeinertis/day03/labs
+/c/Users/David/Desktop/Kubeinertis/day03/labs/02-inspect-communication-logs
+/c/Users/David/Desktop/Kubeinertis/day03/labs/02-inspect-communication-logs/Images
+/c/Users/David/Desktop/Kubeinertis/day03/labs/02-inspect-communication-logs/Images/200 = nginx ענה בהצלחה.jpg
+/c/Users/David/Desktop/Kubeinertis/day03/labs/02-inspect-communication-logs/outputs
+/c/Users/David/Desktop/Kubeinertis/day03/labs/02-inspect-communication-logs/outputs/01-nginx-wide.txt
+/c/Users/David/Desktop/Kubeinertis/day03/labs/02-inspect-communication-logs/outputs/02-host-curl-note.txt
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.2-nodeport-service
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.2-nodeport-service/nginx-svc.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.3-dry-run-yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.3-dry-run-yaml/color-api-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.3-dry-run-yaml/nginx-svc-dry-run.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.4-imperative-replace-limits
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.4-imperative-replace-limits/nginx-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.5-declarative-apply
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.5-declarative-apply/nginx-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.5-declarative-apply/nginx-svc.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.6-create-to-apply-migration
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.6-create-to-apply-migration/nginx-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/04.6-create-to-apply-migration/nginx-svc.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.2
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.2/local-volume-example.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.2/notes.md
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.2/screenshots
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.5-statefulset-storage
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.5-statefulset-storage/# 8 - Storage and Persistence
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.5-statefulset-storage/pvs.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lab-8.5-statefulset-storage/statefulset.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lav 7.0
+/c/Users/David/Desktop/Kubeinertis/day03/labs/lav 7.0/color-api.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/local-volume-example.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/manifests
+/c/Users/David/Desktop/Kubeinertis/day03/manifests/deployments
+/c/Users/David/Desktop/Kubeinertis/day03/manifests/deployments/nginx-replicaset.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/manifests/labs
+/c/Users/David/Desktop/Kubeinertis/day03/manifests/labs/Object-Management
+/c/Users/David/Desktop/Kubeinertis/day03/manifests/labs/Object-Management/nginx-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/nginx-pod.yaml
+/c/Users/David/Desktop/Kubeinertis/day03/nginx-rs.yaml
+/c/Users/David/Desktop/Kubeinertis/Detection (7j8xs).exe
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0404.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0407.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0409.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x040a.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x040c.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0410.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0411.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0412.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0416.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0419.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x041e.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x041f.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0804.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0816.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/0x0c0c.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/data1.cab
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/data1.hdr
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/data2.cab
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/ISSetup.dll
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/layout.bin
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/oem.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/setup.bat
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/setup.exe
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/setup.ini
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/setup.inx
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045/setup.iss
+/c/Users/David/Desktop/Kubeinertis/nb-driver-64bit-win11-dchu-controlcenter-3.0-6.045.zip
+/c/Users/David/Desktop/Kubeinertis/_inventory
+/c/Users/David/Desktop/Kubeinertis/_inventory/00-location.txt
+/c/Users/David/Desktop/Kubeinertis/_inventory/01-tree-maxdepth6.txt
+/c/Users/David/Desktop/Kubeinertis/_inventory/02-all-files.txt
+/c/Users/David/Desktop/Kubeinertis/_inventory/03-important-files.txt
+/c/Users/David/Desktop/Kubeinertis/_inventory/04-docker-images.txt
+/c/Users/David/Desktop/Kubeinertis/_inventory/05-docker-containers.txt
+/c/Users/David/Desktop/Kubeinertis/_inventory/06-k8s-all.txt

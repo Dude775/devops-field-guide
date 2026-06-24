@@ -1,0 +1,12 @@
+
+============================================================
+helm version
+============================================================
+
+version.BuildInfo{Version:"v4.2.1", GitCommit:"d591a19b953bd9cfdf7d9ddd83c2f4ffdaeafb29", GitTreeState:"clean", GoVersion:"go1.26.4", KubeClientVersion:"v1.36"}
+
+============================================================
+helm version
+============================================================
+
+version.BuildInfo{Version:"v4.2.1", GitCommit:"d591a19b953bd9cfdf7d9ddd83c2f4ffdaeafb29", GitTreeState:"clean", GoVersion:"go1.26.4", KubeClientVersion:"v1.36"}

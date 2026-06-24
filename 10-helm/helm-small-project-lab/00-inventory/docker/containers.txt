@@ -1,0 +1,28 @@
+
+============================================================
+docker ps -a
+============================================================
+
+CONTAINER ID   IMAGE                                                          COMMAND                  CREATED       STATUS                     PORTS                                                                                                                                  NAMES
+fa52015c2e46   lironefitoussi/aws-sol-2                                       "/docker-entrypoint.…"   2 days ago    Exited (0) 2 days ago                                                                                                                                             gallant_feynman
+351d6c86f9c4   450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest   "docker-entrypoint.s…"   3 days ago    Exited (137) 2 days ago                                                                                                                                           app
+dafafc6a873d   lironefitoussi/aws-sol-1:latest                                "/docker-entrypoint.…"   3 days ago    Exited (0) 3 days ago                                                                                                                                             hungry_chatterjee
+a202ce691269   dude775/movie-api:1.0                                          "/bin/sh -c 'uvicorn…"   5 days ago    Exited (255) 3 days ago    0.0.0.0:3000->3000/tcp                                                                                                                 movie-api
+0ef49875e237   mongo:7                                                        "docker-entrypoint.s…"   5 days ago    Exited (255) 3 days ago    27017/tcp                                                                                                                              mongo
+1685e044e9b0   gcr.io/k8s-minikube/kicbase:v0.0.50                            "/usr/local/bin/entr…"   6 days ago    Exited (255) 4 hours ago   127.0.0.1:32768->22/tcp, 127.0.0.1:32769->2376/tcp, 127.0.0.1:32770->5000/tcp, 127.0.0.1:32771->8443/tcp, 127.0.0.1:32772->32443/tcp   minikube
+1fb4114cf4e9   iran-3-backend                                                 "/nodejs/bin/node di…"   12 days ago   Exited (137) 6 days ago                                                                                                                                           shopflow-backend
+213b5760fc04   postgres:17                                                    "docker-entrypoint.s…"   12 days ago   Exited (0) 6 days ago                                                                                                                                             shopflow-postgres
+
+============================================================
+docker ps -a
+============================================================
+
+CONTAINER ID   IMAGE                                                          COMMAND                  CREATED       STATUS                     PORTS                                                                                                                                  NAMES
+fa52015c2e46   lironefitoussi/aws-sol-2                                       "/docker-entrypoint.…"   2 days ago    Exited (0) 2 days ago                                                                                                                                             gallant_feynman
+351d6c86f9c4   450963613786.dkr.ecr.us-east-1.amazonaws.com/ecr-demo:latest   "docker-entrypoint.s…"   3 days ago    Exited (137) 2 days ago                                                                                                                                           app
+dafafc6a873d   lironefitoussi/aws-sol-1:latest                                "/docker-entrypoint.…"   3 days ago    Exited (0) 3 days ago                                                                                                                                             hungry_chatterjee
+a202ce691269   dude775/movie-api:1.0                                          "/bin/sh -c 'uvicorn…"   5 days ago    Exited (255) 3 days ago    0.0.0.0:3000->3000/tcp                                                                                                                 movie-api
+0ef49875e237   mongo:7                                                        "docker-entrypoint.s…"   5 days ago    Exited (255) 3 days ago    27017/tcp                                                                                                                              mongo
+1685e044e9b0   gcr.io/k8s-minikube/kicbase:v0.0.50                            "/usr/local/bin/entr…"   6 days ago    Exited (255) 4 hours ago   127.0.0.1:32768->22/tcp, 127.0.0.1:32769->2376/tcp, 127.0.0.1:32770->5000/tcp, 127.0.0.1:32771->8443/tcp, 127.0.0.1:32772->32443/tcp   minikube
+1fb4114cf4e9   iran-3-backend                                                 "/nodejs/bin/node di…"   12 days ago   Exited (137) 6 days ago                                                                                                                                           shopflow-backend
+213b5760fc04   postgres:17                                                    "docker-entrypoint.s…"   12 days ago   Exited (0) 6 days ago                                                                                                                                             shopflow-postgres
