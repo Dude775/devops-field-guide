@@ -1,0 +1,3 @@
+2026-06-24 15:28:07 [ℹ]  scaling nodegroup "linux-nodes" in cluster drubin-test-cluster
+2026-06-24 15:28:08 [ℹ]  initiated scaling of nodegroup
+2026-06-24 15:28:08 [ℹ]  to see the status of the scaling run `eksctl get nodegroup --cluster drubin-test-cluster --region eu-central-1 --name linux-nodes`
