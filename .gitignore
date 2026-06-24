@@ -1,25 +1,58 @@
-
-# Added 2026-05-23 - protect secrets and build artifacts
+# === Secrets - NEVER COMMIT ===
+*.pem
 *.key
-*.csr
-node_modules/
-dist/
+*.p12
+*.pfx
 .env
 .env.*
-!.env.example
-10-helm/workspace-audit/
-10-helm/helm-small-project-lab/00-inventory/
-10-helm/helm-small-project-lab/01-source/
-10-helm/helm-small-project-lab/*.code-workspace
-10-helm/helm-small-project-lab/00-preflight-inventory.sh
-06-aws/1-Udemy-stefan/
-11-aws-advanced/ECS ECR EKS Presentations/
-11-aws-advanced/**/Results/
-*.mp4
-*.pem
-11-aws-advanced/mern-eks-app/
+credentials
+**/credentials
+id_rsa*
+id_ed25519*
 
-# secrets
-secret.txt
-*.secret
-*-credentials.txt
+# === Terraform ===
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.tfstate.lock.info
+crash.log
+*.tfvars
+
+# === Python ===
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# === Node ===
+node_modules/
+dist/
+build/
+
+# === Lab timestamps ===
+.start_ts
+.end_ts
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IDE ===
+.idea/
+*.swp
+
+# === Course material (copyright) ===
+06-aws/1-Udemy-stefan/
+12-terraform/Presentations/
+**/Presentations/
+11-aws-advanced/POD Identity VS IRSA.pdf
+
+# === Personal/scratch ===
+secrets-vault/
+11-aws-advanced/ECS ECR EKS Presentations/
