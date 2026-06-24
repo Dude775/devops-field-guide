@@ -1,0 +1,4 @@
+[
+    "eksctl-drubin-test-cluster-nodegroup-linux-nodes",
+    "eksctl-drubin-test-cluster-cluster"
+]

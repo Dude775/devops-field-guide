@@ -1,0 +1,21 @@
+2026-06-24 15:28:59 [ℹ]  deleting EKS cluster "drubin-test-cluster"
+2026-06-24 15:29:00 [ℹ]  will drain 0 unmanaged nodegroup(s) in cluster "drubin-test-cluster"
+2026-06-24 15:29:00 [ℹ]  starting parallel draining, max in-flight of 1
+2026-06-24 15:29:01 [ℹ]  deleted 0 Fargate profile(s)
+2026-06-24 15:29:01 [✔]  kubeconfig has been updated
+2026-06-24 15:29:02 [ℹ]  cleaning up AWS load balancers created by Kubernetes objects of Kind Service, Ingress, or Gateway
+2026-06-24 15:29:04 [ℹ]  
+2 sequential tasks: { delete nodegroup "linux-nodes", delete cluster control plane "drubin-test-cluster" [async] 
+}
+2026-06-24 15:29:04 [ℹ]  will delete stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:29:04 [ℹ]  waiting for stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes" to get deleted
+2026-06-24 15:29:04 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:29:35 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:30:10 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:31:00 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:32:31 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:33:49 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:35:22 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:36:33 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 15:36:33 [ℹ]  will delete stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 15:36:34 [✔]  all cluster resources were deleted
