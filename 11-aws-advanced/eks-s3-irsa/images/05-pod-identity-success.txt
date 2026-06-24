@@ -1,0 +1,18 @@
+=== Pod Identity verification ===
+pod: nginx-deployment-59485c7bff-5xmlv
+
+--- s3-fetch initContainer log (object fetched from S3) ---
+Hello from IRSA lab - David Rubin
+
+--- injected credential env (Pod Identity, NOT IRSA) ---
+AWS_STS_REGIONAL_ENDPOINTS=regional
+AWS_DEFAULT_REGION=us-east-1
+AWS_REGION=us-east-1
+AWS_CONTAINER_CREDENTIALS_FULL_URI=http://169.254.170.23/v1/credentials
+AWS_CONTAINER_AUTHORIZATION_TOKEN_FILE=/var/run/secrets/pods.eks.amazonaws.com/serviceaccount/eks-pod-identity-token
+
+--- service account (no IRSA annotation) ---
+{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"v1\",\"kind\":\"ServiceAccount\",\"metadata\":{\"annotations\":{},\"name\":\"app\",\"namespace\":\"default\"}}\n"}
+
+--- pod identity association ---
+default	app	arn:aws:iam::450963613786:role/eks-s3-pod-identity-role

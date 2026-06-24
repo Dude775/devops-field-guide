@@ -5,6 +5,10 @@ metadata:
   namespace: default
 spec:
   replicas: 1
+  # Recreate: single replica on capacity-constrained t3.micro nodes (max-pods=4).
+  # Default RollingUpdate surges a 2nd pod that can't schedule -> deadlock.
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app: nginx
