@@ -1,0 +1,9 @@
+NAMESPACE     NAME                              READY   STATUS    RESTARTS   AGE
+kube-system   aws-node-j4g9b                    2/2     Running   0          20m
+kube-system   aws-node-v7qq4                    2/2     Running   0          20m
+kube-system   coredns-6bf798dd74-6hnkv          1/1     Running   0          24m
+kube-system   coredns-6bf798dd74-kfmls          1/1     Running   0          24m
+kube-system   kube-proxy-lxvjn                  1/1     Running   0          20m
+kube-system   kube-proxy-w74rk                  1/1     Running   0          20m
+kube-system   metrics-server-5d4bdc7c4b-26tj9   1/1     Running   0          18m
+kube-system   metrics-server-5d4bdc7c4b-9hnnr   1/1     Running   0          18m

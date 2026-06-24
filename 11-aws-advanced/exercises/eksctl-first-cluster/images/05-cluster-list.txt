@@ -1,0 +1,2 @@
+NAME			REGION		EKSCTL CREATED
+drubin-test-cluster	eu-central-1	True
