@@ -1,0 +1,20 @@
+# Terraform working directory
+.terraform/
+.terraform.tfstate.lock.info
+
+# State files - sensitive, do not commit
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variables files with sensitive data
+*.tfvars
+*.tfvars.json
+
+# CLI configuration
+.terraformrc
+terraform.rc
