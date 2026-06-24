@@ -1,0 +1,8 @@
+Cleanup verified - 0 EKS clusters in us-east-1
+
+verified at: Wed, Jun 24, 2026  3:30:12 AM
+eks clusters (us-east-1): []   <- empty
+active eksctl-cluster CFN stacks: []   <- empty
+eks-s3-pod-identity-role deleted (NoSuchEntity): 1
+eks-s3-read-policy deleted (NoSuchEntity): 1
+S3 bucket david-rubin-eks-irsa-lab-450963: intentionally KEPT (optional, ~0 cost)
