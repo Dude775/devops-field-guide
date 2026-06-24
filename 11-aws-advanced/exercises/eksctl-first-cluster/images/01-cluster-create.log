@@ -1,0 +1,67 @@
+2026-06-24 14:18:01 [ℹ]  eksctl version 0.227.0
+2026-06-24 14:18:01 [ℹ]  using region eu-central-1
+2026-06-24 14:18:01 [ℹ]  setting availability zones to [eu-central-1c eu-central-1b eu-central-1a]
+2026-06-24 14:18:01 [ℹ]  subnets for eu-central-1c - public:192.168.0.0/19 private:192.168.96.0/19
+2026-06-24 14:18:01 [ℹ]  subnets for eu-central-1b - public:192.168.32.0/19 private:192.168.128.0/19
+2026-06-24 14:18:01 [ℹ]  subnets for eu-central-1a - public:192.168.64.0/19 private:192.168.160.0/19
+2026-06-24 14:18:01 [ℹ]  nodegroup "linux-nodes" will use "" [AmazonLinux2023/1.30]
+2026-06-24 14:18:01 [!]  Auto Mode will be enabled by default in an upcoming release of eksctl. This means managed node groups and managed networking add-ons will no longer be created by default. To maintain current behavior, explicitly set 'autoModeConfig.enabled: false' in your cluster configuration. Learn more: https://eksctl.io/usage/auto-mode/
+2026-06-24 14:18:01 [ℹ]  using Kubernetes version 1.30
+2026-06-24 14:18:01 [ℹ]  creating EKS cluster "drubin-test-cluster" in "eu-central-1" region with managed nodes
+2026-06-24 14:18:01 [ℹ]  will create 2 separate CloudFormation stacks for cluster itself and the initial managed nodegroup
+2026-06-24 14:18:01 [ℹ]  if you encounter any issues, check CloudFormation console or try 'eksctl utils describe-stacks --region=eu-central-1 --cluster=drubin-test-cluster'
+2026-06-24 14:18:01 [ℹ]  Kubernetes API endpoint access will use default of {publicAccess=true, privateAccess=false} for cluster "drubin-test-cluster" in "eu-central-1"
+2026-06-24 14:18:01 [ℹ]  CloudWatch logging will not be enabled for cluster "drubin-test-cluster" in "eu-central-1"
+2026-06-24 14:18:01 [ℹ]  you can enable it with 'eksctl utils update-cluster-logging --enable-types={SPECIFY-YOUR-LOG-TYPES-HERE (e.g. all)} --region=eu-central-1 --cluster=drubin-test-cluster'
+2026-06-24 14:18:01 [ℹ]  default addons coredns, metrics-server, vpc-cni, kube-proxy were not specified, will install them as EKS addons
+2026-06-24 14:18:01 [ℹ]  
+2 sequential tasks: { create cluster control plane "drubin-test-cluster", 
+    2 sequential sub-tasks: { 
+        2 sequential sub-tasks: { 
+            1 task: { create addons },
+            wait for control plane to become ready,
+        },
+        create managed nodegroup "linux-nodes",
+    } 
+}
+2026-06-24 14:18:01 [ℹ]  building cluster stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:18:02 [ℹ]  deploying stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:18:32 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:19:02 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:20:03 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:21:03 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:22:03 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:23:04 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:24:04 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:25:04 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:26:05 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-cluster"
+2026-06-24 14:26:06 [ℹ]  creating addon: coredns
+2026-06-24 14:26:07 [ℹ]  successfully created addon: coredns
+2026-06-24 14:26:07 [!]  recommended policies were found for "vpc-cni" addon, but since OIDC is disabled on the cluster, eksctl cannot configure the requested permissions; the recommended way to provide IAM permissions for "vpc-cni" addon is via pod identity associations; after addon creation is completed, add all recommended policies to the config file, under `addon.PodIdentityAssociations`, and run `eksctl update addon`
+2026-06-24 14:26:07 [ℹ]  creating addon: vpc-cni
+2026-06-24 14:26:08 [ℹ]  successfully created addon: vpc-cni
+2026-06-24 14:26:08 [ℹ]  creating addon: kube-proxy
+2026-06-24 14:26:09 [ℹ]  successfully created addon: kube-proxy
+2026-06-24 14:28:11 [ℹ]  building managed nodegroup stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 14:28:11 [ℹ]  deploying stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 14:28:11 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 14:28:42 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 14:29:16 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 14:30:08 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 14:31:23 [ℹ]  waiting for CloudFormation stack "eksctl-drubin-test-cluster-nodegroup-linux-nodes"
+2026-06-24 14:31:23 [ℹ]  waiting for the control plane to become ready
+2026-06-24 14:31:25 [✔]  saved kubeconfig as "C:\\Users\\David\\.kube\\config"
+2026-06-24 14:31:25 [ℹ]  no tasks
+2026-06-24 14:31:25 [✔]  all EKS cluster resources for "drubin-test-cluster" have been created
+2026-06-24 14:31:25 [ℹ]  nodegroup "linux-nodes" has 2 node(s)
+2026-06-24 14:31:25 [ℹ]  node "ip-192-168-18-29.eu-central-1.compute.internal" is ready
+2026-06-24 14:31:25 [ℹ]  node "ip-192-168-83-199.eu-central-1.compute.internal" is ready
+2026-06-24 14:31:25 [ℹ]  waiting for at least 2 node(s) to become ready in "linux-nodes"
+2026-06-24 14:31:25 [ℹ]  nodegroup "linux-nodes" has 2 node(s)
+2026-06-24 14:31:25 [ℹ]  node "ip-192-168-18-29.eu-central-1.compute.internal" is ready
+2026-06-24 14:31:25 [ℹ]  node "ip-192-168-83-199.eu-central-1.compute.internal" is ready
+2026-06-24 14:31:25 [✔]  created 1 managed nodegroup(s) in cluster "drubin-test-cluster"
+2026-06-24 14:31:26 [ℹ]  creating addon: metrics-server
+2026-06-24 14:31:26 [ℹ]  successfully created addon: metrics-server
+2026-06-24 14:31:27 [ℹ]  kubectl command should work with "C:\\Users\\David\\.kube\\config", try 'kubectl get nodes'
+2026-06-24 14:31:27 [✔]  EKS cluster "drubin-test-cluster" in "eu-central-1" region is ready
