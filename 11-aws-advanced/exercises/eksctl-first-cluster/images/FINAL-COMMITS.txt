@@ -1,0 +1,20 @@
+02f4c07 lab docs
+a5174e1 teardown verified
+b1a2de0 docs 02-aws-provider
+5d33511 docs 01-local-file
+e2b4a20 scaled back
+ba1fd1c scaled to 3
+dc894bf verify nodes
+1e0634f cluster up
+f7fdd9a lab skeleton
+cc36219 pre-flight ok
+e011f01 save eksctl logs
+e1fe3cc cleanup done
+081fd1c readme done
+cfb6ee2 pod identity works
+24a712c irsa works
+36356a7 irsa wired
+f5bfc6a iam policy
+8e06f01 cluster up
+492176e fix instance type free tier
+719ba62 cleanup previous attempt
