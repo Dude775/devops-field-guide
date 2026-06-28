@@ -8,3 +8,7 @@ variable "objects_list" {
     lastname  = string
   }))
 }
+
+variable "numbers_map" {
+  type = map(number)
+}
