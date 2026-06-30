@@ -1,0 +1,17 @@
+﻿**/.terraform/
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/*.tfstate
+**/*.tfstate.*
+**/.env
+**/.env.*
+!**/.env.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# .terraform.lock.hcl is tracked on purpose
+
+_audit/
